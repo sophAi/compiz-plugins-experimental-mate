@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.toggledeco" gettext-domain="compiz">
+    <key type="s" name="trigger-key">
+      <default>'&lt;Super&gt;&lt;Primary&gt;d'</default>
+      <summary>Toggle decoration</summary>
+      <description>Toggles decoration on/off.</description>
+    </key>
+    <key type="s" name="trigger-all-key">
+      <default>'&lt;Super&gt;&lt;Primary&gt;a'</default>
+      <summary>Toggle decoration on desktop</summary>
+      <description>Toggles decoration of every window on the desktop.</description>
+    </key>
+  </schema>
+</schemalist>

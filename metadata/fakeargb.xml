@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="fakeargb">
+		<short>Color Opacity</short>
+		<short xml:lang="ca">Opacitat del color</short>
+		<short xml:lang="de">Farbsichtbarkeit</short>
+		<short xml:lang="el">Χρωματιστή Αδιαφάνεια</short>
+		<short xml:lang="en_GB">Colour Opacity</short>
+		<short xml:lang="es">Transparencia por color</short>
+		<short xml:lang="eu">Opakutasun kolorea</short>
+		<short xml:lang="fi">Värin läpinäkyvyys</short>
+		<short xml:lang="fr">Opacité par couleur</short>
+		<short xml:lang="gl">Opacidade de cores</short>
+		<short xml:lang="gu">રંગ અપારદર્શકતા</short>
+		<short xml:lang="he">אטימות צבע</short>
+		<short xml:lang="hi">रंग अपारदर्शिता</short>
+		<short xml:lang="hu">Szín láthatósága</short>
+		<short xml:lang="it">Colore opacità</short>
+		<short xml:lang="ja">色の透過性</short>
+		<short xml:lang="ko">색 투명도</short>
+		<short xml:lang="nb">Fargedekkevne</short>
+		<short xml:lang="nl">Kleur ondoorzichtigheid</short>
+		<short xml:lang="pl">Przezroczystość kolorów</short>
+		<short xml:lang="pt">Opacidade de cores</short>
+		<short xml:lang="pt_BR">Opacidade de cores</short>
+		<short xml:lang="sv">Färg opacitet</short>
+		<short xml:lang="tr">Renk Matlığı</short>
+		<short xml:lang="zh_CN">颜色不透明功能</short>
+		<long>Alter window opacity based on color.</long>
+		<long xml:lang="ca">Altera l'opacitat de la finestra basada en color.</long>
+		<long xml:lang="de">Verändert Fenstersichtbarkeit abhänig von Farbe</long>
+		<long xml:lang="el">Αλλαγή αδιαφάνειας παραθύρου βασισμένη στο χρώμα.</long>
+		<long xml:lang="en_GB">Alter window opacity based on colour.</long>
+		<long xml:lang="es">Alterar la transparencia de las ventanas basado en un color</long>
+		<long xml:lang="eu">Aldatu leihoaren opakutasuna kolorean oinarriturik.</long>
+		<long xml:lang="fi">Muuta ikkunan läpinäkyvyys värin perusteella.</long>
+		<long xml:lang="fr">Altérer l'opacité de la fenêtre en se basant sur la couleur.</long>
+		<long xml:lang="gl">Alterar opacidade da xanela con base na cor.</long>
+		<long xml:lang="gu">રંગ આધારિત વિન્ડોની અપારદર્શકતા બદલો.</long>
+		<long xml:lang="he">שנה אטימות חלון בהתבסס על הצבע.</long>
+		<long xml:lang="hi">रंग के आधार पर विंडो अपारदर्शिता बदलें.</long>
+		<long xml:lang="hu">Ablak szín alapú láthatósága</long>
+		<long xml:lang="it">Altera l'opacità della finestra in base al colore.</long>
+		<long xml:lang="ja">色を元にしたウィンドウ透過の変更</long>
+		<long xml:lang="ko">색에 기반하여 창의 투명도를 변경</long>
+		<long xml:lang="nb">Endre vinduets dekkevne basert på farge.</long>
+		<long xml:lang="nl">Verander venster ondoorzichtigheid gebaseerd op kleur.</long>
+		<long xml:lang="pl">Zmienia przezroczystość okien bazując na kolorze.</long>
+		<long xml:lang="pt">Alterar opacidade da janela com base na cor.</long>
+		<long xml:lang="pt_BR">Alterar a opacidade da janela com base na cor.</long>
+		<long xml:lang="sv">Ändra opacitet på fönster baserat på dess färg</long>
+		<long xml:lang="zh_CN">基于颜色改变窗口不透明度。</long>
+		<category>Extras</category>
+		<options>
+			<option type="key" name="window_toggle_key">
+				<short>Toggle Window Fake ARGB</short>
+				<short xml:lang="de">Aktiviere pseudo-ARGB für Fenster</short>
+				<short xml:lang="el">Εκκίνηση-Σταμάτημα του Στοιχείου Ψεύτικα ARGB Παραθύρου</short>
+				<short xml:lang="en_GB">Toggle Window Fake ARGB</short>
+				<short xml:lang="es">Habilitar o desactivar ARGB falso</short>
+				<short xml:lang="eu">Gaitu/ezgaitu leiho ARGB faltsua</short>
+				<short xml:lang="fi">Aktivoi ikkunan vale-ARGB</short>
+				<short xml:lang="fr">Basculer la fenêtre en faux ARGB</short>
+				<short xml:lang="gl">Trocar ARGB falsos da xanela</short>
+				<short xml:lang="gu">વિન્ડો ફેક ARGB બદલો</short>
+				<short xml:lang="he">הפעל\נטרל ARGB מזויף לחלון</short>
+				<short xml:lang="hi">विंडो नकली ARGB टॉगल करें</short>
+				<short xml:lang="hu">Ablak ál ARGB alapján</short>
+				<short xml:lang="it">Attivare la falsa trasparenza</short>
+				<short xml:lang="ja">ウィンドウの色(透過)の切り替え</short>
+				<short xml:lang="ko">가짜 창 ARGB 기능 토글</short>
+				<short xml:lang="nb">Skru av/på falsk ARGB for vinduer</short>
+				<short xml:lang="nl">Wissel venster nep ARGB</short>
+				<short xml:lang="pl">Przełącz fałszywy ARGB okien</short>
+				<short xml:lang="pt">Alternar ARGB falsos da janela</short>
+				<short xml:lang="pt_BR">Alternar ARGB falsos da janela</short>
+				<short xml:lang="sv">Växla falskt fönster ARGB</short>
+				<short xml:lang="zh_CN">切换窗口伪ARGB</short>
+				<long>Toggle window fake ARGB.</long>
+				<long xml:lang="de">Aktiviere pseudo-ARGB für das momentan aktive Fenster.</long>
+				<long xml:lang="el">Εκκίνηση-Σταμάτημα του στοιχείου ψεύτικα ARGB παραθύρου.</long>
+				<long xml:lang="en_GB">Toggle window fake ARGB.</long>
+				<long xml:lang="es">Habilitar o desactivar ARGB falso.</long>
+				<long xml:lang="eu">Gaitu/ezgaitu leiho ARGB faltsua</long>
+				<long xml:lang="fi">Aktivoi ikkunan vale-ARGB.</long>
+				<long xml:lang="fr">Basculer la fenêtre en faux ARGB.</long>
+				<long xml:lang="gl">Trocar ARGB falsos da xanela.</long>
+				<long xml:lang="gu">વિન્ડો ફેક ARGB બદલો.</long>
+				<long xml:lang="he">הפעל\נטרל ARGB מזויף לחלון.</long>
+				<long xml:lang="hi">विंडो नकली ARGB टॉगल करें.</long>
+				<long xml:lang="hu">Ablak ál ARGB alapján.</long>
+				<long xml:lang="it">Attiva la falsa trasparenza ARGB della finestra.</long>
+				<long xml:lang="ja">ウィンドウの色(透過)の切り替え</long>
+				<long xml:lang="ko">가짜 창 ARGB 기능 토글</long>
+				<long xml:lang="nb">Skru av/på falsk ARGB for vinduer</long>
+				<long xml:lang="nl">Wissel venster nep ARGB.</long>
+				<long xml:lang="pl">Przełącza fałszywy ARGB okien.</long>
+				<long xml:lang="pt">Alternar ARGB falsos da janela.</long>
+				<long xml:lang="pt_BR">Alternar ARGB falsos da janela.</long>
+				<long xml:lang="sv">Växla falskt fönster ARGB</long>
+				<long xml:lang="zh_CN">切换窗口伪ARGB功能。</long>
+				<default>&lt;Super&gt;f</default>
+			</option>
+			<option type="button" name="window_toggle_button">
+				<short>Toggle Window Fake ARGB</short>
+				<short xml:lang="de">Aktiviere pseudo-ARGB für Fenster</short>
+				<short xml:lang="el">Εκκίνηση-Σταμάτημα του Στοιχείου Ψεύτικα ARGB Παραθύρου</short>
+				<short xml:lang="en_GB">Toggle Window Fake ARGB</short>
+				<short xml:lang="es">Habilitar o desactivar ARGB falso</short>
+				<short xml:lang="eu">Gaitu/ezgaitu leiho ARGB faltsua</short>
+				<short xml:lang="fi">Aktivoi ikkunan vale-ARGB</short>
+				<short xml:lang="fr">Basculer la fenêtre en faux ARGB</short>
+				<short xml:lang="gl">Trocar ARGB falsos da xanela</short>
+				<short xml:lang="gu">વિન્ડો ફેક ARGB બદલો</short>
+				<short xml:lang="he">הפעל\נטרל ARGB מזויף לחלון</short>
+				<short xml:lang="hi">विंडो नकली ARGB टॉगल करें</short>
+				<short xml:lang="hu">Ablak ál ARGB alapján</short>
+				<short xml:lang="it">Attivare la falsa trasparenza</short>
+				<short xml:lang="ja">ウィンドウの色(透過)の切り替え</short>
+				<short xml:lang="ko">가짜 창 ARGB 기능 토글</short>
+				<short xml:lang="nb">Skru av/på falsk ARGB for vinduer</short>
+				<short xml:lang="nl">Wissel venster nep ARGB</short>
+				<short xml:lang="pl">Przełącz fałszywy ARGB okien</short>
+				<short xml:lang="pt">Alternar ARGB falsos da janela</short>
+				<short xml:lang="pt_BR">Alternar ARGB falsos da janela</short>
+				<short xml:lang="sv">Växla falskt fönster ARGB</short>
+				<short xml:lang="zh_CN">切换窗口伪ARGB</short>
+				<long>Toggle window fake ARGB.</long>
+				<long xml:lang="de">Aktiviere pseudo-ARGB für das momentan aktive Fenster.</long>
+				<long xml:lang="el">Εκκίνηση-Σταμάτημα του στοιχείου ψεύτικα ARGB παραθύρου.</long>
+				<long xml:lang="en_GB">Toggle window fake ARGB.</long>
+				<long xml:lang="es">Habilitar o desactivar ARGB falso.</long>
+				<long xml:lang="eu">Gaitu/ezgaitu leiho ARGB faltsua</long>
+				<long xml:lang="fi">Aktivoi ikkunan vale-ARGB.</long>
+				<long xml:lang="fr">Basculer la fenêtre en faux ARGB.</long>
+				<long xml:lang="gl">Trocar ARGB falsos da xanela.</long>
+				<long xml:lang="gu">વિન્ડો ફેક ARGB બદલો.</long>
+				<long xml:lang="he">הפעל\נטרל ARGB מזויף לחלון.</long>
+				<long xml:lang="hi">विंडो नकली ARGB टॉगल करें.</long>
+				<long xml:lang="hu">Ablak ál ARGB alapján.</long>
+				<long xml:lang="it">Attiva la falsa trasparenza ARGB della finestra.</long>
+				<long xml:lang="ja">ウィンドウの色(透過)の切り替え</long>
+				<long xml:lang="ko">가짜 창 ARGB 기능 토글</long>
+				<long xml:lang="nb">Skru av/på falsk ARGB for vinduer</long>
+				<long xml:lang="nl">Wissel venster nep ARGB.</long>
+				<long xml:lang="pl">Przełącza fałszywy ARGB okien.</long>
+				<long xml:lang="pt">Alternar ARGB falsos da janela.</long>
+				<long xml:lang="pt_BR">Alternar ARGB falsos da janela.</long>
+				<long xml:lang="sv">Växla falskt fönster ARGB</long>
+				<long xml:lang="zh_CN">切换窗口伪ARGB功能。</long>
+			</option>
+		</options>
+	</plugin>
+</compiz>

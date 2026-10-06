@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.tile" gettext-domain="compiz">
+    <key type="i" name="animate-type">
+      <default>0</default>
+      <summary>Tiling Animation Type</summary>
+      <description>Selects the animation used while tiling (0 = None, 1 = Filled Outline, 2 = Slide, 3 = Zoom, 4 = Drop From Top, 5 = Fade)</description>
+    </key>
+    <key type="i" name="animation-duration">
+      <default>1000</default>
+      <summary>Animation Duration</summary>
+      <description>Duration (in ms) of the tiling animation (100 - 2000)</description>
+    </key>
+    <key type="i" name="tile-toggle-type">
+      <default>0</default>
+      <summary>Tiling Method For Toggle</summary>
+      <description>Choose the tiling type you want when using toggle. (0 = Tile, 1 = Left, 2 = Tile Vertically, 3 = Tile Horizontally, 4 = Cascade)</description>
+    </key>
+    <key type="b" name="tile-join">
+      <default>false</default>
+      <summary>Join Windows (EXPERIMENTAL)</summary>
+      <description>Tries to join the windows together when horizontal, vertical or left tiling is enabled so that when you resize a window surrounding windows resize accordingly. This may cause problems if you dont leave them enough space.</description>
+    </key>
+    <key type="i" name="tile-delta">
+      <default>35</default>
+      <summary>Cascade Delta</summary>
+      <description>Distance between windows when using cascade (0 - 250)</description>
+    </key>
+    <key type="i" name="tile-left-occupancy">
+      <default>60</default>
+      <summary>Left Occupancy</summary>
+      <description>Occupancy percentage for window placed left. This number is percentage of screen width, which the active window will have it as width when tiled. Applies to Left tiling type. (20 - 80)</description>
+    </key>
+    <key type="s" name="exclude-match">
+      <default>''</default>
+      <summary>Excluded Windows</summary>
+      <description>Windows which should be excluded from tiling (match)</description>
+    </key>
+    <key type="s" name="tile-vertically-key">
+      <default>'Disabled'</default>
+      <summary>Tile Windows Vertically</summary>
+      <description>Move and resize all visible windows so that they have full height, same width and occupy whole screen.</description>
+    </key>
+    <key type="s" name="tile-horizontally-key">
+      <default>'Disabled'</default>
+      <summary>Tile Windows Horizontally</summary>
+      <description>Move and resize all visible windows so that they have full width, same height and occupy whole screen.</description>
+    </key>
+    <key type="s" name="tile-tile-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;a'</default>
+      <summary>Tile Windows</summary>
+      <description>Move and resize all visible windows both vertically and horizontally, so that the occupy whole screen and are in a grid.</description>
+    </key>
+    <key type="s" name="tile-cascade-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;s'</default>
+      <summary>Cascade Windows</summary>
+      <description>Move and resize all visible windows with the delta value set for cascading.</description>
+    </key>
+    <key type="s" name="tile-restore-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;z'</default>
+      <summary>Restore Windows</summary>
+      <description>Restore windows to their original position they had before tiling.</description>
+    </key>
+    <key type="s" name="tile-toggle-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;x'</default>
+      <summary>Toggle Tiling</summary>
+      <description>Toggle between tile and restore</description>
+    </key>
+  </schema>
+</schemalist>

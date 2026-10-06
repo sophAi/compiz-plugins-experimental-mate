@@ -1,0 +1,1061 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="tile">
+		<short>Tile</short>
+		<short xml:lang="ca">Mosaic</short>
+		<short xml:lang="cs">Dlaždice</short>
+		<short xml:lang="de">Kacheln</short>
+		<short xml:lang="el">Πλακίδιο</short>
+		<short xml:lang="en_GB">Tile</short>
+		<short xml:lang="es">Mosaico</short>
+		<short xml:lang="fi">Laatoita</short>
+		<short xml:lang="fr">Mosaïque</short>
+		<short xml:lang="gl">Mosaico</short>
+		<short xml:lang="gu">તકતી</short>
+		<short xml:lang="he">ריצוף</short>
+		<short xml:lang="hi">टाइल</short>
+		<short xml:lang="hu">Csempe</short>
+		<short xml:lang="it">Accosta</short>
+		<short xml:lang="ja">整列</short>
+		<short xml:lang="ko">타일</short>
+		<short xml:lang="nb">Flislegg</short>
+		<short xml:lang="nl">Tegelen</short>
+		<short xml:lang="pl">Rozmieszczanie okien</short>
+		<short xml:lang="pt">Mosaico</short>
+		<short xml:lang="pt_BR">Mosaico</short>
+		<short xml:lang="sv">Kakla</short>
+		<short xml:lang="tr">Döşe</short>
+		<short xml:lang="zh_CN">平铺</short>
+		<long>Tile windows</long>
+		<long xml:lang="ca">Mosaic de les finestres</long>
+		<long xml:lang="de">Fenster anordnen</long>
+		<long xml:lang="el">Μετατροπή παραθύρων σε πλακίδια</long>
+		<long xml:lang="en_GB">Tile windows</long>
+		<long xml:lang="es">Ventanas en mosaico</long>
+		<long xml:lang="fr">Fenêtres en mosaïque</long>
+		<long xml:lang="gl">Crear mosaico das xanelas</long>
+		<long xml:lang="gu">વિન્ડોની તકતી કરો</long>
+		<long xml:lang="he">ריצוף חלונות</long>
+		<long xml:lang="hi">विंडोज टाइल करें</long>
+		<long xml:lang="hu">Ablakok darabolása</long>
+		<long xml:lang="it">Accosta le finestre</long>
+		<long xml:lang="ja">ウィンドウの整列</long>
+		<long xml:lang="ko">윈도우 타일</long>
+		<long xml:lang="nb">Flislegg vinduer</long>
+		<long xml:lang="nl">Tegelen vensters</long>
+		<long xml:lang="pl">Rozmieszcza równomiernie okna na pulpicie</long>
+		<long xml:lang="pt">Criar mosaico das janelas</long>
+		<long xml:lang="pt_BR">Criar mosaico das janelas</long>
+		<long xml:lang="sv">Kakla fönster</long>
+		<long xml:lang="tr">Pencereleri döşe</long>
+		<long xml:lang="zh_CN">平铺窗口</long>
+		<category>Window Management</category>
+		<options>
+			<group>
+				<short>Options</short>
+				<short xml:lang="ar">خيارات</short>
+				<short xml:lang="ca">Opcions</short>
+				<short xml:lang="cs">Nastavení</short>
+				<short xml:lang="de">Optionen</short>
+				<short xml:lang="el">Ιδιότητες</short>
+				<short xml:lang="en_GB">Options</short>
+				<short xml:lang="es">Opciones</short>
+				<short xml:lang="eu">Aukerak</short>
+				<short xml:lang="fi">Valinnat</short>
+				<short xml:lang="fr">Options</short>
+				<short xml:lang="gl">Opcións</short>
+				<short xml:lang="gu">વિકલ્પો</short>
+				<short xml:lang="he">אפשרויות</short>
+				<short xml:lang="hi">विकल्प</short>
+				<short xml:lang="hu">Beállítások</short>
+				<short xml:lang="it">Opzioni</short>
+				<short xml:lang="ja">オプション</short>
+				<short xml:lang="ko">옵션</short>
+				<short xml:lang="nb">Valg</short>
+				<short xml:lang="nl">Optie's</short>
+				<short xml:lang="pl">Opcje</short>
+				<short xml:lang="pt">Opções</short>
+				<short xml:lang="pt_BR">Opções</short>
+				<short xml:lang="ru">Функции</short>
+				<short xml:lang="sv">Alternativ</short>
+				<short xml:lang="tr">Seçenekler</short>
+				<short xml:lang="zh_CN">选项</short>
+				<option type="int" name="animate_type">
+					<short>Tiling Animation Type</short>
+					<short xml:lang="ca">Tipus d'animació del mosaic</short>
+					<short xml:lang="de">Animationstyp</short>
+					<short xml:lang="el">Γραφική Απεικόνηση Πλακιδίων</short>
+					<short xml:lang="en_GB">Tiling Animation Type</short>
+					<short xml:lang="es">Tipo de animación del mosaico</short>
+					<short xml:lang="fr">Type d'animation pour la mosaïque</short>
+					<short xml:lang="gl">Tipo de Animación do Mosaico</short>
+					<short xml:lang="gu">એનીમેશન પ્રકારની તકતી કરવાનું</short>
+					<short xml:lang="he">סוג אנימצית ריצוף</short>
+					<short xml:lang="hi">संजीवन प्रकार टाइल कर रहा है</short>
+					<short xml:lang="hu">Darabolás animációjának típusa</short>
+					<short xml:lang="it">Tipo animazione accostamento</short>
+					<short xml:lang="ja">整列アニメーション形式</short>
+					<short xml:lang="ko">타일 애니메이션 종류</short>
+					<short xml:lang="nb">Animasjonstype for flislegging</short>
+					<short xml:lang="nl">Tegel animatie methode</short>
+					<short xml:lang="pl">Animacja rozmieszczenia okien</short>
+					<short xml:lang="pt">Tipo de Animação do Mosaico</short>
+					<short xml:lang="pt_BR">Tipo de Animação do Mosaico</short>
+					<short xml:lang="sv">Kaklinganimationstyp</short>
+					<short xml:lang="tr">Döşeme Canlandırma Tipi</short>
+					<short xml:lang="zh_CN">平铺动画类型</short>
+					<long>Selects the animation used while tiling</long>
+					<long xml:lang="ca">Selecciona l'animació que s'utilitza mentre es realitza el mosaic</long>
+					<long xml:lang="de">Wähle die Anordnungsanimation aus.</long>
+					<long xml:lang="el">Επιλογή γραφικής απεικόνισης που θα χρησιμοποιηθεί στη δημιουργία πλακιδίων</long>
+					<long xml:lang="en_GB">Selects the animation used while tiling</long>
+					<long xml:lang="es">Selecciona la animación utilizada al crear el mosaico.</long>
+					<long xml:lang="fr">Sélectionnez l'animation a utiliser lors de la mise en mosaïque</long>
+					<long xml:lang="gl">Seleccionar a animación que se vai empregar cando se entra en modo mosaico</long>
+					<long xml:lang="gu">તકતી કરવા પહેલાં વપરાતું એનીમેશન પસંદ કરે છે</long>
+					<long xml:lang="he">האנימציה שתוצג בעת ריצוף</long>
+					<long xml:lang="hi">टाइलिंग के दौरान प्रयुक्त संजीवन को चुनता है</long>
+					<long xml:lang="hu">Válassza ki az igazítás során alkalmazott animációt</long>
+					<long xml:lang="it">Seleziona l'animazione da usare durante l'accostamento</long>
+					<long xml:lang="ja">整列中に使用するアニメーションの選択</long>
+					<long xml:lang="ko">타일 동작에 대한 애니메이션 선택</long>
+					<long xml:lang="nb">Velger animasjonen som brukes ved flislegging</long>
+					<long xml:lang="nl">Selecteert de gebruikte animatie tĳdens tegelen</long>
+					<long xml:lang="pl">Wybiera animację używaną do rozmieszczenia okien</long>
+					<long xml:lang="pt">Seleccionar a animação a usar quando se entra em modo mosaico</long>
+					<long xml:lang="pt_BR">Selecionar a animação usada ao entrar no modo mosaico</long>
+					<long xml:lang="sv">Väljer animationen använd under kakling</long>
+					<long xml:lang="zh_CN">选取排列使用的动画类型</long>
+					<default>0</default>
+					<min>0</min>
+					<max>5</max>
+					<desc>
+						<value>0</value>
+						<name>None</name>
+						<name xml:lang="ar">لا شئ</name>
+						<name xml:lang="ca">Cap</name>
+						<name xml:lang="cs">Nic</name>
+						<name xml:lang="de">Nichts</name>
+						<name xml:lang="el">Κανένα</name>
+						<name xml:lang="en_GB">None</name>
+						<name xml:lang="es">Ninguno/a</name>
+						<name xml:lang="eu">Ezer ez</name>
+						<name xml:lang="fi">Ei mitään</name>
+						<name xml:lang="fr">Aucun</name>
+						<name xml:lang="gl">Ningunha</name>
+						<name xml:lang="gu">કંઈ નહિં</name>
+						<name xml:lang="he">ללא</name>
+						<name xml:lang="hi">कोई नहीं</name>
+						<name xml:lang="hu">Nincs</name>
+						<name xml:lang="it">Nessuno</name>
+						<name xml:lang="ja">なし</name>
+						<name xml:lang="ko">없음</name>
+						<name xml:lang="nb">Ingen</name>
+						<name xml:lang="nl">Geen</name>
+						<name xml:lang="pl">Brak</name>
+						<name xml:lang="pt">Nenhuma</name>
+						<name xml:lang="pt_BR">Nenhum</name>
+						<name xml:lang="ru">Отсутствует</name>
+						<name xml:lang="sv">Inget</name>
+						<name xml:lang="tr">Hiçbiri</name>
+						<name xml:lang="zh_CN">无</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Filled Outline</name>
+						<name xml:lang="ca">Emplenament del contorn</name>
+						<name xml:lang="de">Gefüllter Rahmen</name>
+						<name xml:lang="el">Γεμισμένο Περίγραμμα</name>
+						<name xml:lang="en_GB">Filled Outline</name>
+						<name xml:lang="es">Contorno relleno</name>
+						<name xml:lang="fr">Contour plein</name>
+						<name xml:lang="gl">Contorno recheo</name>
+						<name xml:lang="gu">ભરેલ બાહ્ય કિનારી</name>
+						<name xml:lang="he">קו מתאר ממולא</name>
+						<name xml:lang="hi">भरा हुआ अभिन्यास</name>
+						<name xml:lang="hu">Kitöltött körvonal</name>
+						<name xml:lang="it">Contorno riempito</name>
+						<name xml:lang="ja">塗りつぶされた輪郭</name>
+						<name xml:lang="ko">채워진 외곽선</name>
+						<name xml:lang="nb">Fylt omriss</name>
+						<name xml:lang="nl">Gevulde omtrek</name>
+						<name xml:lang="pl">Wypełnione obramowania</name>
+						<name xml:lang="pt">Delineação Preenchida</name>
+						<name xml:lang="pt_BR">Delineação preenchida</name>
+						<name xml:lang="sv">Fylld kontur</name>
+						<name xml:lang="zh_CN">填充框架</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Slide</name>
+						<name xml:lang="ca">Lliscament</name>
+						<name xml:lang="cs">Snímek</name>
+						<name xml:lang="de">Gleiten</name>
+						<name xml:lang="el">Σλάιντ</name>
+						<name xml:lang="en_GB">Slide</name>
+						<name xml:lang="es">Deslizar</name>
+						<name xml:lang="fr">Diapositive</name>
+						<name xml:lang="gl">Deslizar</name>
+						<name xml:lang="gu">સરકાવો</name>
+						<name xml:lang="he">גלישה</name>
+						<name xml:lang="hi">स्लाइड</name>
+						<name xml:lang="hu">Csúszás</name>
+						<name xml:lang="it">Diapositiva</name>
+						<name xml:lang="ja">スライド</name>
+						<name xml:lang="ko">슬라이드</name>
+						<name xml:lang="nb">Gli</name>
+						<name xml:lang="nl">Dia</name>
+						<name xml:lang="pl">Wsuwanie</name>
+						<name xml:lang="pt">Deslizar</name>
+						<name xml:lang="pt_BR">Deslizar</name>
+						<name xml:lang="sv">Glid</name>
+						<name xml:lang="tr">Kaydırma</name>
+						<name xml:lang="zh_CN">幻灯</name>
+					</desc>
+					<desc>
+						<value>3</value>
+						<name>Zoom</name>
+						<name xml:lang="ar">تكبير</name>
+						<name xml:lang="ca">Zoom</name>
+						<name xml:lang="cs">Přiblížení</name>
+						<name xml:lang="de">Zoom</name>
+						<name xml:lang="el">Ζουμ</name>
+						<name xml:lang="en_GB">Zoom</name>
+						<name xml:lang="es">Zoom</name>
+						<name xml:lang="eu">Zoom</name>
+						<name xml:lang="fi">Zoomaus</name>
+						<name xml:lang="fr">Zoom</name>
+						<name xml:lang="gl">Zoom</name>
+						<name xml:lang="gu">નાનું-મોટુ કરો</name>
+						<name xml:lang="he">תקריב</name>
+						<name xml:lang="hi">ज़ूम</name>
+						<name xml:lang="hu">Nagyító</name>
+						<name xml:lang="it">Zoom</name>
+						<name xml:lang="ja">ズーム</name>
+						<name xml:lang="ko">축소</name>
+						<name xml:lang="nb">Forstørr/forminsk</name>
+						<name xml:lang="nl">Inzoomen</name>
+						<name xml:lang="pl">Zbliżenie</name>
+						<name xml:lang="pt">Zoom</name>
+						<name xml:lang="pt_BR">Zoom</name>
+						<name xml:lang="ru">Масштаб</name>
+						<name xml:lang="sv">Zoom</name>
+						<name xml:lang="tr">Büyütme</name>
+						<name xml:lang="zh_CN">缩放</name>
+					</desc>
+					<desc>
+						<value>4</value>
+						<name>Drop From Top</name>
+						<name xml:lang="ca">Caiguda des de dalt</name>
+						<name xml:lang="de">Von oben herunterfallen lassen</name>
+						<name xml:lang="el">Πέσιμο απο Πάνω</name>
+						<name xml:lang="en_GB">Drop From Top</name>
+						<name xml:lang="es">Dejar caer desde arriba</name>
+						<name xml:lang="fr">Chute depuis le haut</name>
+						<name xml:lang="gl">Eliminar de enrriba</name>
+						<name xml:lang="gu">ટોચથી પાડો</name>
+						<name xml:lang="he">הורד מלמעלה</name>
+						<name xml:lang="hi">ऊपर से छोडें</name>
+						<name xml:lang="hu">Fentről</name>
+						<name xml:lang="it">Disponi dall'alto</name>
+						<name xml:lang="ja">上から落とす</name>
+						<name xml:lang="ko">위에서 떨어짐</name>
+						<name xml:lang="nb">Slipp fra toppen</name>
+						<name xml:lang="nl">Laat van top vallen</name>
+						<name xml:lang="pl">Upuszczaj z góry</name>
+						<name xml:lang="pt">Largar Do Cimo</name>
+						<name xml:lang="pt_BR">Largar de cima</name>
+						<name xml:lang="sv">Släpp från topp</name>
+						<name xml:lang="tr">Yukarıdan Düşür</name>
+						<name xml:lang="zh_CN">从顶端落下</name>
+					</desc>
+					<desc>
+						<value>5</value>
+						<name>Fade</name>
+						<name xml:lang="ar">تلاشي</name>
+						<name xml:lang="bn">মলিন করা</name>
+						<name xml:lang="ca">Esvaeix</name>
+						<name xml:lang="cs">Rozplynutí</name>
+						<name xml:lang="de">Ein-/Ausblenden</name>
+						<name xml:lang="el">Ξεθώριασμα</name>
+						<name xml:lang="en_GB">Fade</name>
+						<name xml:lang="es">Atenuar</name>
+						<name xml:lang="eu">Iraungi</name>
+						<name xml:lang="fi">Häivytys</name>
+						<name xml:lang="fr">Fondre</name>
+						<name xml:lang="gl">Desvanecemento</name>
+						<name xml:lang="gu">ધૂંધ</name>
+						<name xml:lang="he">פייד</name>
+						<name xml:lang="hi">फीका कीजिये</name>
+						<name xml:lang="hu">Elhalványul</name>
+						<name xml:lang="it">Dissolvenza</name>
+						<name xml:lang="ja">フェード</name>
+						<name xml:lang="ko">페이드</name>
+						<name xml:lang="nb">Ton ut/inn</name>
+						<name xml:lang="nl">Vervagen</name>
+						<name xml:lang="pl">Zanikanie</name>
+						<name xml:lang="pt">Desvanecimento</name>
+						<name xml:lang="pt_BR">Desvanecimento</name>
+						<name xml:lang="ru">Скорость угасания</name>
+						<name xml:lang="sv">Tona</name>
+						<name xml:lang="tr">Belirme/Kaybolma</name>
+						<name xml:lang="zh_CN">淡入淡出</name>
+					</desc>
+				</option>
+				<option type="int" name="animation_duration">
+					<short>Animation Duration</short>
+					<short xml:lang="ca">Durada de l'animació</short>
+					<short xml:lang="cs">Délka animace</short>
+					<short xml:lang="de">Animationsdauer</short>
+					<short xml:lang="el">Διάρκεια Γραφικής Απεικόνισης</short>
+					<short xml:lang="en_GB">Animation Duration</short>
+					<short xml:lang="es">Duración de la animación</short>
+					<short xml:lang="fi">Animaation kesto</short>
+					<short xml:lang="fr">Durée de l'animation</short>
+					<short xml:lang="gl">Duración da Animación</short>
+					<short xml:lang="gu">એનીમેશન ગાળો</short>
+					<short xml:lang="he">משך האנימציה</short>
+					<short xml:lang="hi">संजीवन अवधि</short>
+					<short xml:lang="hu">Animáció időtartama</short>
+					<short xml:lang="it">Durata animazione</short>
+					<short xml:lang="ja">アニメーション持続時間</short>
+					<short xml:lang="ko">애니메이션 지속 시간</short>
+					<short xml:lang="nb">Animasjonsvarighet</short>
+					<short xml:lang="nl">Duur van animatie</short>
+					<short xml:lang="pl">Czas trwania animacji</short>
+					<short xml:lang="pt">Duração da Animação</short>
+					<short xml:lang="pt_BR">Duração da Animação</short>
+					<short xml:lang="sv">Varaktighet på animation</short>
+					<short xml:lang="tr">Canlandırma Süresi</short>
+					<short xml:lang="zh_CN">动画时长</short>
+					<long>Duration (in ms) of the tiling animation</long>
+					<long xml:lang="ca">La durada (en ms) de l'animació del mosaic</long>
+					<long xml:lang="de">Dauer (in Millisekunden) für die Anordnungsanimation</long>
+					<long xml:lang="el">Διάρκεια (σε ms) της γραφικής απεικόνησης πλακιδίων</long>
+					<long xml:lang="en_GB">Duration (in ms) of the tiling animation</long>
+					<long xml:lang="es">Duración (en milisegundos) de la animación de puesta en mosaico</long>
+					<long xml:lang="fr">Durée (en ms) de l'animation Mosaïque</long>
+					<long xml:lang="gl">Duración (en ms) da animación do mosaico</long>
+					<long xml:lang="gu">તકતી એનીમેશનનો ગાળો (મિલિકેન્ડોમાં)</long>
+					<long xml:lang="he">משך אנימצית הריצוף במילישניות</long>
+					<long xml:lang="hi">टाइलिंग संजीवन की अवधि (मिलीसेकेंड में)</long>
+					<long xml:lang="hu">Igazítás animáció hossza (másodpercben megadva)</long>
+					<long xml:lang="it">Durata (in millisecondi) dell'animazione </long>
+					<long xml:lang="ja">整列アニメーションの持続時間（ミリ秒）</long>
+					<long xml:lang="ko">정렬 애니메이션의 지속 시간(0.1초)</long>
+					<long xml:lang="nb">Varighet (i ms) for flisleggingsanimasjonen</long>
+					<long xml:lang="nl">Duur (in ms) van de tegel animatie</long>
+					<long xml:lang="pl">Czas (w milisekundach) trwania animacji rozmieszczenia</long>
+					<long xml:lang="pt">Duração (em ms) da animação do mosaico</long>
+					<long xml:lang="pt_BR">Duração (em ms) da animação do mosaico</long>
+					<long xml:lang="sv">Varaktighet (i ms) för kaklingsanimationen</long>
+					<long xml:lang="zh_CN">排列动画时长(微秒)</long>
+					<default>1000</default>
+					<min>100</min>
+					<max>2000</max>
+				</option>
+				<option type="int" name="tile_toggle_type">
+					<short>Tiling Method For Toggle</short>
+					<short xml:lang="ca">Mètode del mosaic per commutar</short>
+					<short xml:lang="de">Kachelmethode</short>
+					<short xml:lang="el">Μεθοδος Πλακιδίων για Εκκίνηση-Σταμάτημα</short>
+					<short xml:lang="en_GB">Tiling Method For Toggle</short>
+					<short xml:lang="es">Metodo de mosaico aleatorio</short>
+					<short xml:lang="fr">Méthode de rangement pour l'Interrupteur</short>
+					<short xml:lang="gl">Tipo de Mosaico cando se Alterna o Estado</short>
+					<short xml:lang="gu">બદલવા માટે તકતી કરવાની પદ્ધતિ</short>
+					<short xml:lang="he">אופן הפעלת ריצוף</short>
+					<short xml:lang="hi">टॉगल के लिए टाइलिंग विधि</short>
+					<short xml:lang="hu">Igazítás üzemmódja váltáskor</short>
+					<short xml:lang="it">Metodo di accostamento per la commutazione</short>
+					<short xml:lang="ja">切り替え使用時の整列形式</short>
+					<short xml:lang="ko">활성화 되었을때 정렬하는 방식</short>
+					<short xml:lang="nb">Flisleggingsmetode for slå av/på</short>
+					<short xml:lang="nl">Tegel methode voor schakelen</short>
+					<short xml:lang="pl">Metoda rozmieszczenia po przełączeniu</short>
+					<short xml:lang="pt">Tipo de Mosaico quando se Alterna o Estado</short>
+					<short xml:lang="pt_BR">Tipo de Mosaico quando se alterna o estado</short>
+					<short xml:lang="sv">Kaklingsmetod använd för växla</short>
+					<short xml:lang="zh_CN">切换平铺方式</short>
+					<long>Choose the tiling type you want when using toggle.</long>
+					<long xml:lang="ca">Seleccioneu el mètode del mosaic que vulgueu utilitzar quan utilitzeu la commutació.</long>
+					<long xml:lang="de">Wähle den Anordnungstyp aus.</long>
+					<long xml:lang="el">Επιλογή είδους πλακιδιών όταν χρησιμοποιηθεί εκκίνηση-σταμάτημα.</long>
+					<long xml:lang="en_GB">Choose the tiling type you want when using toggle.</long>
+					<long xml:lang="es">Elegis el tipo de mosaico que desea cambiar cuando se utiliza</long>
+					<long xml:lang="fr">Choisissez la methode de rangement lors de l'utilisation de l'interrupteur</long>
+					<long xml:lang="gl">Escolle o tipo de mosaico que queres empregar cando se activa/desactiva o modo mosaico.</long>
+					<long xml:lang="gu">જ્યારે બદલવાનું વાપરી રહ્યા હોય ત્યારે તમને જે ગમતો હોય તે તકતીનો પ્રકાર પસંદ કરો.</long>
+					<long xml:lang="he">נא לבחור את סוג ריצוף החלונות שיופעל.</long>
+					<long xml:lang="hi">टॉगल के प्रयोग के दौरान टाइलिंग प्रकार चुनें जिसे आप चाहते हैं.</long>
+					<long xml:lang="hu">Igazítás típusa a kapcsoló használatakor.</long>
+					<long xml:lang="it">Scegliere il tipo di accostamento quando si usa il tasto di commutazione.</long>
+					<long xml:lang="ja">オンオフ切り替えを使用したときに適用する整列形式の選択</long>
+					<long xml:lang="ko">토글 상태일때 정렬될 형태를 선택하세요.</long>
+					<long xml:lang="nb">Velg flisleggingstypen du vil bruke når du slår av/på.</long>
+					<long xml:lang="nl">Kies de tegelmethode die je wilt als je de schakel knop gebruikt.</long>
+					<long xml:lang="pl">Wybierz tryb rozmieszczenia którego będziesz używał po przełączeniu.</long>
+					<long xml:lang="pt">Escolher o tipo de mosaico que pretende quando se activa/desactiva o modo mosaico.</long>
+					<long xml:lang="pt_BR">Escolher o tipo de mosaico que você pretende usar ao ativar/desativar o modo mosaico.</long>
+					<long xml:lang="sv">Välj kaklingstyp du vill ha när du växlar.</long>
+					<long xml:lang="zh_CN">窗口排列方法。</long>
+					<default>0</default>
+					<min>0</min>
+					<max>4</max>
+					<desc>
+						<value>0</value>
+						<name>Tile</name>
+						<name xml:lang="ca">Mosaic</name>
+						<name xml:lang="cs">Dlaždice</name>
+						<name xml:lang="de">Kacheln</name>
+						<name xml:lang="el">Πλακίδιο</name>
+						<name xml:lang="en_GB">Tile</name>
+						<name xml:lang="es">Mosaico</name>
+						<name xml:lang="fi">Laatoita</name>
+						<name xml:lang="fr">Mosaïque</name>
+						<name xml:lang="gl">Mosaico</name>
+						<name xml:lang="gu">તકતી</name>
+						<name xml:lang="he">ריצוף</name>
+						<name xml:lang="hi">टाइल</name>
+						<name xml:lang="hu">Csempe</name>
+						<name xml:lang="it">Accosta</name>
+						<name xml:lang="ja">整列</name>
+						<name xml:lang="ko">타일</name>
+						<name xml:lang="nb">Flislegg</name>
+						<name xml:lang="nl">Tegelen</name>
+						<name xml:lang="pl">Rozmieszczanie okien</name>
+						<name xml:lang="pt">Mosaico</name>
+						<name xml:lang="pt_BR">Mosaico</name>
+						<name xml:lang="sv">Kakla</name>
+						<name xml:lang="tr">Döşe</name>
+						<name xml:lang="zh_CN">平铺</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Left</name>
+						<name xml:lang="ar">يسار</name>
+						<name xml:lang="bn">বাম</name>
+						<name xml:lang="ca">Esquerra</name>
+						<name xml:lang="cs">Zleva</name>
+						<name xml:lang="de">Links</name>
+						<name xml:lang="el">Αριστερά</name>
+						<name xml:lang="en_GB">Left</name>
+						<name xml:lang="es">Izquierda</name>
+						<name xml:lang="eu">Ezkerra</name>
+						<name xml:lang="fi">Vasen</name>
+						<name xml:lang="fr">Gauche</name>
+						<name xml:lang="gl">Para a esquerda</name>
+						<name xml:lang="gu">ડાબું</name>
+						<name xml:lang="he">שמאלה</name>
+						<name xml:lang="hi">बायाँ</name>
+						<name xml:lang="hu">Balra</name>
+						<name xml:lang="it">Sinistra</name>
+						<name xml:lang="ja">左</name>
+						<name xml:lang="ko">왼쪽</name>
+						<name xml:lang="nb">Venstre</name>
+						<name xml:lang="nl">Links</name>
+						<name xml:lang="pl">W lewo</name>
+						<name xml:lang="pt">Para a esquerda</name>
+						<name xml:lang="pt_BR">Para a esquerda</name>
+						<name xml:lang="ru">Слева</name>
+						<name xml:lang="sv">Vänster</name>
+						<name xml:lang="tr">Sol</name>
+						<name xml:lang="zh_CN">左</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Tile Vertically</name>
+						<name xml:lang="ca">Mosaic vertical</name>
+						<name xml:lang="cs">Svislé dlaždice</name>
+						<name xml:lang="de">Vertikal kacheln</name>
+						<name xml:lang="el">Θέσε Πλακίδια Κάθετα</name>
+						<name xml:lang="en_GB">Tile Vertically</name>
+						<name xml:lang="es">Mosaico vertical</name>
+						<name xml:lang="fi">Laatoita pystysuoraan</name>
+						<name xml:lang="fr">Mosaïque verticale</name>
+						<name xml:lang="gl">Mosaico Vertical</name>
+						<name xml:lang="gu">ઊભી રીતે તકતી કરો</name>
+						<name xml:lang="he">ריצוף במאונך</name>
+						<name xml:lang="hi">लंबवत रूप से टाइल करें</name>
+						<name xml:lang="hu">Darabolás függőlegesen</name>
+						<name xml:lang="it">Accosta verticalmente</name>
+						<name xml:lang="ja">垂直に整列</name>
+						<name xml:lang="ko">수직 타일</name>
+						<name xml:lang="nb">Flislegg vertikalt</name>
+						<name xml:lang="nl">Tegelen verticaal</name>
+						<name xml:lang="pl">Rozmieść pionowo</name>
+						<name xml:lang="pt">Mosaico Vertical</name>
+						<name xml:lang="pt_BR">Mosaico Vertical</name>
+						<name xml:lang="sv">Kakla vertikalt</name>
+						<name xml:lang="tr">Dikey Olarak Döşe</name>
+						<name xml:lang="zh_CN">纵向平铺</name>
+					</desc>
+					<desc>
+						<value>3</value>
+						<name>Tile Horizontally</name>
+						<name xml:lang="ca">Mosaic horitzontal</name>
+						<name xml:lang="cs">Vodorovné dlaždice</name>
+						<name xml:lang="de">Horizontal kacheln</name>
+						<name xml:lang="el">Θέσε Πλακίδια Οριζόντια</name>
+						<name xml:lang="en_GB">Tile Horizontally</name>
+						<name xml:lang="es">Mosaico horizontal</name>
+						<name xml:lang="fi">Laatoita vaakasuoraan</name>
+						<name xml:lang="fr">Mosaïque horizontale</name>
+						<name xml:lang="gl">Mosaico Horizontal</name>
+						<name xml:lang="gu">આડી રીતે તકતી કરો</name>
+						<name xml:lang="he">ריצוף במאוזן</name>
+						<name xml:lang="hi">क्षैतिज रूप से टाइल करें</name>
+						<name xml:lang="hu">Darabolás vízszintesen</name>
+						<name xml:lang="it">Accosta orizzontalmente</name>
+						<name xml:lang="ja">水平に整列</name>
+						<name xml:lang="ko">수평 타일</name>
+						<name xml:lang="nb">Flislegg horisontalt</name>
+						<name xml:lang="nl">Tegelen horizontaal</name>
+						<name xml:lang="pl">Rozmieść poziomo</name>
+						<name xml:lang="pt">Mosaico Horizontal</name>
+						<name xml:lang="pt_BR">Mosaico Horizontal</name>
+						<name xml:lang="sv">Kakla horisontellt</name>
+						<name xml:lang="tr">Yatay Olarak Döşe</name>
+						<name xml:lang="zh_CN">横向平铺</name>
+					</desc>
+					<desc>
+						<value>4</value>
+						<name>Cascade</name>
+						<name xml:lang="ca">Cascada</name>
+						<name xml:lang="cs">Kaskáda</name>
+						<name xml:lang="de">Stufenförmig</name>
+						<name xml:lang="el">Καταρράκτης</name>
+						<name xml:lang="en_GB">Cascade</name>
+						<name xml:lang="es">Cascada</name>
+						<name xml:lang="fi">Kaskadi</name>
+						<name xml:lang="fr">Cascade</name>
+						<name xml:lang="gl">Cascada</name>
+						<name xml:lang="gu">કાસ્કેડ</name>
+						<name xml:lang="he">דירוג</name>
+						<name xml:lang="hi">प्रपाती</name>
+						<name xml:lang="hu">Lépcsőzetes</name>
+						<name xml:lang="it">Cascata</name>
+						<name xml:lang="ja">カスケード</name>
+						<name xml:lang="ko">계단식 배열</name>
+						<name xml:lang="nb">Tett-i-tett</name>
+						<name xml:lang="nl">Cascade</name>
+						<name xml:lang="pl">Kaskadowo</name>
+						<name xml:lang="pt">Cascata</name>
+						<name xml:lang="pt_BR">Cascata</name>
+						<name xml:lang="sv">Kaskad</name>
+						<name xml:lang="tr">Basamakla</name>
+						<name xml:lang="zh_CN">层叠</name>
+					</desc>
+				</option>
+				<option type="bool" name="tile_join">
+					<short>Join Windows (EXPERIMENTAL)</short>
+					<short xml:lang="ca">Reuneix les finestres (EXPERIMENTAL)</short>
+					<short xml:lang="cs">Spojit okna (EXPERIMENTÁLNÍ)</short>
+					<short xml:lang="de">Verbinde Fenster (EXPERIMENTELL)</short>
+					<short xml:lang="el">Ένωση Παραθύρων (ΠΕΙΡΑΜΑΤΙΚΟ)</short>
+					<short xml:lang="en_GB">Join Windows (EXPERIMENTAL)</short>
+					<short xml:lang="es">Juntar ventanas (experimental)</short>
+					<short xml:lang="fr">Joindre les fenêtres (EXPÉRIMENTAL)</short>
+					<short xml:lang="gl">Xuntar Fiestras (EXPERIMENTAL)</short>
+					<short xml:lang="gu">વિન્ડો જોડો (પ્રાયોગિક)</short>
+					<short xml:lang="he">צרף חלונות (נסיוני)</short>
+					<short xml:lang="hi">विंडोज़ में शामिल हों (प्रायोगिक)</short>
+					<short xml:lang="hu">Ablakok összefűzése (KÍSÉRLETI STÁDIUMBAN)</short>
+					<short xml:lang="it">Unisci le finestre (sperimentale)</short>
+					<short xml:lang="ja">ウィンドウを結合 (実験段階)</short>
+					<short xml:lang="ko">창 결합 (EXPERIMENTAL)</short>
+					<short xml:lang="nb">Slå sammen vinduer (EKSPERIMENTELT)</short>
+					<short xml:lang="nl">Vensters samenvoegen (EXPERIMENTEEL)</short>
+					<short xml:lang="pl">Połącz okna (EKSPERYMENTALNE)</short>
+					<short xml:lang="pt">Juntar Janelas (EXPERIMENTAL)</short>
+					<short xml:lang="pt_BR">Juntar Janelas (EXPERIMENTAL)</short>
+					<short xml:lang="sv">Slå ihop fönster (EXPERIMENTELL)</short>
+					<short xml:lang="tr">Pencereleri Birleştir (DENEYSEL)</short>
+					<short xml:lang="zh_CN">窗口合并(实验性)</short>
+					<long>Tries to join the windows together when horizontal, vertical or left tiling is enabled so that when you resize a window surrounding windows resize accordingly. This may cause problems if you dont leave them enough space.</long>
+					<long xml:lang="ca">Intenta reunir les finestres quan està habilitat el mosaic horitzontal, vertical o esquerra, ja que quan redimensioneu una finestra que envolta les finestres aquestes es redimensionen en conseqüència. Això pot provocar problemes si no deixeu prou espai.</long>
+					<long xml:lang="de">Versucht die Fenster zu verbinden, wenn der Kachelmodus 'Horizontal', 'Vertikal' oder 'Links' aktiviert ist. Das bedeutet, wenn man ein Fenster skaliert, werden die umgebenden Fenster auch skaliert. Allerdings kann dies Probleme verursachen, wenn nicht genug Platz vorhanden ist.</long>
+					<long xml:lang="el">Προσπάθεια για ένωση των παραθύρων όταν πλακιδιοποιούνται οριζόντια, κάθετα ή αριστερά ετσι ώστε όταν μορφοποιείται ένα παραθύρου τα περιφερειακά παράθυρα μορφοποιούνται επίσης. Μπορεί να προκληθούν προβλήματα αν δεν υπάρχει αρκετός χώρος.</long>
+					<long xml:lang="en_GB">Tries to join the windows together when horizontal, vertical or left tiling is enabled so that when a window is resized, the surrounding windows resize accordingly. This may cause problems if you dont leave them enough space.</long>
+					<long xml:lang="es">Intenta juntar las ventanas cuando se activa el mosaico horizontal, vertical o izquierdo, de manera que cuando se redimensiona una ventana, lasventanas cercanas se redimensionan en consecuencia. Esto puede causar problemas si no se les deja suficiente espacio.</long>
+					<long xml:lang="fr">Essaye d'assembler les fenêtre entre elles lorsque le mode mosaïque horizontal, vertical ou gauche est activé de telle façon qu'un redimensionnement d'une fenêtre redimensionne également les autres. Ceci peut créer des problèmes si vous ne laissez pas assez de place.</long>
+					<long xml:lang="gl">Tenta xuntar as xanelas cando estivera en modo mosaico horizontal, vertical ou á esquerda, de modo que cando se redimensiona unha xanela, as xanelas adxacentes sexan tamén redimensionadas. Isto pode causar problemas se non deixa espazo suficiente a esas mesmas xanelas adxacentes.</long>
+					<long xml:lang="gu">વિન્ડોને એકસાથે જોડવાનો પ્રયાસ કરે છે જ્યારે આડું, ઊભું અથવા ડાબું તકતી કરવાનું સક્રિય કરેલ હોય કે જેથી જ્યારે તમે વિન્ડોનું માપ આસપાસની વિન્ડોના માપને અનુલક્ષીને બદલો. આ સમસ્યાઓ સર્જી શકશે જો તમે તેમના માટે પૂરતી જગ્યા છોડો નહિં.</long>
+					<long xml:lang="he">נסה לצרף חלונות יחדיו כאשר מוגדר ריצוף שמאלי, במאוזן או במאונך, כך שבעת שינוי גודל חלון ישתנה בהתאם גודל החלונות המקיפים אותו. הדבר עלול לגרום לבעיות אם לא נותר מספיק שטח.</long>
+					<long xml:lang="hi">विंडो को एक साथ जोड़ने की कोशिश करता है जब क्षैतिज, लंबवत, या बायां टाइलिंग सक्रिय है ताकि जब आप फिर आकार देते हैं तो आसपास का विंडो भी उसी अनुसार आकार बदलता है. यह समस्या को जन्म दे सकता है यदि आप उनके लिए पर्याप्त स्थान नहीं छोड़ते हैं.</long>
+					<long xml:lang="hu">Megpróbálja az ablakokat összefűzni egymással, ha a vízszintes, a függőleges vagy a balra rendezett igazítás be van kapcsolva. Következésképpen amikor átméretezi az ablakot a körülötte lévő ablakok is átméretezésre kerülnek. Ez problémát jelenthet ha nincs elég hely a képernyőn.</long>
+					<long xml:lang="it">Cerca di unire le finestre assieme quando è abilitato l'accostamento orizzontale, verticale o allineato a destra, in modo tale che quando una finestra viene ridimensionata, anche le altre lo siano. Questo potrebbe causare problemi se non viene lasciato loro abbastanza spazio.</long>
+					<long xml:lang="ja">水平や垂直、左の整列方式が有効の場合にウィンドウ同士の結合を試み、1つのウィンドウをサイズ変更すると、それを囲むウィンドウのサイズも一緒に変更されるようにします。十分なスペースがない場合には問題が生じる可能性があります。</long>
+					<long xml:lang="ko">창 크기를 조절할때 주변의 창들이 함께 크기 조절 되도록 창들을 수평, 수직, 왼쪽 타일 기능을 활성화합니다. 충분한 공간을 남겨두지 않으면 문제를 일으킬 수 있습니다.</long>
+					<long xml:lang="nb">Forsøker å slå vinduer sammen når horisontal, vertikal eller venstre flislegging brukes, slik at når du endrer størrelse på et vindu endres omkringliggende vinduer i tråd med dette. Dette kan forårsake problemer hvis du ikke gir dem nok plass.</long>
+					<long xml:lang="nl">Probeert om vensters samen te voegen als horizontaal, verticaal of links tegelen is ingeschakeld zodat wanneer je de grootte van een venster aanpast de omringende vensters overeenkomstig aangepast worden. Dit kan problemen opleveren als je ze niet genoeg ruimte laat.</long>
+					<long xml:lang="pl">Próbuje połączyć okna gdy rozmieszczenie pionowe, poziome lub do lewej jest włączone, tak aby otaczające okna zmieniały rozmiar kiedy zmieniasz rozmiar okna przez nie otoczonego. Może to powodować problemy jeśli nie pozostawisz im odpowiedniej ilości miejsca</long>
+					<long xml:lang="pt">Tenta juntar as janelas quando estiver em modo mosaico horizontal, vertical ou à esquerda, de modo a que quando se redimensiona uma janela, as janelas adjacentes sejam também redimensionadas. Isto pode causar problemas se não deixar espaço suficiente a essas mesmas janelas adjacentes.</long>
+					<long xml:lang="pt_BR">Tenta juntar as janelas quando estiver em modo mosaico horizontal, vertical ou à esquerda, de modo que quando se redimensiona uma janela, as janelas adjacentes sejam também redimensionadas. Isto pode causar problemas se não deixar espaço suficiente para essas janelas adjacentes.</long>
+					<long xml:lang="sv">Försöker att slå samman fönster när horisontell, vertikal eller vänster-kakling är aktiverad så att när du storleksändrar ett fönster gör alla fönster omkring det också. Detta kan skapa problem om du inte ger dem tillräckligt mycket utrymme.</long>
+					<long xml:lang="zh_CN">当启用横向、纵向或左平铺时，尝试将窗口连在一起。这样当调整一个窗口的大小时，周围的窗口也会做对应的调整。如果没有给窗口留足够空间则可能导致一些问题。</long>
+					<default>false</default>
+				</option>
+				<option type="int" name="tile_delta">
+					<short>Cascade Delta</short>
+					<short xml:lang="ca">Delta de la cascada</short>
+					<short xml:lang="de">Stufenabstand</short>
+					<short xml:lang="el">Καταρράκτης Δέλτα</short>
+					<short xml:lang="en_GB">Cascade Delta</short>
+					<short xml:lang="es">Delta de la cascada</short>
+					<short xml:lang="fr">Distance entre les fenêtres en mode cascade</short>
+					<short xml:lang="gl">Distancia entre Fiestras en cascada</short>
+					<short xml:lang="gu">કાસ્કેડ ડેલ્ટા</short>
+					<short xml:lang="he">דלתת דירוג</short>
+					<short xml:lang="hi">प्रपाती डेल्टा</short>
+					<short xml:lang="hu">Térköz</short>
+					<short xml:lang="it">Intervallo di cascata</short>
+					<short xml:lang="ja">カスケードのずらし間隔</short>
+					<short xml:lang="ko">창 간격</short>
+					<short xml:lang="nb">Mellomrom for tett-i-tett</short>
+					<short xml:lang="nl">Cascade Delta</short>
+					<short xml:lang="pl">Róźnica kaskady</short>
+					<short xml:lang="pt">Distância entre Janelas em Cascata</short>
+					<short xml:lang="pt_BR">Distância entre janelas em cascata</short>
+					<short xml:lang="sv">Delta-kaskad</short>
+					<short xml:lang="zh_CN">层叠Delta</short>
+					<long>Distance between windows when using cascade</long>
+					<long xml:lang="ca">La distància entre les finestres quan s'utilitza la cascada</long>
+					<long xml:lang="de">Der Abstand zwischen den Stufen wenn der stufenförmige Anordnungstyp verwendet wird.</long>
+					<long xml:lang="el">Απόσταση μεταξύ παραθύρων όταν χρησιμοποιείται καταρράκτης</long>
+					<long xml:lang="en_GB">Distance between windows when using cascade</long>
+					<long xml:lang="es">Distancia entre las ventanas cuando el modo cascada está activado</long>
+					<long xml:lang="fr">Distance entre les fenêtre en mode cascade</long>
+					<long xml:lang="gl">Distancia entre xanelas cando en cascada</long>
+					<long xml:lang="gu">જ્યારે કાસ્કેડ વાપરી રહ્યા હોય ત્યારે વિન્ડો વચ્ચેનું અંતર</long>
+					<long xml:lang="he">מרחק בין חלונות בעת דירוג</long>
+					<long xml:lang="hi">प्रपाती के प्रयोग के दौरान विंडो के बीच दूरी</long>
+					<long xml:lang="hu">Távolság az ablakok között Lépcsőzetes ablakelrendezés esetén.</long>
+					<long xml:lang="it">Distanza fra le finestre quando si usa l'ordinamento a cascata</long>
+					<long xml:lang="ja">カスケードを使用したときのウィンドウ間のずらし間隔</long>
+					<long xml:lang="ko">계단식 창 배열에서의 창 사이의 거리</long>
+					<long xml:lang="nb">Avstand mellom vinduer ved tett-i-tett</long>
+					<long xml:lang="nl">Afstand tussen venster bĳ gebruik van cascade</long>
+					<long xml:lang="pl">Odstęp między oknami gdy używany jest tryb kaskady</long>
+					<long xml:lang="pt">Distância entre janelas quando em cascata</long>
+					<long xml:lang="pt_BR">Distância entre janelas quando em cascata</long>
+					<long xml:lang="sv">Avstånd mellan fönster vid användning av kaskad</long>
+					<long xml:lang="zh_CN">层叠窗口的间距</long>
+					<default>35</default>
+					<min>0</min>
+					<max>250</max>
+				</option>
+				<option type="int" name="tile_left_occupancy">
+					<short>Left Occupancy</short>
+					<short xml:lang="de">Breite des linken Fensters</short>
+					<short xml:lang="el">Κατοχή απ τα Αριστερά</short>
+					<short xml:lang="en_GB">Left Occupancy</short>
+					<short xml:lang="es">Ocupación izquierda</short>
+					<short xml:lang="fr">Couverture Gauche</short>
+					<short xml:lang="gl">Ocupación á Esquerda</short>
+					<short xml:lang="gu">બાકી જગ્યા</short>
+					<short xml:lang="he">תפיסת שטח משמאל</short>
+					<short xml:lang="hi">बायाँ अधिवास</short>
+					<short xml:lang="hu">Balra rendezett</short>
+					<short xml:lang="it">Occupazione a sinistra</short>
+					<short xml:lang="ja">左側占有率</short>
+					<short xml:lang="ko">남은 공간</short>
+					<short xml:lang="nb">Venstre oppdekning</short>
+					<short xml:lang="nl">Linker ruimte percentage</short>
+					<short xml:lang="pl">Zapełnianie od lewej</short>
+					<short xml:lang="pt">Ocupação à Esquerda</short>
+					<short xml:lang="pt_BR">Ocupação à esquerda</short>
+					<short xml:lang="sv">Vänster ockupering</short>
+					<short xml:lang="zh_CN">左占用</short>
+					<long>Occupancy percentage for window placed left. This number is percentage of screen width, which the active window will have it as width when tiled. Applies to Left tiling type.</long>
+					<long xml:lang="ca">El percentatge d'ocupació per a les finestres col·locades a l'esquerra. Aquest número és el percentatge de l'amplada de la pantalla que tindrà la finestra activa com a amplada quan es realitzi el mosaic. S'aplica al tipus de mosaic esquerre.</long>
+					<long xml:lang="de">Anteil der Bildschirmbreite (in Prozent), auf die das aktive Fenster im Anordnungsmodus 'Links' skaliert wird.</long>
+					<long xml:lang="el">Ποσοστό που καταλαμβάνει το παράθυρο που τοποθετείται αριστερα. Αυτός ο αριθμός είναι ποσοστό του πλάτους οθόνης, που το ενεργό παράθυρο θα έχει για πλάτος όταν γίνει πλακίδιο.</long>
+					<long xml:lang="en_GB">Occupancy percentage for the left placed window. This number is the percentage of the screen width that the active window will have when it is tiled. Applies to Left tiling type.</long>
+					<long xml:lang="es">Porcentaje de ocupación para las ventanas situadas a la izquierda. Este número es el porcentaje del ancho de la pantalla que tendrá la ventana activa cuando se ponga en mosaico. Se aplica al tipo de mosaico a la izquierda.</long>
+					<long xml:lang="fr">Pourcentage d'occupation pour la fenêtre placé à gauche. Ce nombre est le pourcentage de largeur d'écran que la fenêtre active pourra avoir en mode Mosaïque S'applique au mode Mosaïque 'Gauche'</long>
+					<long xml:lang="gl">Porcentaxe de ocupación da xanela colocada á esquerda. Este valor é a percentaxe de largura da pantalla que a xanela activa terá como largura,cando se estivera en modo mosaico. Só é aplicada cando se estivera no modo de mosaico á esquerda.</long>
+					<long xml:lang="gu">ડાબે મૂકાયેલ વિન્ડો માટે ફાળવણી ટકા. આ નંબર એ સ્ક્રીન પહોળાઈના ટકા છે, કે જે સક્રિય વિન્ડોને તે પહોળાઈ તરીકે હશે જ્યારે તકતી થયેલ હોય. ડાબા તકતી પ્રકારને લાગુ પડે છે.</long>
+					<long xml:lang="he">אחוז תפיסת השטח עבור חלונות הממוקמים משמאל. מספר זה מייצג את רוחב החלון הפעיל בעת ריצופו באחוזים מרוחב המסך. מתייחס לאופן ריצוף שמאלי. </long>
+					<long xml:lang="hi">बायें रखे विंडो के लिए दखल प्रतिशत. यह संख्या स्क्रीन की चौड़ाई का प्रतिशत है, जो सक्रिय विंडो इसे रखेगा चौड़ाई के रूप में जब टाइल किया जाता है. बायें टाइलिंग प्रकार में लागू होता है.</long>
+					<long xml:lang="hu">A balra rendezett ablak helyfoglalása százalékban megadva. A megadott érték a képernyő szélessége százalékos arányban, amely az aktív ablak rendelkezésére áll balra rendezett beállítás esetén.</long>
+					<long xml:lang="it">Percentuale di spazio occupato dalla finestra piazzata a sinistra. Questo valore è la percentuale di larghezza dello schermo che la finestra attiva avrà come larghezza quando è affiancata. Si applica all'affiancamento a sinistra.</long>
+					<long xml:lang="ja">左側に置かれるウィンドウの占有率です。この数値は画面幅に対する割合であり、整列された際のアクティブ・ウィンドウの幅となります。”左”の整列形式の場合に適用されます。</long>
+					<long xml:lang="ko">창들이 놓여지는 공간의 점유율. 이 숫자는 활성화된 창들이 정렬되었을때 높이로서 가지게 되는화면 높이의 퍼센트 입니다.남은 타일 형태를 적용합니다.</long>
+					<long xml:lang="nb">Prosentandel for oppdekning for vinduer plassert til venstre. Dette tallet er prosentandel av skjermbredde, som det aktive vinduet vil ha som dets bredde når det blir flislagt. Gjelder for Venstre flisleggingstype.</long>
+					<long xml:lang="nl">Ruimte percentage voor venster wat links geplaatst wordt. Deze waarde is een percentage van de schermbreedte , die het actieve venster zal verkrijgen als breedte tijdens tegelen. is van toepassing op Links Tegelen.</long>
+					<long xml:lang="pl">Procentowy obszar okna rozmieszczonego po lewej. Jest to procent szerokości ekranu, które aktywne okno będzie miało jako swoją szerokość. Ma zastosowanie tylko przy rozmieszczeniu do lewej</long>
+					<long xml:lang="pt">Percentagem de ocupação da janela colocada à esquerda. Este valor é a percentagem de largura do ecrã que a janela activa irá ter como largura, quando se estiver em modo mosaico. Só é aplicada quando se estiver no modo de mosaico à esquerda.</long>
+					<long xml:lang="pt_BR">Percentagem de ocupação da janela colocada à esquerda. Este valor é a proporcional a largura da tela que a janela ativa irá ter como largura, quando estiver em modo mosaico. Só é aplicada quando se estiver no modo de mosaico à esquerda.</long>
+					<long xml:lang="sv">Procentuell ockupering för fönster placerade till vänster. Detta är procent av skärmbredden, av vilket det aktiva fönstret kommer ha som sin bredd när den kaklas. Gäller för vänsterkaklingstyp.</long>
+					<long xml:lang="zh_CN">窗口左方向占用比率。数值为屏幕宽度百分数，排列时活动窗口将使用其作为宽度。应用于左排列类型。</long>
+					<default>60</default>
+					<min>20</min>
+					<max>80</max>
+				</option>
+				<option type="match" name="exclude_match">
+					<short>Excluded Windows</short>
+					<short xml:lang="ca">Finestres excloses</short>
+					<short xml:lang="de">Ausgeschlossene Fenster</short>
+					<short xml:lang="el">Αποκλεισμένα Παράθυρα</short>
+					<short xml:lang="en_GB">Excluded Windows</short>
+					<short xml:lang="es">Ventanas excluídas</short>
+					<short xml:lang="fr">Fenêtres exclues</short>
+					<short xml:lang="gl">Fiestras Excluidas</short>
+					<short xml:lang="gu">નહિં સમાયેલ વિન્ડો</short>
+					<short xml:lang="he">מלבד חלונות אלה</short>
+					<short xml:lang="hi">पृथक विंडोज़</short>
+					<short xml:lang="hu">Mellőzött ablakok</short>
+					<short xml:lang="it">Finestre escluse</short>
+					<short xml:lang="ja">適用除外ウィンドウ</short>
+					<short xml:lang="ko">제외된 창</short>
+					<short xml:lang="nb">Ekskluderte vinduer</short>
+					<short xml:lang="nl">Uitgezonderde vensters</short>
+					<short xml:lang="pl">Wykluczone okna</short>
+					<short xml:lang="pt">Janelas Excluídas</short>
+					<short xml:lang="pt_BR">Janelas excluídas</short>
+					<short xml:lang="sv">Exkluderade fönster</short>
+					<short xml:lang="tr">Hariç Tutulan Pencereler</short>
+					<short xml:lang="zh_CN">排除窗口</short>
+					<long>Windows which should be excluded from tiling</long>
+					<long xml:lang="ca">Les finestres que han de ser excloses del mosaic</long>
+					<long xml:lang="de">Fenster, die vom Kacheln ausgeschlossen werden sollen</long>
+					<long xml:lang="el">Παράθυρα που πρέπει να αποκλειστούν απ το να γίνουν πλακίδια</long>
+					<long xml:lang="en_GB">Windows which should be excluded from tiling</long>
+					<long xml:lang="es">Ventanas que deben excluirse del mosaico</long>
+					<long xml:lang="fr">Fenêtres devant être exclues du mode mosaïque</long>
+					<long xml:lang="gl">Tipos de xanelas a excluír do modo mosaico</long>
+					<long xml:lang="gu">વિન્ડો કે જે તકતી કરવામાં નહિં સમાવવામાં આવવી જોઈએ</long>
+					<long xml:lang="he">חלונות שאין לרצפם</long>
+					<long xml:lang="hi">विंडो जिसे टाइलिंग से अलग करने के लिए छोड़ा जाना चाहिए</long>
+					<long xml:lang="hu">Igazításból kizárt ablakok</long>
+					<long xml:lang="it">Finestre da escludere dall'accostamento</long>
+					<long xml:lang="ja">整列の対象から除外するウィンドウ</long>
+					<long xml:lang="ko">타일 기능이 적용되지 않는 창</long>
+					<long xml:lang="nb">Vinduer som skal ekskluderes fra flislegging</long>
+					<long xml:lang="nl">Vensters die moeten worden uitgesloten van tegelen</long>
+					<long xml:lang="pl">Okna które nie powinny zostać poddane rozmieszczeniu</long>
+					<long xml:lang="pt">Tipos de janelas a excluir do modo mosaico</long>
+					<long xml:lang="pt_BR">Tipos de janelas a excluir do modo mosaico</long>
+					<long xml:lang="sv">Fönster som ska exkluderas från kakling</long>
+					<long xml:lang="zh_CN">不参与平铺的窗口</long>
+					<default />
+				</option>
+			</group>
+			<group>
+				<short>Key Bindings</short>
+				<short xml:lang="ca">Vinculació de les tecles</short>
+				<short xml:lang="cs">Mapování kláves</short>
+				<short xml:lang="de">Tastenkombinationen</short>
+				<short xml:lang="el">Συνδυασμοί Πλήκτρων</short>
+				<short xml:lang="en_GB">Key Bindings</short>
+				<short xml:lang="es">Combinaciones de teclas</short>
+				<short xml:lang="fi">Pikanäppäimet</short>
+				<short xml:lang="fr">Raccourcis claviers</short>
+				<short xml:lang="gl">Tecras de Atallo</short>
+				<short xml:lang="gu">કી બાઈન્ડીંગ</short>
+				<short xml:lang="he">צירופי מקשים</short>
+				<short xml:lang="hi">की बाइंडिंग</short>
+				<short xml:lang="hu">Gyorsbillentyűk</short>
+				<short xml:lang="it">Associazioni tasti</short>
+				<short xml:lang="ja">キー割り当て</short>
+				<short xml:lang="ko">단축키</short>
+				<short xml:lang="nb">Hurtigtaster</short>
+				<short xml:lang="nl">Toets bindingen</short>
+				<short xml:lang="pl">Powiązanie klawiszy</short>
+				<short xml:lang="pt">Teclas de Atalho</short>
+				<short xml:lang="pt_BR">Teclas de Atalho</short>
+				<short xml:lang="sv">Tangentbindningar</short>
+				<short xml:lang="tr">Kısayollar</short>
+				<short xml:lang="zh_CN">按键组合</short>
+				<option type="key" name="tile_vertically_key">
+					<short>Tile Windows Vertically</short>
+					<short xml:lang="ca">Mosaic en vertical de les finestres</short>
+					<short xml:lang="de">Fenster vertikal kacheln</short>
+					<short xml:lang="el">Μετατροπή Παραθύρων σε Πλακίδια Κάθετα</short>
+					<short xml:lang="en_GB">Tile Windows Vertically</short>
+					<short xml:lang="es">Ventanas en mosaico vertical</short>
+					<short xml:lang="fr">Ranger les fenêtres verticalement</short>
+					<short xml:lang="gl">Crear Mosaico Vertical das Fiestras</short>
+					<short xml:lang="gu">વિન્ડોને ઊભી રીતે તકતી કરો</short>
+					<short xml:lang="he">ריצוף חלונות במאונך</short>
+					<short xml:lang="hi">विंडोज लंबवत रूप से टाइल करें</short>
+					<short xml:lang="hu">Ablakok darabolása függőlegesen</short>
+					<short xml:lang="it">Accosta finestre verticalmente</short>
+					<short xml:lang="ja">ウィンドウを垂直に整列</short>
+					<short xml:lang="ko">창 수직 타일</short>
+					<short xml:lang="nb">Flislegg vinduer vertikalt</short>
+					<short xml:lang="nl">Verticaal tegelen van vensters</short>
+					<short xml:lang="pl">Rozmieszczenie okien pionowe</short>
+					<short xml:lang="pt">Criar Mosaico Vertical das Janelas</short>
+					<short xml:lang="pt_BR">Criar Mosaico Vertical das Janelas</short>
+					<short xml:lang="sv">Kakla fönster vertikalt</short>
+					<short xml:lang="tr">Pencereleri Dikey Olarak Döşe</short>
+					<short xml:lang="zh_CN">纵向平铺窗口</short>
+					<long>Move and resize all visible windows so that they have full height, same width and occupy whole screen.</long>
+					<long xml:lang="ca">Mou i redimensiona totes les finestres visibles perquè tinguin tota l'alçada, la mateixa amplada i ocupin tota la pantalla.</long>
+					<long xml:lang="de">Bewege und skaliere alle sichtbaren Fenster horizontal, sodass sie alle die gleiche Breite haben und den ganzen Bildschirm bedecken.</long>
+					<long xml:lang="el">Μετακίνηση κ μορφοποίηση όλων των ορατών παραθύρων ωστε να έχουν πλήρες ύψος, ίδιο πλάτος κ να καταλαμβάνουν όλη την οθόνη.</long>
+					<long xml:lang="en_GB">Move and resize all visible windows so that they have full height, the same width and occupy the whole screen.</long>
+					<long xml:lang="es">Mover y cambiar el tamaño de todas las ventanas visibles para que tengan la mayor altura posible, mismo ancho y para que ocupen toda la pantalla.</long>
+					<long xml:lang="fr">Déplace et redimensionne toutes les fenêtre visibles de façon à ce qu'elles occupent toute la hauteur, aient la même largeur et couvrent tout l'écran.</long>
+					<long xml:lang="gl">Mover e redimensionar todas as xanelas visibles, de forma que fiquen con altura igual á pantalla, con larguras todas iguais e de maneira que ocupen a pantalla enteira.</long>
+					<long xml:lang="gu">બધી દેખીતી વિન્ડોને ખસેડો અને માપ બદલો કે જેથી તેઓની ઊંચાઈ પૂરેપૂરી હોય, સરખી પહોળાઈ અને આખી સ્ક્રીન ફાળવો.</long>
+					<long xml:lang="he">הזז את כל החלונות הנראים ושנה את גודלם, במאונך ובמאוזן, כך שיתפסו את כל המסך.</long>
+					<long xml:lang="hi">सभी दृश्य विंडो खिसकाएं व आकार दें, ताकि वह पूरी ऊंचाई का हो, समान चौड़ाई और पूरे स्क्रीन को भर सके.</long>
+					<long xml:lang="hu">Minden látható ablak áthelyezése és átméretezése, így azok a teljes méretűek lesznek és a egész képernyőt elfoglalják.</long>
+					<long xml:lang="it">Muove e ridimensiona tutte le finestre visibili in modo che abbiano massima altezza, stessa larghezza e occupino l'intero schermo.</long>
+					<long xml:lang="ja">表示されているすべてのウィンドウを最大の高さかつ同じ幅になるように移動やサイズ変更して、画面全体を占有するように整列</long>
+					<long xml:lang="ko">모든 활성화된 창들이 최대 높이에, 동일한 너비를 가지며 전체 화면을 채우도록움직이고 크기를 줄입니다.</long>
+					<long xml:lang="nb">Flytt og gjør om størrelse på alle synlige, slik at de har full høyde, samme bredde og opptar hele skjermen.</long>
+					<long xml:lang="nl">Verplaats en afmeting wijzigen zodat alle vensters een volledige hoogte hebben, dezelfde breedte en het hele scherm bezetten.</long>
+					<long xml:lang="pl">Przemieszcza i zmienia rozmiar widocznych okien tak by miały wysokość pulpitu, taką samą szerokość i zajmowały cały ekran.</long>
+					<long xml:lang="pt">Mover e redimensionar todas as janelas visíveis, de forma a que fiquem com altura igual ao ecrã, com larguras todas iguais e de maneira a ocupar o ecrã inteiro.</long>
+					<long xml:lang="pt_BR">Mover e redimensionar todas as janelas visíveis, de forma que fiquem com altura igual a tela, com larguras todas iguais e de maneira a ocupar toda a tela.</long>
+					<long xml:lang="sv">Flytta och storlekförändra alla synliga fönster som att de har maxhöjd, samma bredd och ockuperar hela skärmen.</long>
+					<long xml:lang="zh_CN">移动、调整所有可视窗口大小，使得它们纵向最大化、等宽、充满屏幕。</long>
+				</option>
+				<option type="key" name="tile_horizontally_key">
+					<short>Tile Windows Horizontally</short>
+					<short xml:lang="ca">Mosaic en horitzontal de les finestres</short>
+					<short xml:lang="de">Fenster horizontal kacheln</short>
+					<short xml:lang="el">Μετατροπή Παραθύρων σε Πλακίδια Οριζόντια</short>
+					<short xml:lang="en_GB">Tile Windows Horizontally</short>
+					<short xml:lang="es">Ventanas en mosaico horizontal</short>
+					<short xml:lang="fr">Ranger les fenêtre horizontalement</short>
+					<short xml:lang="gl">Crear Mosaico Horizontal das Fiestras</short>
+					<short xml:lang="gu">વિન્ડોને આડી રીતે તકતી કરો</short>
+					<short xml:lang="he">ריצוף חלונות במאוזן</short>
+					<short xml:lang="hi">विंडोज क्षैतिज रूप से टाइल करें</short>
+					<short xml:lang="hu">Ablakok darabolása vízszintesen</short>
+					<short xml:lang="it">Accosta finestre orizzontalmente</short>
+					<short xml:lang="ja">ウィンドウを水平に整列</short>
+					<short xml:lang="ko">창 수평 타일</short>
+					<short xml:lang="nb">Flislegg vinduer horisontalt</short>
+					<short xml:lang="nl">Horizontaal tegelen van vensters</short>
+					<short xml:lang="pl">Rozmieszczenie okien poziome</short>
+					<short xml:lang="pt">Criar Mosaico Horizontal das Janelas</short>
+					<short xml:lang="pt_BR">Criar Mosaico Horizontal das Janelas</short>
+					<short xml:lang="sv">Kakla fönster horisontellt</short>
+					<short xml:lang="tr">Pencereleri Yatay Olarak Döşe</short>
+					<short xml:lang="zh_CN">横向平铺窗口</short>
+					<long>Move and resize all visible windows so that they have full width, same height and occupy whole screen.</long>
+					<long xml:lang="ca">Mou i redimensiona totes les finestres visibles perquè tinguin tota l'amplada, la mateixa alçada i ocupin tota la pantalla.</long>
+					<long xml:lang="de">Bewege und skaliere all sichtbaren Fenster vertikal, sodass sie alle die gleiche Höhe besitzen und den ganzen Bildschirm bedecken.</long>
+					<long xml:lang="el">Μετακίνηση κ μορφοποίηση όλων των ορατών παραθύρων ωστε να έχουν πλήρες πλάτος, ίδιο ύψος κ να καταλαμβάνουν όλη την οθόνη.</long>
+					<long xml:lang="en_GB">Move and resize all visible windows so that they have full width, the same height and occupy the whole screen.</long>
+					<long xml:lang="es">Mover y cambiar el tamaño de todas las ventanas visibles para que tengan el mayor ancho posible, misma altura y para que ocupen toda la pantalla.</long>
+					<long xml:lang="fr">Déplace et redimensionne toutes les fenêtre visibles de façon à ce qu'elles occupent toute la largeur, aient la même hauteur et couvrent tout l'écran.</long>
+					<long xml:lang="gl">Mover e redimensionar todas as xanelas visibles, de forma que fiquen con largura igual á pantalla, con alturas todas iguais e de maneira a ocupar a pantalla inteiro.</long>
+					<long xml:lang="gu">બધી દેખીતી વિન્ડોને ખસેડો અને માપ બદલો કે જેથી તેઓની પહોળાઈ પૂરેપૂરી હોય, સરખી ઊંચાઈ અને આખી સ્ક્રીન ફાળવો.</long>
+					<long xml:lang="he">הזז את כל החלונות הנראים והרחב אותם למקסימום מבלי לשנות את גובהם, כך שיתפסו את כל המסך.</long>
+					<long xml:lang="hi">सभी दृश्य विंडो खिसकाएं व आकार दें, ताकि वह पूर्ण चौड़ाई का हो, समान चौड़ाई और पूरे स्क्रीन को भर सके.</long>
+					<long xml:lang="hu">Minden látható ablak áthelyezése és átméretezése, így azok a teljes méretűek lesznek és a egész képernyőt elfoglalják.</long>
+					<long xml:lang="it">Muove e ridimensiona tutte le finestre visibili in modo che abbiano massima larghezza, stessa altezza e occupino l'intero schermo.</long>
+					<long xml:lang="ja">表示されているすべてのウィンドウを最大の幅かつ同じ高さになるように移動やサイズ変更して、画面全体を占有するように整列</long>
+					<long xml:lang="ko">모든 활성화된 창들이 최대 너비에, 동일한 높이를 가지며 전체화면을 채우도록움직이고 크기를 줄입니다.</long>
+					<long xml:lang="nb">Flytt og gjør om størrelse på alle synlige, slik at de har full bredde, samme høyde og opptar hele skjermen.</long>
+					<long xml:lang="nl">Verplaats en wijzig grootte van alle zichtbare vensters zodat ze een volledige breedte, dezelfde hoogte hebben en het scherm volledig vullen.</long>
+					<long xml:lang="pl">Przemieszcza i zmienia rozmiar widocznych okien tak aby miały szerokość pulpitu, tą samą wysokość i zajmowały cały ekran.</long>
+					<long xml:lang="pt">Mover e redimensionar todas as janelas visíveis, de forma a que fiquem com largura igual ao ecrã, com alturas todas iguais e de maneira a ocupar o ecrã inteiro.</long>
+					<long xml:lang="pt_BR">Mover e redimensionar todas as janelas visíveis, de forma que fiquem com largura igual a tela, com alturas todas iguais e de maneira a ocupar toda a tela.</long>
+					<long xml:lang="sv">Flytta och storlekförändra alla synliga fönster så att de har maxbredd, samma höjd och ockuperar hela skärmen.</long>
+					<long xml:lang="zh_CN">移动、调整所有可视窗口大小，使得它们横向最大化、等高、充满屏幕。</long>
+				</option>
+				<option type="key" name="tile_tile_key">
+					<short>Tile Windows</short>
+					<short xml:lang="ca">Mosaic de les finestres</short>
+					<short xml:lang="de">Fenster anordnen</short>
+					<short xml:lang="el">Μετατροπή Παραθύρων σε Πλακίδια</short>
+					<short xml:lang="en_GB">Tile Windows</short>
+					<short xml:lang="es">Ventanas en mosaico</short>
+					<short xml:lang="fi">Laatoita ikkunat</short>
+					<short xml:lang="fr">Fenêtres en mosaïque</short>
+					<short xml:lang="gl">Crear Mosaico das Fiestras</short>
+					<short xml:lang="gu">વિન્ડોની તકતી કરો</short>
+					<short xml:lang="he">ריצוף חלונות</short>
+					<short xml:lang="hi">टाइल विन्डो</short>
+					<short xml:lang="hu">Ablakok darabolása</short>
+					<short xml:lang="it">Accosta le finestre</short>
+					<short xml:lang="ja">ウィンドウを整列</short>
+					<short xml:lang="ko">윈도우 타일</short>
+					<short xml:lang="nb">Flislegg vinduer</short>
+					<short xml:lang="nl">Tegelen van vensters</short>
+					<short xml:lang="pl">Rozmieść równomiernie</short>
+					<short xml:lang="pt">Criar Mosaico das Janelas</short>
+					<short xml:lang="pt_BR">Criar Mosaico das Janelas</short>
+					<short xml:lang="sv">Kakla fönster</short>
+					<short xml:lang="tr">Pencereleri Döşe</short>
+					<short xml:lang="zh_CN">平铺窗口</short>
+					<long>Move and resize all visible windows both vertically and horizontally, so that the occupy whole screen and are in a grid.</long>
+					<long xml:lang="ca">Mou i redimensiona totes les finestres visibles, tant verticalment com horitzontalment, de manera que ocupin tota la pantalla sencera i estiguin en una quadrícula.</long>
+					<long xml:lang="de">Bewege and skaliere alle sichtbaren Fenster sowohl vertikal als auch horizontal, sodass sie den ganzen Bildschirm in einem Gitter bedecken.</long>
+					<long xml:lang="el">Μετακίνηση και μορφοποίηση όλων των ορατών παραθύρων κάθετα και οριζόντια, έτσι ώστε να καταλάβουν όλη την οθόνη και να είναι σε πλέγμα.</long>
+					<long xml:lang="en_GB">Move and resize all visible windows both vertically and horizontally, so that they occupy the whole screen and are in a grid.</long>
+					<long xml:lang="es">Mover y cambiar el tamaño de todas las ventanas visibles horizontal y verticalmente para que ocupen toda la pantalla y para que estén alineadas en una grilla.</long>
+					<long xml:lang="fr">Déplace et redimensionne toutes les fenêtre visibles autant horizontalementque verticalement de façon à ce que l'écran soit entièrement couvert et qu'elles soient placées sur une grille</long>
+					<long xml:lang="gl">Mover e redimensionar xanelas visibles tanto verticalmente como horizontalmente, de maneira que formen unha grella que ocupe a pantalla enteira.</long>
+					<long xml:lang="gu">બધી દેખીતી વિન્ડોને ઊભી અને આડી બંને રીતે ખસેડો અને તેમનું માપ બદલો, કે જેથી આખી સ્ક્રીન ફાળવી દેવાય અને તેઓ જાળીમાં હોય.</long>
+					<long xml:lang="he">הזז את כל החלונות הנראים ושנה את גודלם, במאונך ובמאוזן, כך שיתפסו את כל המסך ויסתדרו במשבצות.</long>
+					<long xml:lang="hi">सभी दृश्य विंडो को लंबवत व क्षैतिज दोनों तरह से खिसकाएं व आकार दें, ताकि वह पूरे स्क्रीन को भर सके और जाल में हो.</long>
+					<long xml:lang="hu">Minden látható ablak áthelyezése és átméretezése, így azok a teljes méretűek lesznek és a egész képernyőt elfoglalják és egy rácson helyezkednek el.</long>
+					<long xml:lang="it">Muove e ridimensiona, sia orizzontalmente che verticalmente, tutte le finestre visibili cosicché occupino tutto lo schermo e siano organizzate come in una griglia.</long>
+					<long xml:lang="ja">表示されているすべてのウィンドウを垂直や水平の両方向に移動やサイズ変更して、画面全体を占有した格子状に整列</long>
+					<long xml:lang="ko">전체 화면을 채우고 창들을 일정하게 정렬 시키기 위해 모든 활성화된 창들을가로 세로로 움직이고 크기를 줄입니다.</long>
+					<long xml:lang="nb">Flytt og gjør om størrelse på alle synlige vinduer både vertikalt og horisontalt, slik at de opptar hele skjermen og er i et rutenett.</long>
+					<long xml:lang="nl">Verplaats en wijzig grootte van alle zichtbare vensters zowel verticaal als horizontaal zodat ze het hele scherm in beslag nemen in een raster.</long>
+					<long xml:lang="pl">Przemieszcza i zmienia rozmiar widocznych okien tak aby zajmowały cały ekran.</long>
+					<long xml:lang="pt">Mover e redimensionar janelas visíveis tanto verticalmente como horizontalmente, de maneira a formarem uma grelha que ocupe o ecrã inteiro.</long>
+					<long xml:lang="pt_BR">Mover e redimensionar janelas visíveis tanto verticalmente como horizontalmente, de maneira a formarem uma grade que ocupe toda a tela.</long>
+					<long xml:lang="sv">Flytta och storleksförändra alla synliga fönster både vertikalt och horisontellt så att den ockuperar hela skärmen och är i ett rutnät.</long>
+					<long xml:lang="zh_CN">纵横双向移动、调整所有可视窗口大小，使得它们充满屏幕并占据一个网格。</long>
+					<default>&lt;Super&gt;&lt;Shift&gt;a</default>
+				</option>
+				<option type="key" name="tile_cascade_key">
+					<short>Cascade Windows</short>
+					<short xml:lang="ca">Cascada de les finestres</short>
+					<short xml:lang="de">Ordne Fenster stufenförmig an</short>
+					<short xml:lang="el">Τοποθέτηση Παραθύρων σαν Καταρράκτη</short>
+					<short xml:lang="en_GB">Cascade Windows</short>
+					<short xml:lang="es">Poner ventanas en cascada</short>
+					<short xml:lang="fr">Disposer les fenêtres en mode cascade</short>
+					<short xml:lang="gl">Mostrar Fiestras en cascada</short>
+					<short xml:lang="gu">વિન્ડો કાસ્કેડ કરો</short>
+					<short xml:lang="he">דרג חלונות</short>
+					<short xml:lang="hi">प्रपाती विन्डो</short>
+					<short xml:lang="hu">Lépcsőzetes ablakelrendezés</short>
+					<short xml:lang="it">Finestre a cascata</short>
+					<short xml:lang="ja">ウィンドウをカスケード</short>
+					<short xml:lang="ko">계단식 창 배열</short>
+					<short xml:lang="nb">Legg vinduer tett i tett</short>
+					<short xml:lang="nl">Cascade vensters</short>
+					<short xml:lang="pl">Okna kaskadowo</short>
+					<short xml:lang="pt">Mostrar Janelas em Cascata</short>
+					<short xml:lang="pt_BR">Mostrar janelas em cascata</short>
+					<short xml:lang="sv">Kaskadfönster</short>
+					<short xml:lang="tr">Pencereleri Basamakla</short>
+					<short xml:lang="zh_CN">层叠窗口</short>
+					<long>Move and resize all visible windows with the delta value set for cascading.</long>
+					<long xml:lang="ca">Mou i redimensiona totes les finestres visibles amb el valor delta establert per a la cascada.</long>
+					<long xml:lang="de">Bewege und skaliere alle sichtbaren Fenster mit den Stufenabstand für die Stufenförmige-Anordnung.</long>
+					<long xml:lang="el">Μετακίνηση κ μορφοποίηση όλων των ορατών παραθύρων με ρυθμισμένη τιμη delta για καταρράκτη.</long>
+					<long xml:lang="en_GB">Move and resize all visible windows with the delta value set for cascading.</long>
+					<long xml:lang="es">Mover y cambiar el tamaño de todas las ventanas visibles con el valor de delta puesto para la puesta en cascada.</long>
+					<long xml:lang="fr">Déplace et redimensionne toute les fenêtre visible avec l'espacement reglé pour le mode Cascade</long>
+					<long xml:lang="gl">Mover e redimensionar todas as xanelas visibles co valor de diferenza definido para cascada.</long>
+					<long xml:lang="gu">બધી દેખીતી વિન્ડોને કાસ્કેડીંગ માટેના ડેલ્ટા કિંમત સમૂહ વડે ખસેડો અને માપ બદલો.</long>
+					<long xml:lang="he">הזז את כל החלונות הנראים ושנה את גודלם על פי ערך הדלתא שנקבע עבור דירוג.</long>
+					<long xml:lang="hi">सभी दृश्य विंडो खिसकाएं व आकार दें प्रपाती के लिए सेट डेल्टा मान के साथ.</long>
+					<long xml:lang="hu">Minden látható ablak áthelyezése és átméretezése, így azok a lépcsőzetes ablakelrendezés térköze szerinti távolságot veszik fel.</long>
+					<long xml:lang="it">Muove e ridimensiona tutte le finestre utilizzando il valore dell'intervallo impostato per l'ordinamento a cascata.</long>
+					<long xml:lang="ja">表示されているすべてのウィンドウをカスケードのずらし間隔の指定値を使用して移動やサイズ変更</long>
+					<long xml:lang="ko">계단식 정렬을 위해 델타 값으로 모든 활성화된 창들을 움직이고 크기를 줄입니다.</long>
+					<long xml:lang="nb">Flytt og gjør om størrelse på alle synlige vinduer med deltaverdien satt for tett-i-tett-vinsing.</long>
+					<long xml:lang="nl">Verplaats en wijzig grootte van alle zichtbare vensters waarbij de delta waarde wordt gezet voor een cascade.</long>
+					<long xml:lang="pl">Przemieszcza i zmienia rozmiar widocznych okien z odstępem między oknami ustawionym dla kaskady.</long>
+					<long xml:lang="pt">Mover e redimensionar todas as janelas visíveis com o valor de diferença definido para cascata.</long>
+					<long xml:lang="pt_BR">Mover e redimensionar todas as janelas visíveis com o valor de diferença definido para cascata.</long>
+					<long xml:lang="sv">Flytta och storleksförändra alla synliga fönster med deltavärdet för kaskadering</long>
+					<long xml:lang="zh_CN">根据层叠 delta 值移动、调整所有可视窗口大小。</long>
+					<default>&lt;Super&gt;&lt;Shift&gt;s</default>
+				</option>
+				<option type="key" name="tile_restore_key">
+					<short>Restore Windows</short>
+					<short xml:lang="ca">Restaura les finestres</short>
+					<short xml:lang="cs">Obnovit okna</short>
+					<short xml:lang="de">Fenster wiederherstellen</short>
+					<short xml:lang="el">Επανάκτηση Παραθύρων</short>
+					<short xml:lang="en_GB">Restore Windows</short>
+					<short xml:lang="es">Restablecer ventanas</short>
+					<short xml:lang="fr">Restaurer les fenêtres</short>
+					<short xml:lang="gl">Restaurar xanelas</short>
+					<short xml:lang="gu">વિન્ડો પુનઃસંગ્રહો</short>
+					<short xml:lang="he">שחזר חלונות</short>
+					<short xml:lang="hi">विंडोज़ वापस करें</short>
+					<short xml:lang="hu">Ablakok visszaállítása</short>
+					<short xml:lang="it">Ripristina le finestre</short>
+					<short xml:lang="ja">ウィンドウを元に戻す</short>
+					<short xml:lang="ko">창을 복원</short>
+					<short xml:lang="nb">Gjenopprett vinduer</short>
+					<short xml:lang="nl">Herstel vensters</short>
+					<short xml:lang="pl">Przywróc okna</short>
+					<short xml:lang="pt">Restaurar janelas</short>
+					<short xml:lang="pt_BR">Restaurar janelas</short>
+					<short xml:lang="sv">Återställ fönster</short>
+					<short xml:lang="zh_CN">恢复窗口</short>
+					<long>Restore windows to their original position they had before tiling.</long>
+					<long xml:lang="ca">Restaura les finestres a la seva posició original que tenien abans del mosaic.</long>
+					<long xml:lang="de">Stelle die ursprüngliche Position wiederher.</long>
+					<long xml:lang="el">Επανάκτηση παραθύρων στην αρχική τους θέση που πριν γίνουν πλακίδια.</long>
+					<long xml:lang="en_GB">Restore windows to their original position they had before tiling.</long>
+					<long xml:lang="es">Restablecer ventanas a la posición original que tenían antes del mosaico.</long>
+					<long xml:lang="fr">Restaurer les fenêtre à leurs positions initiales avant la mise en mosaïque.</long>
+					<long xml:lang="gl">Restaurar xanelas ás súas posicións orixinais (posicións antes de entrar en modo mosaico) .</long>
+					<long xml:lang="gu">વિન્ડોને તેના મૂળ સ્થાને કે જે તકતી કરવા પહેલાં હતું તેમાં પુનઃસંગ્રહો.</long>
+					<long xml:lang="he">שחזר את החלונות למקומם המקורי לפני הריצוף.</long>
+					<long xml:lang="hi">उनकी मौलिक स्थिति में विंडोज़ वापस करें जैसा टाइलिंग के पहले था.</long>
+					<long xml:lang="hu">Visszaállítja az ablakokat az igazítás előtti, eredeti helyükre.</long>
+					<long xml:lang="it">Riporta le finestre nella loro posizione precedente all'accostamento.</long>
+					<long xml:lang="ja">ウィンドウを整列前の元の位置に戻す</long>
+					<long xml:lang="ko">타일 기능을 사용하기 전으로 되돌리기</long>
+					<long xml:lang="nb">Gjenopprett vinduer til posisjonen de hadde før flislegging.</long>
+					<long xml:lang="nl">Herstel de vensters naar hun originele positie zoals ze die hadden voor het tegelen.</long>
+					<long xml:lang="pl">Przywraca okna do ich położenia sprzed rozmieszczenia okien.</long>
+					<long xml:lang="pt">Restaurar janelas às suas posições que as janelas tinham originalmente antes de entrar em modo mosaico.</long>
+					<long xml:lang="pt_BR">Restaurar janelas às suas posições originais (posições antes de entrar em modo mosaico).</long>
+					<long xml:lang="sv">Återställ fönster till dess orginalposition som de hade innan kakling.</long>
+					<long xml:lang="zh_CN">将窗口恢复到排列之前的位置。</long>
+					<default>&lt;Super&gt;&lt;Shift&gt;z</default>
+				</option>
+				<option type="key" name="tile_toggle_key">
+					<short>Toggle Tiling</short>
+					<short xml:lang="ca">Commuta el mosaic</short>
+					<short xml:lang="de">Aktiviere Kacheln</short>
+					<short xml:lang="el">Εκκίνηση-Σταμάτημα Πλακιδίων</short>
+					<short xml:lang="en_GB">Toggle Tiling</short>
+					<short xml:lang="es">Mosaico aleatorio</short>
+					<short xml:lang="fr">Interrupteur Mosaïque</short>
+					<short xml:lang="gl">Trocar o  modo Mosaico</short>
+					<short xml:lang="gu">તકતી કરવાનું બદલો</short>
+					<short xml:lang="he">הפעל\נטרל ריצוף</short>
+					<short xml:lang="hi">टाइलिंग टॉगल करें</short>
+					<short xml:lang="hu">Igazítás váltás</short>
+					<short xml:lang="it">Commuta «Accostamento»</short>
+					<short xml:lang="ja">整列オンオフの切り替え</short>
+					<short xml:lang="ko">타일 기능 사용</short>
+					<short xml:lang="nb">Slå av/på flislegging</short>
+					<short xml:lang="nl">Schakel tegelen</short>
+					<short xml:lang="pl">Zmień rozmieszczenie</short>
+					<short xml:lang="pt">Alternar modo Mosaico</short>
+					<short xml:lang="pt_BR">Alternar modo Mosaico</short>
+					<short xml:lang="sv">Växla kakling</short>
+					<short xml:lang="tr">Döşemeyi Aç / Kapat</short>
+					<short xml:lang="zh_CN">切换平铺</short>
+					<long>Toggle between tile and restore</long>
+					<long xml:lang="ca">Commutació entre el mosaic i la restauració</long>
+					<long xml:lang="de">Wechsel zwischen Kacheln und Wiederherstellen</long>
+					<long xml:lang="el">Εκκίνηση-Σταμάτημα ανάμεσα σε μετατροπή πλακιδίων κ επανάκτηση</long>
+					<long xml:lang="en_GB">Toggle between tile and restore</long>
+					<long xml:lang="es">Cambiar entre mosaico y restauración</long>
+					<long xml:lang="fr">Bascule entre mosaïque et la disposition originale</long>
+					<long xml:lang="gl">Trocar entre o modo mosaico e o modo orixinal</long>
+					<long xml:lang="gu">તકતી અને પુનઃસંગ્રહો વચ્ચે ફેરબદલી</long>
+					<long xml:lang="he">העבר בין ריצוף ושחזור</long>
+					<long xml:lang="hi">टाइल व पुनर्वहाली के बीच टॉगल करें</long>
+					<long xml:lang="hu">Váltás az igazítás és a visszaállítás között</long>
+					<long xml:lang="it">Passa dall'accostamento alla normalità</long>
+					<long xml:lang="ja">整列と元の位置への復元との切り替え</long>
+					<long xml:lang="ko">타일 기능을 사용함</long>
+					<long xml:lang="nb">Bytt mellom flislegg og gjenopprett</long>
+					<long xml:lang="nl">Schakel tussen tegelen en herstellen</long>
+					<long xml:lang="pl">Przełącz pomiędzy rozmieszczeniem i przywróceniem pozycji</long>
+					<long xml:lang="pt">Alternar entre modo mosaico e modo original</long>
+					<long xml:lang="pt_BR">Alternar entre modo mosaico e modo original</long>
+					<long xml:lang="sv">Växla mellan kakla och återställ</long>
+					<long xml:lang="zh_CN">在平铺和恢复间切换</long>
+					<default>&lt;Super&gt;&lt;Shift&gt;x</default>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

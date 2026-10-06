@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="ghost">
+		<short>Ghost</short>
+		<long>Makes clicks pass through windows</long>
+		<category>Extras</category>
+		<deps>
+			<relation type="after">
+				<plugin>regex</plugin>
+				<plugin>mousepoll</plugin>
+			</relation>
+			<requirement>
+				<plugin>regex</plugin>
+				<plugin>mousepoll</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<group>
+				<option type="key" name="ghost_toggle_key">
+					<short>Toggle Ghost</short>
+					<short xml:lang="ca">Commuta el fantasma</short>
+					<short xml:lang="en_GB">Toggle Ghost</short>
+					<long>Toggle ghost for all matching windows</long>
+					<long xml:lang="en_GB">Toggle ghost for all matching windows</long>
+					<default>none</default>
+				</option>
+				<option type="button" name="ghost_toggle_button">
+					<short>Toggle Ghost</short>
+					<short xml:lang="ca">Commuta el fantasma</short>
+					<short xml:lang="en_GB">Toggle Ghost</short>
+					<long>Toggle ghost for all matching windows</long>
+					<long xml:lang="en_GB">Toggle ghost for all matching windows</long>
+					<default>none</default>
+				</option>
+				<option type="key" name="ghost_toggle_window_key">
+					<short>Toggle Ghost Window</short>
+					<short xml:lang="en_GB">Toggle Ghost Window</short>
+					<long>Toggle ghosting of individual window</long>
+					<long xml:lang="en_GB">Toggle ghosting of individual window</long>
+					<default>none</default>
+				</option>
+				<option type="button" name="ghost_toggle_window_button">
+					<short>Toggle Ghost Window</short>
+					<short xml:lang="en_GB">Toggle Ghost Window</short>
+					<long>Toggle ghosting of individual window</long>
+					<long xml:lang="en_GB">Toggle ghosting of individual window</long>
+					<default>none</default>
+				</option>
+				<option type="match" name="window_types">
+					<short>Window Types</short>
+					<short xml:lang="ar">أنواع النوافذ</short>
+					<short xml:lang="bn">উইন্ডোর প্রকৃতি</short>
+					<short xml:lang="ca">Tipus de finestra</short>
+					<short xml:lang="cs">Typy oken</short>
+					<short xml:lang="de">Fenstertypen</short>
+					<short xml:lang="el">Είδη Παραθύρων</short>
+					<short xml:lang="en_GB">Window Types</short>
+					<short xml:lang="es">Tipos de ventana</short>
+					<short xml:lang="eu">leiho motak</short>
+					<short xml:lang="fi">Ikkunatyypit</short>
+					<short xml:lang="fr">Types de fenêtres</short>
+					<short xml:lang="gl">Tipos de Fiestras</short>
+					<short xml:lang="gu">વિન્ડો પ્રકારો</short>
+					<short xml:lang="he">סוגי חלונות</short>
+					<short xml:lang="hi">विंडो प्रकार</short>
+					<short xml:lang="hu">Ablaktípusok</short>
+					<short xml:lang="it">Tipi di finestre</short>
+					<short xml:lang="ja">ウィンドウの種類</short>
+					<short xml:lang="ko">창 종류</short>
+					<short xml:lang="nb">Vindustyper</short>
+					<short xml:lang="nl">Venster typen</short>
+					<short xml:lang="pl">Typy okien</short>
+					<short xml:lang="pt">Tipos de janelas</short>
+					<short xml:lang="pt_BR">Tipos de janelas</short>
+					<short xml:lang="ru">Типы окна</short>
+					<short xml:lang="sv">Fönstertyper</short>
+					<short xml:lang="tr">Pencere Tipleri</short>
+					<short xml:lang="zh_CN">窗口类型</short>
+					<long>Windows which should become ghosts</long>
+					<long xml:lang="en_GB">Windows which should become ghosts</long>
+					<default>state=above &amp; type=normal</default>
+				</option>
+				<option type="bool" name="ghost_active">
+					<short>Ghost Active Window</short>
+					<short xml:lang="en_GB">Ghost Active Window</short>
+					<long>Whether a ghosted active window will accept input or not</long>
+					<long xml:lang="en_GB">Whether a ghosted active window will accept input or not</long>
+					<default>true</default>
+				</option>
+				<option type="bool" name="fade_on_mouseover">
+					<short>Fade windows only on mousover</short>
+					<short xml:lang="en_GB">Fade windows only on mousover</short>
+					<long>Whether a ghosted window will always be faded or only when the cursor is over it</long>
+					<long xml:lang="en_GB">Whether a ghosted window will always be faded or only when the cursor is over it</long>
+					<default>false</default>
+				</option>
+				<option type="float" name="speed">
+					<short>Speed</short>
+					<short xml:lang="ca">Velocitat</short>
+					<short xml:lang="cs">Rychlost</short>
+					<short xml:lang="de">Geschwindigkeit</short>
+					<short xml:lang="el">Ταχύτητα</short>
+					<short xml:lang="en_GB">Speed</short>
+					<short xml:lang="es">Velocidad</short>
+					<short xml:lang="eu">Abiadura</short>
+					<short xml:lang="fi">Nopeus</short>
+					<short xml:lang="fr">Vitesse</short>
+					<short xml:lang="gl">Velocidade</short>
+					<short xml:lang="gu">ઝડપ</short>
+					<short xml:lang="he">מהירות</short>
+					<short xml:lang="hi">गति</short>
+					<short xml:lang="hu">Sebesség</short>
+					<short xml:lang="it">Velocità</short>
+					<short xml:lang="ja">速度</short>
+					<short xml:lang="ko">속도</short>
+					<short xml:lang="nb">Hastighet</short>
+					<short xml:lang="nl">Snelheid</short>
+					<short xml:lang="pl">Szybkość</short>
+					<short xml:lang="pt">Velocidade</short>
+					<short xml:lang="pt_BR">Velocidade</short>
+					<short xml:lang="sv">Hastighet</short>
+					<short xml:lang="tr">Hız</short>
+					<short xml:lang="zh_CN">速度</short>
+					<long>The speed of the animation</long>
+					<long xml:lang="en_GB">The speed of the animation</long>
+					<default>16</default>
+					<min>1</min>
+					<max>100</max>
+					<precision>1</precision>
+				</option>
+				<option type="float" name="opacity">
+					<short>Opacity</short>
+					<short xml:lang="ar">اللاشفافية</short>
+					<short xml:lang="bn">অস্বচ্ছতা</short>
+					<short xml:lang="ca">Opacitat</short>
+					<short xml:lang="cs">Průhlednost</short>
+					<short xml:lang="de">Sichtbarkeit</short>
+					<short xml:lang="el">Αδιαφάνεια</short>
+					<short xml:lang="en_GB">Opacity</short>
+					<short xml:lang="es">Opacidad</short>
+					<short xml:lang="eu">Opakutasun</short>
+					<short xml:lang="fi">Läpinäkyvyys</short>
+					<short xml:lang="fr">Opacité</short>
+					<short xml:lang="gl">Opacidade</short>
+					<short xml:lang="gu">અપારદર્શકતા</short>
+					<short xml:lang="he">אטימות</short>
+					<short xml:lang="hi">अपारदर्शिता</short>
+					<short xml:lang="hu">Átlátszatlanság</short>
+					<short xml:lang="it">Opacità</short>
+					<short xml:lang="ja">不透明度</short>
+					<short xml:lang="ko">투명도</short>
+					<short xml:lang="nb">Dekkevne</short>
+					<short xml:lang="nl">Ondoorzichtigheid</short>
+					<short xml:lang="pl">Nieprzezroczystość</short>
+					<short xml:lang="pt">Opacidade</short>
+					<short xml:lang="pt_BR">Opacidade</short>
+					<short xml:lang="ru">Непрозрачность</short>
+					<short xml:lang="sv">Opacitet</short>
+					<short xml:lang="tr">Matlık</short>
+					<short xml:lang="zh_CN">不透明度</short>
+					<long>The Opacity of Ghosted Windows</long>
+					<long xml:lang="en_GB">The Opacity of Ghosted Windows</long>
+					<default>30</default>
+					<min>0</min>
+					<max>100</max>
+					<precision>1</precision>
+				</option>
+				<option type="float" name="saturation">
+					<short>Saturation</short>
+					<short xml:lang="ar">قوة الألوان</short>
+					<short xml:lang="bn">সম্পৃক্তি</short>
+					<short xml:lang="ca">Saturació</short>
+					<short xml:lang="cs">Sytost</short>
+					<short xml:lang="de">Sättigung</short>
+					<short xml:lang="el">Κορεσμός</short>
+					<short xml:lang="en_GB">Saturation</short>
+					<short xml:lang="es">Saturación</short>
+					<short xml:lang="eu">Saturazioa</short>
+					<short xml:lang="fi">Kylläisyys</short>
+					<short xml:lang="fr">Saturation</short>
+					<short xml:lang="gl">Saturación</short>
+					<short xml:lang="gu">સંતુલન</short>
+					<short xml:lang="he">רוויה</short>
+					<short xml:lang="hi">संतृप्ति</short>
+					<short xml:lang="hu">Színtelítettség</short>
+					<short xml:lang="it">Saturazione</short>
+					<short xml:lang="ja">彩度</short>
+					<short xml:lang="ko">채도</short>
+					<short xml:lang="nb">Metning</short>
+					<short xml:lang="nl">Verzadiging</short>
+					<short xml:lang="pl">Nasycenie</short>
+					<short xml:lang="pt">Contraste</short>
+					<short xml:lang="pt_BR">Saturação</short>
+					<short xml:lang="ru">Насыщенность</short>
+					<short xml:lang="sv">Färgmättnad</short>
+					<short xml:lang="tr">Doygunluk</short>
+					<short xml:lang="zh_CN">饱和度</short>
+					<long>The Saturation of Ghosted Windows</long>
+					<long xml:lang="en_GB">The Saturation of Ghosted Windows</long>
+					<default>30</default>
+					<min>0</min>
+					<max>100</max>
+					<precision>1</precision>
+				</option>
+				<option type="float" name="brightness">
+					<short>Brightness</short>
+					<short xml:lang="ar">النصوع</short>
+					<short xml:lang="bn">উজ্জ্বলতা</short>
+					<short xml:lang="ca">Brillantor</short>
+					<short xml:lang="cs">Jas</short>
+					<short xml:lang="de">Helligkeit</short>
+					<short xml:lang="el">Φωτεινότητα</short>
+					<short xml:lang="en_GB">Brightness</short>
+					<short xml:lang="es">Brillo</short>
+					<short xml:lang="eu">Distira</short>
+					<short xml:lang="fi">Kirkkaus</short>
+					<short xml:lang="fr">Luminosité</short>
+					<short xml:lang="gl">Brillo</short>
+					<short xml:lang="gu">તેજસ્વીતા</short>
+					<short xml:lang="he">בהירות</short>
+					<short xml:lang="hi">चमकीलापन</short>
+					<short xml:lang="hu">Fényerő</short>
+					<short xml:lang="it">Luminosità</short>
+					<short xml:lang="ja">明度</short>
+					<short xml:lang="ko">밝기</short>
+					<short xml:lang="nb">Skarphet</short>
+					<short xml:lang="nl">Helderheid</short>
+					<short xml:lang="pl">Jasnosć</short>
+					<short xml:lang="pt">Brilho</short>
+					<short xml:lang="pt_BR">Brilho</short>
+					<short xml:lang="ru">Яркость</short>
+					<short xml:lang="sv">Ljusstyrka</short>
+					<short xml:lang="tr">Parlaklık</short>
+					<short xml:lang="zh_CN">亮度</short>
+					<long>The Brightness of Ghosted Windows</long>
+					<long xml:lang="en_GB">The Brightness of Ghosted Windows</long>
+					<default>80</default>
+					<min>0</min>
+					<max>100</max>
+					<precision>1</precision>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

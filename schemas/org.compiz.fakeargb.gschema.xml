@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.fakeargb" gettext-domain="compiz">
+    <key type="s" name="window-toggle-key">
+      <default>'&lt;Super&gt;f'</default>
+      <summary>Toggle Window Fake ARGB</summary>
+      <description>Toggle window fake ARGB.</description>
+    </key>
+    <key type="s" name="window-toggle-button">
+      <default>'Disabled'</default>
+      <summary>Toggle Window Fake ARGB</summary>
+      <description>Toggle window fake ARGB.</description>
+    </key>
+  </schema>
+</schemalist>

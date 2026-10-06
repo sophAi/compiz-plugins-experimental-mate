@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.atlantis" gettext-domain="compiz">
+    <key type="d" name="speed-factor">
+      <default>1</default>
+      <summary>Speed factor</summary>
+      <description>Multiply the speed of the fish by this factor. (0.5 - 3)</description>
+    </key>
+    <key type="b" name="start-crabs-bottom">
+      <default>false</default>
+      <summary>Start crabs on bottom</summary>
+      <description>Start crabs on the bottom of the cube.</description>
+    </key>
+    <key type="b" name="school-similar-groups">
+      <default>true</default>
+      <summary>School similar groups</summary>
+      <description>Fish in different groups, but of the same type, swim together.</description>
+    </key>
+    <key type="b" name="low-poly">
+      <default>false</default>
+      <summary>Low detail models</summary>
+      <description>Use less detailed models for increased performance.</description>
+    </key>
+    <key type="ai" name="creature-type">
+      <default>[0,1,3,4,9]</default>
+      <summary>Type</summary>
+      <description>Type of sea creature.</description>
+    </key>
+    <key type="as" name="creature-color">
+      <default>['#FFFFFFFF','#60A0FFFF','#FF7000FF','#FFFF00FF','#FF0000FF']</default>
+      <summary>Color</summary>
+      <description>The color of the sea creature.</description>
+    </key>
+    <key type="ai" name="creature-number">
+      <default>[5,5,5,5,5]</default>
+      <summary>Number</summary>
+      <description>The number of the sea creature.</description>
+    </key>
+    <key type="ai" name="creature-size">
+      <default>[4000,3500,3500,3500,4000]</default>
+      <summary>Size</summary>
+      <description>The size of the sea creature.</description>
+    </key>
+    <key type="ai" name="plant-type">
+      <default>[0,1,2]</default>
+      <summary>Type</summary>
+      <description>Type of sea plant.</description>
+    </key>
+    <key type="as" name="plant-color">
+      <default>['#00D010FF','#00D010FF','#8090FF0C']</default>
+      <summary>Color</summary>
+      <description>The color of the sea plant.</description>
+    </key>
+    <key type="ai" name="plant-number">
+      <default>[8,8,1]</default>
+      <summary>Number</summary>
+      <description>The number of the sea plants.</description>
+    </key>
+    <key type="ai" name="plant-size">
+      <default>[5000,5000,800]</default>
+      <summary>Size</summary>
+      <description>The size of the sea plant.</description>
+    </key>
+    <key type="b" name="show-water">
+      <default>true</default>
+      <summary>Render water</summary>
+      <description>Render water inside the cube.</description>
+    </key>
+    <key type="b" name="show-water-wire">
+      <default>false</default>
+      <summary>Render water wireframe</summary>
+      <description>Render water wireframe inside the cube.</description>
+    </key>
+    <key type="b" name="show-ground">
+      <default>true</default>
+      <summary>Render ground</summary>
+      <description>Render ground inside the cube.</description>
+    </key>
+    <key type="s" name="ground-color">
+      <default>'#855E00FF'</default>
+      <summary>Ground color</summary>
+      <description>Color of ground in the cube.</description>
+    </key>
+    <key type="d" name="water-height">
+      <default>0.85</default>
+      <summary>Water surface height</summary>
+      <description>Height of water surface in the cube. (0.2 - 1)</description>
+    </key>
+    <key type="s" name="water-color">
+      <default>'#08093008'</default>
+      <summary>Water color</summary>
+      <description>Color of water in the cube.</description>
+    </key>
+    <key type="i" name="grid-quality">
+      <default>3</default>
+      <summary>Water/Ground grid smoothness</summary>
+      <description>Number of subdivisions that create a finer grid. (1 - 7)</description>
+    </key>
+    <key type="b" name="render-waves">
+      <default>true</default>
+      <summary>Render waves</summary>
+      <description>Render water waves inside the cube.</description>
+    </key>
+    <key type="b" name="wave-ripple">
+      <default>false</default>
+      <summary>Ripple effect</summary>
+      <description>Semi-randomize light scattering off water waves.</description>
+    </key>
+    <key type="d" name="wave-amplitude">
+      <default>0.02</default>
+      <summary>Wave amplitude</summary>
+      <description>Amplitude of water waves. (0 - 0.5)</description>
+    </key>
+    <key type="d" name="wave-frequency">
+      <default>20</default>
+      <summary>Wave frequency</summary>
+      <description>Frequency of water waves. (0 - 100)</description>
+    </key>
+    <key type="d" name="small-wave-amplitude">
+      <default>0.01</default>
+      <summary>Small wave amplitude</summary>
+      <description>Amplitude of small water waves on the bigger ones. (0 - 0.5)</description>
+    </key>
+    <key type="d" name="small-wave-frequency">
+      <default>40</default>
+      <summary>Small wave frequency</summary>
+      <description>Frequency of small water waves on the bigger ones. (0 - 100)</description>
+    </key>
+    <key type="b" name="rescale-width">
+      <default>true</default>
+      <summary>Rescale for screen ratio</summary>
+      <description>Rescale along the sides of the cube by the ratio of screen width to height.</description>
+    </key>
+    <key type="b" name="rotate-lighting">
+      <default>false</default>
+      <summary>Rotate lighting</summary>
+      <description>Preserve light direction when rotating the cube.</description>
+    </key>
+    <key type="d" name="light-inclination">
+      <default>90</default>
+      <summary>Light inclination</summary>
+      <description>The angle of light rays from the horizon in degrees (0 is from the viewer's perspective, 90 is from on top). Only has effect when Rotate Lighting is false. (0 - 180)</description>
+    </key>
+    <key type="d" name="light-ambient">
+      <default>0.3</default>
+      <summary>Ambient light</summary>
+      <description>Component of light coming from all directions equally. (0.0 - 0.6)</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="toggledeco">
+		<short>Toggle Decoration</short>
+		<short xml:lang="ca">Commutació de la decoració</short>
+		<short xml:lang="en_GB">Toggle Decoration</short>
+		<long>Toggles decoration.</long>
+		<long xml:lang="ca">Commuta la decoració.</long>
+		<long xml:lang="en_GB">Toggles decoration.</long>
+		<category>Window Management</category>
+		<options>
+			<group>
+				<short>Bindings</short>
+				<short xml:lang="ar">الأغلفة</short>
+				<short xml:lang="bn">সীমাবদ্ধতা</short>
+				<short xml:lang="ca">Vinculacions</short>
+				<short xml:lang="cs">Klávesové zkratky</short>
+				<short xml:lang="de">Tastenkombinationen</short>
+				<short xml:lang="el">Συνδυασμοί</short>
+				<short xml:lang="en_GB">Bindings</short>
+				<short xml:lang="es">Combinaciones de teclado</short>
+				<short xml:lang="eu">Laster-teklak</short>
+				<short xml:lang="fi">Näppäinyhdistelmät</short>
+				<short xml:lang="fr">Raccourcis</short>
+				<short xml:lang="gl">Atallos</short>
+				<short xml:lang="gu">બાઈન્ડીંગો</short>
+				<short xml:lang="he">צימודים</short>
+				<short xml:lang="hi">बाइंडिंग</short>
+				<short xml:lang="hu">Összerendelések</short>
+				<short xml:lang="it">Associazioni</short>
+				<short xml:lang="ja">割り当て</short>
+				<short xml:lang="ko">바로가기</short>
+				<short xml:lang="nb">Hurtigtast</short>
+				<short xml:lang="nl">Bindingen</short>
+				<short xml:lang="pl">Skróty klawiszowe</short>
+				<short xml:lang="pt">Atalhos</short>
+				<short xml:lang="pt_BR">Atalhos</short>
+				<short xml:lang="ru">Сочетания клавиш</short>
+				<short xml:lang="sv">Bindningar</short>
+				<short xml:lang="tr">Bağlayıcılar</short>
+				<short xml:lang="zh_CN">绑定</short>
+				<option type="key" name="trigger_key">
+					<short>Toggle decoration</short>
+					<short xml:lang="ca">Commuta la decoració</short>
+					<short xml:lang="en_GB">Toggle decoration</short>
+					<long>Toggles decoration on/off.</long>
+					<long xml:lang="en_GB">Toggles decoration on/off.</long>
+					<default>&lt;Super&gt;&lt;Primary&gt;d</default>
+				</option>
+				<option type="key" name="trigger_all_key">
+					<short>Toggle decoration on desktop</short>
+					<short xml:lang="ca">Commuta la decoració a l'escriptori.</short>
+					<short xml:lang="en_GB">Toggle decoration on desktop</short>
+					<long>Toggles decoration of every window on the desktop.</long>
+					<long xml:lang="en_GB">Toggles decoration of every window on the desktop.</long>
+					<default>&lt;Super&gt;&lt;Primary&gt;a</default>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

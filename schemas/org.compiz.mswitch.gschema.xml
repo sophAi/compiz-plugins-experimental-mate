@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.mswitch" gettext-domain="compiz">
+    <key type="s" name="begin-key">
+      <default>'&lt;Super&gt;s'</default>
+      <summary>Begin Gesture</summary>
+      <description>Begin Mouse Gesture</description>
+    </key>
+    <key type="s" name="begin-button">
+      <default>'Disabled'</default>
+      <summary>Begin Gesture</summary>
+      <description>Begin Mouse Gesture</description>
+    </key>
+  </schema>
+</schemalist>

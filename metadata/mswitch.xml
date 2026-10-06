@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="mswitch">
+		<short>Mouse switch</short>
+		<short xml:lang="ca">Canvi amb el ratolí</short>
+		<short xml:lang="de">Maus-Arbeitsflächenumschalter</short>
+		<short xml:lang="el">Αλλαγή με το ποντίκι</short>
+		<short xml:lang="en_GB">Mouse switch</short>
+		<short xml:lang="es">Cambiador de ratón</short>
+		<short xml:lang="eu">Sagu aldaketa</short>
+		<short xml:lang="fi">Hiiren kytkin</short>
+		<short xml:lang="fr">Changement à la Souris</short>
+		<short xml:lang="gl">Interruptor do Rato</short>
+		<short xml:lang="gu">માઉસ બદલો</short>
+		<short xml:lang="he">מעבר עכבר</short>
+		<short xml:lang="hi">माउस स्विच</short>
+		<short xml:lang="hu">Egérváltó</short>
+		<short xml:lang="it">Cambia area di lavoro con i gesti del mouse</short>
+		<short xml:lang="ja">マウス切り替え</short>
+		<short xml:lang="ko">마우스 변경</short>
+		<short xml:lang="nb">Musebytte</short>
+		<short xml:lang="nl">Muis schakelaar</short>
+		<short xml:lang="pl">Przełącz mysz</short>
+		<short xml:lang="pt">Interruptor do rato</short>
+		<short xml:lang="pt_BR">Interruptor do mouse</short>
+		<short xml:lang="sv">Musväxling</short>
+		<short xml:lang="zh_CN">鼠标切换</short>
+		<long>Switch viewport in response to mouse gesture</long>
+		<long xml:lang="ca">Canvia d'àrea de visualització en resposta al gest del ratolí</long>
+		<long xml:lang="el">Αλλαγή εικονικής επιφάνειας εργασίας ανταποκρινόμενη στο νεύμα του ποντικιού</long>
+		<long xml:lang="en_GB">Switch viewport in response to mouse gesture</long>
+		<long xml:lang="es">Cambiar punto de vista en respuesta al gesto del ratón</long>
+		<long xml:lang="eu">Aldatu mahaigain aurkezpenaz sagu keinuaz</long>
+		<long xml:lang="fi">Vaihda työtilaa vastatoimena hiirenliikkeelle</long>
+		<long xml:lang="fr">Changer de bureau en fonction des mouvements de la souris</long>
+		<long xml:lang="gl">Trocar escritorio en resposta a un xestos do rato</long>
+		<long xml:lang="gu">માઉસ ઈશારાના જવાબમાં દૃશ્યપોર્ટ બદલો</long>
+		<long xml:lang="he">עבור למשטח עבודה אחר בתגובה למחוות עכבר</long>
+		<long xml:lang="hi">माउस हाव भाव के जवाब में व्यूपोर्ट स्विच करें</long>
+		<long xml:lang="hu">Munkalap váltása egérmozdulattal</long>
+		<long xml:lang="it">Cambia area visibile con un gesto del mouse</long>
+		<long xml:lang="ja">マウスジェスチャーに対応したビューポートの切り替え</long>
+		<long xml:lang="ko">마우스 제스쳐를 이용한 작업 공간 변경</long>
+		<long xml:lang="nb">Bytt arbeidsområde ved musegest</long>
+		<long xml:lang="nl">Wissel viewport als reactie op een muisbeweging</long>
+		<long xml:lang="pl">Zmieniaj wirtualny pulpit po wykonaniu gestu myszy</long>
+		<long xml:lang="pt">Mudar viewport em resposta a um gesto do rato</long>
+		<long xml:lang="pt_BR">Mudar janela de visualização em resposta a um gesto do mouse</long>
+		<long xml:lang="sv">Byt skrivbordsvy som svar på musgest</long>
+		<long xml:lang="zh_CN">根据鼠标手语切换视口</long>
+		<category>Desktop</category>
+		<options>
+			<option type="key" name="begin_key">
+				<short>Begin Gesture</short>
+				<short xml:lang="ca">Comença el gest</short>
+				<short xml:lang="el">Ξεκίνημα Νεύματος</short>
+				<short xml:lang="en_GB">Begin Gesture</short>
+				<short xml:lang="es">Iniciar gesto</short>
+				<short xml:lang="eu">Keinu hasiera</short>
+				<short xml:lang="fi">Aloita hiirenliike</short>
+				<short xml:lang="fr">Démarrer le Changement à la Souris</short>
+				<short xml:lang="gl">Comezo de Xesto</short>
+				<short xml:lang="gu">ઈશારા શરૂ કરો</short>
+				<short xml:lang="he">התחל מחווה</short>
+				<short xml:lang="hi">हावभाव शुरू करें</short>
+				<short xml:lang="hu">Mozdulat kezdete</short>
+				<short xml:lang="it">Comincia gesto</short>
+				<short xml:lang="ja">ジェスチャーを開始</short>
+				<short xml:lang="ko">제스쳐 시작</short>
+				<short xml:lang="nb">Start gest</short>
+				<short xml:lang="nl">Begin beweging</short>
+				<short xml:lang="pl">Rozpocznij gest</short>
+				<short xml:lang="pt">Começar Gesto</short>
+				<short xml:lang="pt_BR">Começar Gesto</short>
+				<short xml:lang="sv">Påbörja gest</short>
+				<short xml:lang="zh_CN">开始手语</short>
+				<long>Begin Mouse Gesture</long>
+				<long xml:lang="ca">Comença el gest del ratolí</long>
+				<long xml:lang="el">Ξεκίνημα Νεύματος Ποντικιού</long>
+				<long xml:lang="en_GB">Begin Mouse Gesture</long>
+				<long xml:lang="es">Inicar gesto del ratón</long>
+				<long xml:lang="eu">Sagu Keinu hasiera</long>
+				<long xml:lang="fi">Aloita hiirenliike</long>
+				<long xml:lang="fr">Démarrer le Changement à la Souris</long>
+				<long xml:lang="gl">Comezo do Xesto do Rato</long>
+				<long xml:lang="gu">માઉસ ઈશારા શરૂ કરો</long>
+				<long xml:lang="he">התחל מחוות עכבר</long>
+				<long xml:lang="hi">माउस हाव भाव शुरू करें</long>
+				<long xml:lang="hu">Egérmozdulat kezdete</long>
+				<long xml:lang="it">Comincia gesto del mouse</long>
+				<long xml:lang="ja">マウスジェスチャーを開始</long>
+				<long xml:lang="ko">마우스 제스쳐 시작</long>
+				<long xml:lang="nb">Start musegester</long>
+				<long xml:lang="nl">Begin muis beweging</long>
+				<long xml:lang="pl">Rozpocznij gest myszy</long>
+				<long xml:lang="pt">Começar Gesto Rato</long>
+				<long xml:lang="pt_BR">Começar Gesto com mouse</long>
+				<long xml:lang="sv">Börja musgest</long>
+				<long xml:lang="zh_CN">开始鼠标手语</long>
+				<default>&lt;Super&gt;s</default>
+			</option>
+			<option type="button" name="begin_button">
+				<short>Begin Gesture</short>
+				<short xml:lang="ca">Comença el gest</short>
+				<short xml:lang="el">Ξεκίνημα Νεύματος</short>
+				<short xml:lang="en_GB">Begin Gesture</short>
+				<short xml:lang="es">Iniciar gesto</short>
+				<short xml:lang="eu">Keinu hasiera</short>
+				<short xml:lang="fi">Aloita hiirenliike</short>
+				<short xml:lang="fr">Démarrer le Changement à la Souris</short>
+				<short xml:lang="gl">Comezo de Xesto</short>
+				<short xml:lang="gu">ઈશારા શરૂ કરો</short>
+				<short xml:lang="he">התחל מחווה</short>
+				<short xml:lang="hi">हावभाव शुरू करें</short>
+				<short xml:lang="hu">Mozdulat kezdete</short>
+				<short xml:lang="it">Comincia gesto</short>
+				<short xml:lang="ja">ジェスチャーを開始</short>
+				<short xml:lang="ko">제스쳐 시작</short>
+				<short xml:lang="nb">Start gest</short>
+				<short xml:lang="nl">Begin beweging</short>
+				<short xml:lang="pl">Rozpocznij gest</short>
+				<short xml:lang="pt">Começar Gesto</short>
+				<short xml:lang="pt_BR">Começar Gesto</short>
+				<short xml:lang="sv">Påbörja gest</short>
+				<short xml:lang="zh_CN">开始手语</short>
+				<long>Begin Mouse Gesture</long>
+				<long xml:lang="ca">Comença el gest del ratolí</long>
+				<long xml:lang="el">Ξεκίνημα Νεύματος Ποντικιού</long>
+				<long xml:lang="en_GB">Begin Mouse Gesture</long>
+				<long xml:lang="es">Inicar gesto del ratón</long>
+				<long xml:lang="eu">Sagu Keinu hasiera</long>
+				<long xml:lang="fi">Aloita hiirenliike</long>
+				<long xml:lang="fr">Démarrer le Changement à la Souris</long>
+				<long xml:lang="gl">Comezo do Xesto do Rato</long>
+				<long xml:lang="gu">માઉસ ઈશારા શરૂ કરો</long>
+				<long xml:lang="he">התחל מחוות עכבר</long>
+				<long xml:lang="hi">माउस हाव भाव शुरू करें</long>
+				<long xml:lang="hu">Egérmozdulat kezdete</long>
+				<long xml:lang="it">Comincia gesto del mouse</long>
+				<long xml:lang="ja">マウスジェスチャーを開始</long>
+				<long xml:lang="ko">마우스 제스쳐 시작</long>
+				<long xml:lang="nb">Start musegester</long>
+				<long xml:lang="nl">Begin muis beweging</long>
+				<long xml:lang="pl">Rozpocznij gest myszy</long>
+				<long xml:lang="pt">Começar Gesto Rato</long>
+				<long xml:lang="pt_BR">Começar Gesto com mouse</long>
+				<long xml:lang="sv">Börja musgest</long>
+				<long xml:lang="zh_CN">开始鼠标手语</long>
+			</option>
+		</options>
+	</plugin>
+</compiz>

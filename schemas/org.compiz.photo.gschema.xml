@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.photo" gettext-domain="compiz">
+    <key type="as" name="photo-textures">
+      <default>[]</default>
+      <summary>Photo Textures</summary>
+      <description>Photo textures</description>
+    </key>
+    <key type="d" name="height">
+      <default>1.0</default>
+      <summary>Height</summary>
+      <description>Height (0.0 - 2.0)</description>
+    </key>
+    <key type="d" name="width">
+      <default>1.0</default>
+      <summary>Width</summary>
+      <description>Width (0.0 - 3.0)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>0.5</default>
+      <summary>Speed</summary>
+      <description>Speed (0.0 - 5.0)</description>
+    </key>
+    <key type="d" name="xpos">
+      <default>0</default>
+      <summary>X Offset</summary>
+      <description>X Offset (this is width) (-2.0 - 2.0)</description>
+    </key>
+    <key type="d" name="ypos">
+      <default>0</default>
+      <summary>Y Offset</summary>
+      <description>Y Offset (this is height) (-2.0 - 2.0)</description>
+    </key>
+    <key type="d" name="zpos">
+      <default>0</default>
+      <summary>Z Offset</summary>
+      <description>Z Offset (this is depth) (-2.0 - 2.0)</description>
+    </key>
+    <key type="b" name="order">
+      <default>true</default>
+      <summary>Rotate Around Axis</summary>
+      <description>Otherwise rotate around its center of cube</description>
+    </key>
+    <key type="s" name="top-colour">
+      <default>'#ffffffff'</default>
+      <summary>Top Color</summary>
+      <description>Color of top face of the photo wheel</description>
+    </key>
+    <key type="s" name="bottom-colour">
+      <default>'#ffffffff'</default>
+      <summary>Bottom Color</summary>
+      <description>Color of bottom face of the photo wheel</description>
+    </key>
+    <key type="b" name="cull">
+      <default>true</default>
+      <summary>Backface Culling</summary>
+      <description>Enable backface culling</description>
+    </key>
+  </schema>
+</schemalist>

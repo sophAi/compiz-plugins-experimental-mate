@@ -1,0 +1,29 @@
+Package: compiz-plugins-experimental
+Version: 2:0.8.18-4+mint22.3
+Section: x11
+Priority: optional
+Architecture: amd64
+Maintainer: Compiz Maintainers <compiz-team@lists.debian.org>
+Installed-Size: 23448
+Depends: libc6 (>= 2.38), libcairo2 (>= 1.2.4), libcurl4t64 | libcurl4 (>= 7.16.2), libgcc-s1 (>= 3.0), libgl1, libglew2.2 (>= 2.2.0), libglu1-mesa | libglu1, libstdc++6 (>= 5), libx11-6, libxext6, libxss1, compiz-core-abiversion-20180927 | compiz-core (>= 1:0.9)
+Recommends: compiz-plugins-main, compiz-plugins-extra
+Suggests: compizconfig-settings-manager
+Homepage: https://gitlab.com/compiz/compiz-plugins-experimental
+Description: Compiz Reloaded plugins - "unsupported" experimental collection
+ Compiz Reloaded is the modern community-maintained fork of the classic
+ C-based Compiz 0.8 series window manager.
+ .
+ This package provides an extended collection of experimental and classic
+ 3D visual effect plugins, including:
+  - atlantis: 3D aquarium inside the transparent rotating cube with swimming fish
+  - snow / snowglobe: snowfall effect on the desktop or inside the cube
+  - elements: falling autumn leaves, bubbles, stars, and fireflies
+  - earth: rotating 3D globe / Earth with clouds and daytime/nighttime rendering
+  - cubemodel: render arbitrary 3D models (OBJ) inside the cube
+  - anaglyph: 3D red/cyan stereoscopic effect
+  - photowheel, stackswitch, tile, smartput, and more.
+ .
+ Excludes plugins already provided by system's compiz-plugins (animationplus,
+ animationsim, freewins, wizard) to prevent overwriting system files.
+ .
+ Built for Linux Mint 22.3 (Noble) with GCC 14 compatibility fixes.

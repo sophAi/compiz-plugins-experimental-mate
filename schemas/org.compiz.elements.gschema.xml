@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.elements" gettext-domain="compiz">
+    <key type="s" name="next-element-key">
+      <default>'&lt;Alt&gt;Right'</default>
+      <summary>Next Element</summary>
+      <description>Select the Next Element in the list</description>
+    </key>
+    <key type="s" name="prev-element-key">
+      <default>'&lt;Alt&gt;Left'</default>
+      <summary>Previous Element</summary>
+      <description>Select the Next Element in the list</description>
+    </key>
+    <key type="s" name="toggle-selected-key">
+      <default>'&lt;Super&gt;&lt;Alt&gt;e'</default>
+      <summary>Toggle Selected Element</summary>
+      <description>Select the Next Element in the list</description>
+    </key>
+    <key type="i" name="update-delay">
+      <default>40</default>
+      <summary>Update Delay</summary>
+      <description>Delay (in ms) between screen updates. Decreasing this value may make snow fall more smoothly, but will also increase CPU usage. (10 - 200)</description>
+    </key>
+    <key type="i" name="screen-depth">
+      <default>1000</default>
+      <summary>Screen Depth</summary>
+      <description>How deep into the screen snowflakes can be drawn before being removed (0 - 2000)</description>
+    </key>
+    <key type="i" name="screen-boxing">
+      <default>1000</default>
+      <summary>Screen Boxing</summary>
+      <description>How far from the screen snowflakes can be drawn before being removed (0 - 2000)</description>
+    </key>
+    <key type="b" name="over-windows">
+      <default>true</default>
+      <summary>Draw Over Windows</summary>
+      <description>Elements drawn above windows</description>
+    </key>
+    <key type="as" name="element-type">
+      <default>['snow','fireflies','stars','autumn','bubbles']</default>
+      <summary>Element Type</summary>
+      <description>Element Movement Type</description>
+    </key>
+    <key type="ai" name="element-iter">
+      <default>[1,2,3,4,5]</default>
+      <summary>Element Iter</summary>
+      <description>Settings for one particular element configuration. Separate element definitions have different iters. This is a workaround to have multiple-textures per element until we can get cascading lists</description>
+    </key>
+    <key type="as" name="element-image">
+      <default>['snow2.png','fireflies1.svg','stars1.png','autumn1.png','bubbles1.png']</default>
+      <summary>Element Image</summary>
+      <description>Image file for this Element</description>
+    </key>
+    <key type="ai" name="element-cap">
+      <default>[600,100,500,100,400]</default>
+      <summary>Number of elements</summary>
+      <description>Total number of allowed element</description>
+    </key>
+    <key type="ai" name="element-size">
+      <default>[25,50,20,35,20]</default>
+      <summary>Element size</summary>
+      <description>Size of these elements</description>
+    </key>
+    <key type="ai" name="element-speed">
+      <default>[30,10,60,30,70]</default>
+      <summary>Element speed</summary>
+      <description>Speed of these elements</description>
+    </key>
+    <key type="ab" name="element-rotate">
+      <default>[true,false,false,true,false]</default>
+      <summary>Element rotation</summary>
+      <description>Allow rotation of this element</description>
+    </key>
+    <key type="s" name="title-font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color for the window title</description>
+    </key>
+    <key type="i" name="title-font-size">
+      <default>16</default>
+      <summary>Font Size</summary>
+      <description>Font size for the window title (6 - 96)</description>
+    </key>
+    <key type="b" name="title-bold-font">
+      <default>true</default>
+      <summary>Bold Font</summary>
+      <description>Use a bold font</description>
+    </key>
+    <key type="s" name="title-back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Background color for the window title</description>
+    </key>
+    <key type="i" name="title-display-time">
+      <default>1000</default>
+      <summary>Display Time</summary>
+      <description>How long to display the title (in ms) (50 - 5000)</description>
+    </key>
+    <key type="b" name="title-on-toggle">
+      <default>true</default>
+      <summary>Show Title on Toggle</summary>
+      <description>Show the element type when toggling the currently selected element</description>
+    </key>
+  </schema>
+</schemalist>

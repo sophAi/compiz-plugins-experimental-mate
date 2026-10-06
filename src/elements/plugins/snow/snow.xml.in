@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<compiz>
+    <plugin name="snow" useBcop="true">
+    <_short>Snow</_short>
+    <_long>Snow Elements Plugin</_long>
+    <category>Extras</category>
+	<deps>
+	    <requirement>
+		<plugin>elements</plugin>
+	    </requirement>
+	    <relation type="after">
+		<plugin>elements</plugin>
+	    </relation>
+	</deps>
+	<options>
+	<group>
+	    <_short>Snow</_short>
+	    <option name="autostart" type="bool">
+		    <_short>Autostart</_short>
+		    <_long>Automatically start this element when the plugin is loaded</_long>
+		    <default>false</default>
+	    </option>
+	    <option name="toggle_snow" type="key">
+		    <_short>Toggle all snow elements</_short>
+		    <_long>Toggle all snow elements defined in the elements
+			   list</_long>
+		    <default>&lt;Super&gt;&lt;Alt&gt;s</default>
+	    </option>
+	    <option name="snow_sway" type="int">
+		    <_short>Snow sway</_short>
+		    <_long>Side-to-side movement of Snow.</_long>
+		    <default>3</default>
+		    <min>0</min>
+		    <max>10</max>
+	    </option>
+	    <option name="wind_direction" type="int">
+		    <_short>Snow Direction</_short>
+		    <_long>Select snow flake movement direction</_long>
+		    <default>0</default>
+		    <min>0</min>
+		    <max>3</max>
+		    <desc>
+			    <value>0</value>
+			    <_name>None</_name>
+		    </desc>
+		    <desc>
+			    <value>1</value>
+			    <_name>Up</_name>
+		    </desc>
+		    <desc>
+			    <value>2</value>
+			    <_name>Left</_name>
+		    </desc>
+		    <desc>
+			    <value>3</value>
+			    <_name>Right</_name>
+		    </desc>
+	    </option>
+	</group>
+	</options>
+
+      <extension base_plugin="elements" screen="true">
+	<base_option>element_type</base_option>
+	<restriction>
+	  <value>snow</value>
+	  <_name>Snow</_name>
+	</restriction>
+      </extension>
+
+    </plugin>
+</compiz>

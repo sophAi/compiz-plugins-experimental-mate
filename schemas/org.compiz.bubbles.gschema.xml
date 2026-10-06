@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.bubbles" gettext-domain="compiz">
+    <key type="b" name="autostart">
+      <default>false</default>
+      <summary>Autostart</summary>
+      <description>Automatically start this element when the plugin is loaded</description>
+    </key>
+    <key type="s" name="toggle-bubble">
+      <default>'&lt;Super&gt;&lt;Alt&gt;b'</default>
+      <summary>Toggle all bubbles elements</summary>
+      <description>Toggle all bubbles elements defined in the elements
+				   list</description>
+    </key>
+    <key type="d" name="viscosity">
+      <default>80.0</default>
+      <summary>Viscosity of liquid</summary>
+      <description>Viscosity of liquid (0.0 - 100.0)</description>
+    </key>
+  </schema>
+</schemalist>

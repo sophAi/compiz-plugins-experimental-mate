@@ -1,0 +1,1184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="atlantis">
+		<short>Cube Atlantis</short>
+		<short xml:lang="ca">Cub Atlàntida</short>
+		<short xml:lang="el">Κύβος Ατλαντίς</short>
+		<short xml:lang="en_GB">Cube Atlantis</short>
+		<short xml:lang="es">Cubo Atlantis</short>
+		<short xml:lang="eu">Atlantis kuboa</short>
+		<short xml:lang="fi">Kuutio-Atlantis</short>
+		<short xml:lang="fr">Cube Atlantis</short>
+		<short xml:lang="gl">Atlántica dentro do Cubo</short>
+		<short xml:lang="he">קוביית אטלנטיס</short>
+		<short xml:lang="hu">Atlantisz</short>
+		<short xml:lang="it">Atlantide</short>
+		<short xml:lang="ja">キューブ・アトランティス</short>
+		<short xml:lang="ko">큐브 아틀란티스</short>
+		<short xml:lang="nb">Atlantiskube</short>
+		<short xml:lang="nl">Kubus Atlantis</short>
+		<short xml:lang="pl">Kostka Atlantis</short>
+		<short xml:lang="sv">Kub Atlantis</short>
+		<short xml:lang="zh_CN">亚特兰蒂斯之盒</short>
+		<long>Render some sea animals inside of the transparent cube</long>
+		<long xml:lang="ca">Renderitza alguns animals marins dins d'un cub transparent</long>
+		<long xml:lang="el">Σχεδιασμός μερικών ζώων μέσα στον διάφανο κύβο.</long>
+		<long xml:lang="en_GB">Render some sea animals inside of the transparent cube</long>
+		<long xml:lang="fr">Afficher des poissons à l'intérieur du cube transparent</long>
+		<long xml:lang="gl">Mostra algúns animais do mar dentro do cubo transparente</long>
+		<long xml:lang="hu">Néhány tengeri élőlényet jelenít meg az áttetsző kockában</long>
+		<long xml:lang="it">Visualizza alcuni animali marini all'interno del cubo trasparente</long>
+		<long xml:lang="ja">透明なキューブ内に海洋生物を描画</long>
+		<long xml:lang="ko">투명 큐브 안에 물고기들을 그려 넣기</long>
+		<long xml:lang="pl">Wyświetla zwierzęta wodne wewnątrz przezroczystej kostki.</long>
+		<long xml:lang="ru">Показывать некоторых морских животных внутри прозрачного куба</long>
+		<category>Effects</category>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+				<plugin>cubeaddon</plugin>
+			</relation>
+			<requirement>
+				<plugin>cube</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<option type="float" name="speed_factor">
+				<short>Speed factor</short>
+				<short xml:lang="ca">Factor de velocitat</short>
+				<short xml:lang="el">Συντελεστής ταχύτητας</short>
+				<short xml:lang="en_GB">Speed factor</short>
+				<short xml:lang="es">Factor de velocidad</short>
+				<short xml:lang="fi">Nopeuskerroin</short>
+				<short xml:lang="gl">Factor de zoom</short>
+				<short xml:lang="hu">Sebesség</short>
+				<short xml:lang="it">Fattore velocità</short>
+				<short xml:lang="ja">速度</short>
+				<short xml:lang="ko">속도 요인</short>
+				<short xml:lang="pl">Współczynnik szybkości</short>
+				<short xml:lang="ru">Фактор скорости</short>
+				<long>Multiply the speed of the fish by this factor.</long>
+				<long xml:lang="ca">Multiplica la velocitat del peix amb aquest factor.</long>
+				<long xml:lang="el">Πολλαπλασιασμός της ταχύτητας των ψαριών με αυτόν τον παράγοντα.</long>
+				<long xml:lang="en_GB">Multiply the speed of the fish by this factor.</long>
+				<long xml:lang="fr">Multiplier la vitesse des poissons par ce facteur.</long>
+				<long xml:lang="gl">Multiplicar a velocidade do peixe por este factor.</long>
+				<long xml:lang="he">הכפל את מהירות הדגים במקדם זה.</long>
+				<long xml:lang="hu">Hal sebességének megszorzása ezzel az értékkel.</long>
+				<long xml:lang="it">Moltiplica la velocità dei pesci per questo fattore</long>
+				<long xml:lang="ja">この値によって魚の動く速さを乗ずる</long>
+				<long xml:lang="ko">이 수치에 따라 물고기의 속도를 지정할 수 있습니다.</long>
+				<long xml:lang="pl">Pomnóż prędkość ryb przez ten mnożnik.</long>
+				<long xml:lang="ru">Умножать скорость рыбы этим фактором.</long>
+				<default>1</default>
+				<min>0.5</min>
+				<max>3</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="bool" name="start_crabs_bottom">
+				<short>Start crabs on bottom</short>
+				<short xml:lang="ca">Inicia els crancs a la part inferior</short>
+				<short xml:lang="el">Εκκίνηση καβουριών στον πυθμένα</short>
+				<short xml:lang="en_GB">Start crabs on bottom</short>
+				<short xml:lang="es">Iniciar cangrejos en el fondo</short>
+				<short xml:lang="gl">Comezar cangrexo na parte inferior</short>
+				<short xml:lang="he">שחרר סרטנים על הקרקעית</short>
+				<short xml:lang="hu">Indítás alulról</short>
+				<short xml:lang="it">Avviare i granchi sul fondo</short>
+				<short xml:lang="ja">カニを底面上で開始</short>
+				<short xml:lang="ko">바닥에 있는 게 움직이기</short>
+				<short xml:lang="pl">Wyświetlaj kraby na dnie</short>
+				<short xml:lang="ru">Запустить крабов на дне</short>
+				<long>Start crabs on the bottom of the cube.</long>
+				<long xml:lang="ca">Inicia els crancs a la part inferior del cub.</long>
+				<long xml:lang="el">Εκκίνηση καβουριών στον πυθμένα του κύβου.</long>
+				<long xml:lang="en_GB">Start crabs on the bottom of the cube.</long>
+				<long xml:lang="es">Iniciar cangrejos en el fondo del cubo.</long>
+				<long xml:lang="gl">Comezar o enganche dende a parte inferior do cubo.</long>
+				<long xml:lang="hu">Leképzés a kocka aljáról.</long>
+				<long xml:lang="it">Avvia i granchi sul fondo del cubo</long>
+				<long xml:lang="ja">カニの配置をキューブの底面から開始</long>
+				<long xml:lang="ko">큐브의 바닥에 있는 게를 움직입니다.</long>
+				<long xml:lang="pl">Wyświetla kraby na dnie kostki.</long>
+				<long xml:lang="ru">Запустить крабов на дне куба.</long>
+				<default>false</default>
+			</option>
+			<option type="bool" name="school_similar_groups">
+				<short>School similar groups</short>
+				<short xml:lang="ca">Mola de peixos de grups similars</short>
+				<short xml:lang="el">Κοπαδοποίηση παρόμοιων ομάδων</short>
+				<short xml:lang="en_GB">School similar groups</short>
+				<short xml:lang="gl">Instruír grupos similares</short>
+				<short xml:lang="he">קבץ קבוצות דומות ללהקה</short>
+				<short xml:lang="hu">Azonos csoportok osztályozása</short>
+				<short xml:lang="it">Ammaestrare i gruppi simili</short>
+				<short xml:lang="ja">似たグループ同士を群れで泳がせる</short>
+				<short xml:lang="ko">유사한 그룹으로 떼지어 가기</short>
+				<short xml:lang="pl">Łącz podobne grupy w ławice</short>
+				<long>Fish in different groups, but of the same type, swim together.</long>
+				<long xml:lang="ca">Els peixos en grups diferents, però del mateix tipus, neden junts.</long>
+				<long xml:lang="el">Ψάρια σε διαφορετικές ομάδες, αλλά του ίδιου είδους, κολυμπούν μαζί.</long>
+				<long xml:lang="en_GB">Fish in different groups, but of the same type, swim together.</long>
+				<long xml:lang="gl">Peixes en diferentes grupos, pero do mesmo tipo, nadan conxuntamente.</long>
+				<long xml:lang="he">דגים בני אותו הסוג מקבוצות שונות שוחים יחדיו.</long>
+				<long xml:lang="hu">Különböző csoportban lévő halak, ha azonos fajtájúak, együtt úsznak.</long>
+				<long xml:lang="it">Pesci dello stsso gruppo, ma dello stesso tipo, nuotano assieme</long>
+				<long xml:lang="ja">同種異グループの魚同士を一緒に泳がせる</long>
+				<long xml:lang="ko">다른 그룹의 물고기이지만 같은 종류에 헤엄을 함께 칩니다.</long>
+				<long xml:lang="pl">Ryby tego samego typu pływają razem w grupach.</long>
+				<long xml:lang="ru">Рыбы в различных группах, но одного типа, плавают вместе.</long>
+				<default>true</default>
+			</option>
+			<option type="bool" name="low_poly">
+				<short>Low detail models</short>
+				<short xml:lang="ca">Models de baix detall</short>
+				<short xml:lang="cs">Nízká detailnost modelů</short>
+				<short xml:lang="el">Μοντέλα χαμηλής λεπτομέρειας</short>
+				<short xml:lang="en_GB">Low detail models</short>
+				<short xml:lang="fi">Alhaisten yksityiskohtien määrien mallit</short>
+				<short xml:lang="gl">Modelos de detalle baixo</short>
+				<short xml:lang="he">מודלים בעלי רמת פירוט נמוכה</short>
+				<short xml:lang="hu">Alacsony részletességű modellek</short>
+				<short xml:lang="it">Modelli a basso dettaglio</short>
+				<short xml:lang="ja">低詳細モデル</short>
+				<short xml:lang="ko">낮은 품질의 모델</short>
+				<short xml:lang="pl">Modele o niskich detalach</short>
+				<short xml:lang="ru">Низкодетальные модели</short>
+				<long>Use less detailed models for increased performance.</long>
+				<long xml:lang="ca">Utilitzar models menys detallats per a un major rendiment.</long>
+				<long xml:lang="el">Χρήση λιγότερο λεπτομερών μοντέλων για βελτιωμένη απόδοση.</long>
+				<long xml:lang="en_GB">Use less detailed models for increased performance.</long>
+				<long xml:lang="fi">Käytä vähemmän yksityiskohtaisia malleja lisääntynyttä suorituskykyä varten.</long>
+				<long xml:lang="fr">Utiliser des détails moins bon pour une meilleure performance</long>
+				<long xml:lang="gl">Empregar menos modelos detallados para incrementar o rendemento.</long>
+				<long xml:lang="he">השתמש במודלים מפורטים פחות על מנת לשפר את הביצועים.</long>
+				<long xml:lang="hu">Kevésbé részletes modellek használata a teljesítmény növelése érdekében.</long>
+				<long xml:lang="it">Usare modelli meno dettagliati per avere maggiori prestazioni</long>
+				<long xml:lang="ja">パフォーマンス向上のため、モデルの描画詳細度を下げる</long>
+				<long xml:lang="ko">향상된 속도를 위해 저품질의 모델을 사용합니다.</long>
+				<long xml:lang="pl">Używaj mniej dokładnych modeli, by zwiększyć wydajność.</long>
+				<long xml:lang="ru">Использовать менее детализированные модели для увеличения производительности.</long>
+				<default>false</default>
+			</option>
+			<subgroup>
+				<short>Creature Selection</short>
+				<short xml:lang="ca">Selecció de criatures</short>
+				<short xml:lang="cs">Výběr tvorů</short>
+				<short xml:lang="el">Επιλογή Πλάσματος</short>
+				<short xml:lang="en_GB">Creature Selection</short>
+				<short xml:lang="fi">Eliön valinta</short>
+				<short xml:lang="gl">Selección de criaturas</short>
+				<short xml:lang="hu">Lények kiválasztása</short>
+				<short xml:lang="it">Selezione creatura</short>
+				<short xml:lang="ja">生物の選択</short>
+				<short xml:lang="ko">생물 선택</short>
+				<short xml:lang="pl">Wybór stworzeń</short>
+				<short xml:lang="zh_CN">选择生物</short>
+				<option type="list" name="creature_type">
+					<short>Type</short>
+					<short xml:lang="ca">Tipus</short>
+					<short xml:lang="cs">Typ</short>
+					<short xml:lang="el">Είδος</short>
+					<short xml:lang="en_GB">Type</short>
+					<short xml:lang="fi">Tyyppi</short>
+					<short xml:lang="gl">Tipo</short>
+					<short xml:lang="hu">Típus</short>
+					<short xml:lang="it">Tipo</short>
+					<short xml:lang="ja">種類</short>
+					<short xml:lang="ko">종류</short>
+					<short xml:lang="pl">Typ</short>
+					<short xml:lang="ru">Тип</short>
+					<long>Type of sea creature.</long>
+					<long xml:lang="ca">Tipus de la criatura marina.</long>
+					<long xml:lang="cs">Druh vodních tvorů.</long>
+					<long xml:lang="el">Είδος πλάσματος της θάλασσας.</long>
+					<long xml:lang="en_GB">Type of sea creature.</long>
+					<long xml:lang="es">Tipo de criaturas marinas.</long>
+					<long xml:lang="fi">Merieliön tyyppi.</long>
+					<long xml:lang="gl">Tipo de criatura do mar.</long>
+					<long xml:lang="he">סוג היצור הימי.</long>
+					<long xml:lang="hu">Tengeri élőlények típusa.</long>
+					<long xml:lang="it">Tipo della creatura marina</long>
+					<long xml:lang="ja">海洋生物の種類</long>
+					<long xml:lang="ko">바다 동물의 종류</long>
+					<long xml:lang="pl">Typ stworzeń morskich.</long>
+					<long xml:lang="ru">Тип морских созданий.</long>
+					<type>int</type>
+					<min>0</min>
+					<max>9</max>
+					<default>
+						<value>0</value>
+						<value>1</value>
+						<value>3</value>
+						<value>4</value>
+						<value>9</value>
+					</default>
+					<desc>
+						<value>0</value>
+						<name>Fish - Butterflyfish</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Fish - Chromis 1</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Fish - Chromis 2</name>
+					</desc>
+					<desc>
+						<value>3</value>
+						<name>Fish - Chromis 3</name>
+					</desc>
+					<desc>
+						<value>4</value>
+						<name>Fish - Type 1</name>
+					</desc>
+					<desc>
+						<value>5</value>
+						<name>Fish - Type 2</name>
+					</desc>
+					<desc>
+						<value>6</value>
+						<name>Dolphin</name>
+					</desc>
+					<desc>
+						<value>7</value>
+						<name>Shark</name>
+					</desc>
+					<desc>
+						<value>8</value>
+						<name>Whale</name>
+					</desc>
+					<desc>
+						<value>9</value>
+						<name>Crab</name>
+					</desc>
+				</option>
+				<option type="list" name="creature_color">
+					<short>Color</short>
+					<short xml:lang="ca">Color</short>
+					<short xml:lang="cs">Barva</short>
+					<short xml:lang="el">Χρώμα</short>
+					<short xml:lang="en_GB">Colour</short>
+					<short xml:lang="es">Color</short>
+					<short xml:lang="fi">Värit</short>
+					<short xml:lang="fr">Couleur</short>
+					<short xml:lang="gl">Cor</short>
+					<short xml:lang="hu">Szín</short>
+					<short xml:lang="it">Colore</short>
+					<short xml:lang="ja">色</short>
+					<short xml:lang="ko">색</short>
+					<short xml:lang="pl">Kolor</short>
+					<short xml:lang="ru">Цвет</short>
+					<short xml:lang="zh_CN">颜色</short>
+					<long>The color of the sea creature.</long>
+					<long xml:lang="ca">El color de la criatura marina.</long>
+					<long xml:lang="cs">Barva vodních tvorů.</long>
+					<long xml:lang="el">Το χρώμα των πλασμάτων της θάλασσας.</long>
+					<long xml:lang="en_GB">The colour of the sea creature.</long>
+					<long xml:lang="fi">Merieliön väri</long>
+					<long xml:lang="gl">Cor da marxe da barra das lapelas</long>
+					<long xml:lang="hu">Tenger élőlények színe.</long>
+					<long xml:lang="it">Il colore della creatura marina</long>
+					<long xml:lang="ja">海洋生物の色</long>
+					<long xml:lang="ko">바다 동물의 색깔.</long>
+					<long xml:lang="pl">Kolor stworzeń morskich.</long>
+					<long xml:lang="ru">Цвет морских созданий.</long>
+					<type>color</type>
+					<default>
+						<value>
+							<red>0xFFFF</red>
+							<green>0xFFFF</green>
+							<blue>0xFFFF</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+						<value>
+							<red>0x6000</red>
+							<green>0xA000</green>
+							<blue>0xFFFF</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+						<value>
+							<red>0xFFFF</red>
+							<green>0x7000</green>
+							<blue>0x0000</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+						<value>
+							<red>0xFFFF</red>
+							<green>0xFFFF</green>
+							<blue>0x0000</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+						<value>
+							<red>0xFFFF</red>
+							<green>0x0000</green>
+							<blue>0x0000</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+					</default>
+				</option>
+				<option type="list" name="creature_number">
+					<short>Number</short>
+					<short xml:lang="ca">Nombre</short>
+					<short xml:lang="el">Αριθμός</short>
+					<short xml:lang="en_GB">Number</short>
+					<short xml:lang="es">Número</short>
+					<short xml:lang="fi">Lukumäärä</short>
+					<short xml:lang="fr">Nombre</short>
+					<short xml:lang="gl">Número</short>
+					<short xml:lang="he">מספר</short>
+					<short xml:lang="hu">Száma</short>
+					<short xml:lang="it">Numero</short>
+					<short xml:lang="ja">数</short>
+					<short xml:lang="ko">숫자</short>
+					<short xml:lang="pl">Numer</short>
+					<short xml:lang="ru">Число</short>
+					<long>The number of the sea creature.</long>
+					<long xml:lang="ca">El nombre de criatures marines.</long>
+					<long xml:lang="cs">Množství vodních tvorů.</long>
+					<long xml:lang="el">Ο αριθμός των πλασμάτων της θάλασσας.</long>
+					<long xml:lang="en_GB">The number of the sea creature.</long>
+					<long xml:lang="fi">Merieliöiden lukumäärä.</long>
+					<long xml:lang="gl">O estilo das criaturas de mar.</long>
+					<long xml:lang="hu">Tenger élőlények száma.</long>
+					<long xml:lang="it">Il numero delle creature marine</long>
+					<long xml:lang="ja">海洋生物の数</long>
+					<long xml:lang="ko">바다 동물의 수.</long>
+					<long xml:lang="pl">Liczba stworzeń morskich.</long>
+					<long xml:lang="ru">Количество морских созданий.</long>
+					<type>int</type>
+					<min>1</min>
+					<max>50</max>
+					<default>
+						<value>5</value>
+						<value>5</value>
+						<value>5</value>
+						<value>5</value>
+						<value>5</value>
+					</default>
+				</option>
+				<option type="list" name="creature_size">
+					<short>Size</short>
+					<short xml:lang="ca">Mida</short>
+					<short xml:lang="cs">Velikost</short>
+					<short xml:lang="el">Μέγεθος</short>
+					<short xml:lang="en_GB">Size</short>
+					<short xml:lang="es">Tamaño</short>
+					<short xml:lang="fi">Koko</short>
+					<short xml:lang="gl">Tamaño</short>
+					<short xml:lang="hu">Méret</short>
+					<short xml:lang="it">Dimensione</short>
+					<short xml:lang="ja">大きさ</short>
+					<short xml:lang="ko">크기</short>
+					<short xml:lang="pl">Rozmiar</short>
+					<short xml:lang="ru">Размер</short>
+					<long>The size of the sea creature.</long>
+					<long xml:lang="ca">La mida de la criatura marina.</long>
+					<long xml:lang="cs">Velikost vodních tvorů.</long>
+					<long xml:lang="el">Το μέγεθος των πλασμάτων της θαλασσας.</long>
+					<long xml:lang="en_GB">The size of the sea creature.</long>
+					<long xml:lang="fi">Merieliön koko.</long>
+					<long xml:lang="gl">O tamaño da criatura de mar.</long>
+					<long xml:lang="hu">Tenger élőlények mérete.</long>
+					<long xml:lang="it">La dimensione delle creature marine</long>
+					<long xml:lang="ja">海洋生物の大きさ</long>
+					<long xml:lang="ko">바다 동물의 크기</long>
+					<long xml:lang="pl">Rozmiar roślin morskich.</long>
+					<long xml:lang="ru">Размер морских созданий.</long>
+					<type>int</type>
+					<min>100</min>
+					<max>20000</max>
+					<default>
+						<value>4000</value>
+						<value>3500</value>
+						<value>3500</value>
+						<value>3500</value>
+						<value>4000</value>
+					</default>
+				</option>
+			</subgroup>
+			<subgroup>
+				<short>Miscellaneous Selection</short>
+				<short xml:lang="ca">Altres seleccions</short>
+				<short xml:lang="el">Ποικίλουσα Επιλογή </short>
+				<short xml:lang="en_GB">Miscellaneous Selection</short>
+				<short xml:lang="es">Selecciones varias</short>
+				<short xml:lang="gl">Selección variada</short>
+				<short xml:lang="hu">Egyéb beállítások</short>
+				<short xml:lang="it">Selezione varia</short>
+				<short xml:lang="ja">その他の選択</short>
+				<short xml:lang="ko">기타 선택</short>
+				<short xml:lang="pl">Zróżnicowany wybór</short>
+				<option type="list" name="plant_type">
+					<short>Type</short>
+					<short xml:lang="ca">Tipus</short>
+					<short xml:lang="cs">Typ</short>
+					<short xml:lang="el">Είδος</short>
+					<short xml:lang="en_GB">Type</short>
+					<short xml:lang="fi">Tyyppi</short>
+					<short xml:lang="gl">Tipo</short>
+					<short xml:lang="hu">Típus</short>
+					<short xml:lang="it">Tipo</short>
+					<short xml:lang="ja">種類</short>
+					<short xml:lang="ko">종류</short>
+					<short xml:lang="pl">Typ</short>
+					<short xml:lang="ru">Тип</short>
+					<long>Type of sea plant.</long>
+					<long xml:lang="ca">Tipus de la planta marina.</long>
+					<long xml:lang="cs">Druh vodních rostlin.</long>
+					<long xml:lang="el">Είδος φυτού της θάλασσας.</long>
+					<long xml:lang="en_GB">Type of sea plant.</long>
+					<long xml:lang="es">Tipo de plantas marinas.</long>
+					<long xml:lang="fi">Merikasvin tyyppi.</long>
+					<long xml:lang="gl">Tipo de planta de mar.</long>
+					<long xml:lang="he">סוג צמח המים.</long>
+					<long xml:lang="hu">Tengeri növények típusa.</long>
+					<long xml:lang="it">Tipo della pianta marina</long>
+					<long xml:lang="ja">海洋植物の種類</long>
+					<long xml:lang="ko">해초의 종류</long>
+					<long xml:lang="pl">Typ roślin morskich.</long>
+					<long xml:lang="ru">Тип морских растений.</long>
+					<type>int</type>
+					<min>0</min>
+					<max>2</max>
+					<default>
+						<value>0</value>
+						<value>1</value>
+						<value>2</value>
+					</default>
+					<desc>
+						<value>0</value>
+						<name>Coral - 1</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Coral - 2</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Aerator</name>
+					</desc>
+				</option>
+				<option type="list" name="plant_color">
+					<short>Color</short>
+					<short xml:lang="ca">Color</short>
+					<short xml:lang="cs">Barva</short>
+					<short xml:lang="el">Χρώμα</short>
+					<short xml:lang="en_GB">Colour</short>
+					<short xml:lang="es">Color</short>
+					<short xml:lang="fi">Värit</short>
+					<short xml:lang="fr">Couleur</short>
+					<short xml:lang="gl">Cor</short>
+					<short xml:lang="hu">Szín</short>
+					<short xml:lang="it">Colore</short>
+					<short xml:lang="ja">色</short>
+					<short xml:lang="ko">색</short>
+					<short xml:lang="pl">Kolor</short>
+					<short xml:lang="ru">Цвет</short>
+					<short xml:lang="zh_CN">颜色</short>
+					<long>The color of the sea plant.</long>
+					<long xml:lang="ca">El color de la planta marina.</long>
+					<long xml:lang="cs">Barva vodních rostlin.</long>
+					<long xml:lang="el">Το χρώμα των φυτών της θάλασσας.</long>
+					<long xml:lang="en_GB">The colour of the sea plant.</long>
+					<long xml:lang="fi">Merikasvin väri.</long>
+					<long xml:lang="gl">A cor das plantas de mar.</long>
+					<long xml:lang="hu">Tenger növények színe.</long>
+					<long xml:lang="it">Il colore della pianta marina</long>
+					<long xml:lang="ja">海洋植物の色</long>
+					<long xml:lang="ko">해초의 색깔.</long>
+					<long xml:lang="pl">Kolor roślin morskich.</long>
+					<long xml:lang="ru">Цвет морских растений.</long>
+					<type>color</type>
+					<default>
+						<value>
+							<red>0x0000</red>
+							<green>0xD000</green>
+							<blue>0x1000</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+						<value>
+							<red>0x0000</red>
+							<green>0xD000</green>
+							<blue>0x1000</blue>
+							<alpha>0xFFFF</alpha>
+						</value>
+						<value>
+							<red>0x8000</red>
+							<green>0x9000</green>
+							<blue>0xFFFF</blue>
+							<alpha>0x0C00</alpha>
+						</value>
+					</default>
+				</option>
+				<option type="list" name="plant_number">
+					<short>Number</short>
+					<short xml:lang="ca">Nombre</short>
+					<short xml:lang="el">Αριθμός</short>
+					<short xml:lang="en_GB">Number</short>
+					<short xml:lang="es">Número</short>
+					<short xml:lang="fi">Lukumäärä</short>
+					<short xml:lang="fr">Nombre</short>
+					<short xml:lang="gl">Número</short>
+					<short xml:lang="he">מספר</short>
+					<short xml:lang="hu">Száma</short>
+					<short xml:lang="it">Numero</short>
+					<short xml:lang="ja">数</short>
+					<short xml:lang="ko">숫자</short>
+					<short xml:lang="pl">Numer</short>
+					<short xml:lang="ru">Число</short>
+					<long>The number of the sea plants.</long>
+					<long xml:lang="ca">El nombre de plantes marines.</long>
+					<long xml:lang="cs">Množství vodních rostlin.</long>
+					<long xml:lang="el">Ο αριθμός των φυτών της θάλασσας.</long>
+					<long xml:lang="en_GB">The number of the sea plants.</long>
+					<long xml:lang="fi">Merikasvien lukumäärä.</long>
+					<long xml:lang="gl">O número das plantas de mar.</long>
+					<long xml:lang="hu">Tenger növények száma.</long>
+					<long xml:lang="it">Il numero delle piante marine</long>
+					<long xml:lang="ja">海洋植物の数</long>
+					<long xml:lang="ko">해초의 수.</long>
+					<long xml:lang="pl">Liczba roślin morskich.</long>
+					<long xml:lang="ru">Количество морских растений.</long>
+					<type>int</type>
+					<min>1</min>
+					<max>200</max>
+					<default>
+						<value>8</value>
+						<value>8</value>
+						<value>1</value>
+					</default>
+				</option>
+				<option type="list" name="plant_size">
+					<short>Size</short>
+					<short xml:lang="ca">Mida</short>
+					<short xml:lang="cs">Velikost</short>
+					<short xml:lang="el">Μέγεθος</short>
+					<short xml:lang="en_GB">Size</short>
+					<short xml:lang="es">Tamaño</short>
+					<short xml:lang="fi">Koko</short>
+					<short xml:lang="gl">Tamaño</short>
+					<short xml:lang="hu">Méret</short>
+					<short xml:lang="it">Dimensione</short>
+					<short xml:lang="ja">大きさ</short>
+					<short xml:lang="ko">크기</short>
+					<short xml:lang="pl">Rozmiar</short>
+					<short xml:lang="ru">Размер</short>
+					<long>The size of the sea plant.</long>
+					<long xml:lang="ca">La mida de la planta marina.</long>
+					<long xml:lang="cs">Velikost vodních rostlin.</long>
+					<long xml:lang="el">Το μέγεθος των φυτών της θαλασσας.</long>
+					<long xml:lang="en_GB">The size of the sea plant.</long>
+					<long xml:lang="fi">Merikasvin koko.</long>
+					<long xml:lang="gl">O tamaño da planta de mar.</long>
+					<long xml:lang="hu">Tenger növények mérete.</long>
+					<long xml:lang="it">La dimensione delle piante marine</long>
+					<long xml:lang="ja">海洋植物の大きさ</long>
+					<long xml:lang="ko">해초의 크기.</long>
+					<long xml:lang="pl">Rozmiar roślin morskich.</long>
+					<long xml:lang="ru">Размер морских растений.</long>
+					<type>int</type>
+					<min>100</min>
+					<max>20000</max>
+					<default>
+						<value>5000</value>
+						<value>5000</value>
+						<value>800</value>
+					</default>
+				</option>
+			</subgroup>
+			<group>
+				<short>Water / Ground</short>
+				<short xml:lang="ca">Aigua / terra</short>
+				<short xml:lang="cs">Voda / země</short>
+				<short xml:lang="el">Νερό / Έδαφος</short>
+				<short xml:lang="en_GB">Water / Ground</short>
+				<short xml:lang="es">Agua / Suelo</short>
+				<short xml:lang="fi">Vesi / maa</short>
+				<short xml:lang="gl">Auga / Chan</short>
+				<short xml:lang="he">מים \ קרקע</short>
+				<short xml:lang="hu">Víz és talaj</short>
+				<short xml:lang="it">Acqua / Fondo</short>
+				<short xml:lang="ja">海水 / 海底</short>
+				<short xml:lang="ko">물 / 지면</short>
+				<short xml:lang="pl">Woda / Podłoże</short>
+				<short xml:lang="ru">Вода / Дно</short>
+				<option type="bool" name="show_water">
+					<short>Render water</short>
+					<short xml:lang="ca">Renderitza l'aigua</short>
+					<short xml:lang="cs">Vykreslovat vodu</short>
+					<short xml:lang="el">Σχεδιασμός νερού</short>
+					<short xml:lang="en_GB">Render water</short>
+					<short xml:lang="es">Presentar agua</short>
+					<short xml:lang="fi">Piirrä vesi</short>
+					<short xml:lang="fr">Afficher de l'eau</short>
+					<short xml:lang="gl">Renderizar auga</short>
+					<short xml:lang="he">צייר מים</short>
+					<short xml:lang="hu">Víz leképzése</short>
+					<short xml:lang="it">Visalizzare l'acqua</short>
+					<short xml:lang="ja">海水を描画</short>
+					<short xml:lang="ko">물 렌더링하기</short>
+					<short xml:lang="pl">Wyświetlaj wodę</short>
+					<short xml:lang="ru">Показывать воду</short>
+					<long>Render water inside the cube.</long>
+					<long xml:lang="ca">Renderitza l'aigua dins del cub.</long>
+					<long xml:lang="el">Σχεδιασμός νερού μέσα στον κύβο.</long>
+					<long xml:lang="en_GB">Render water inside the cube.</long>
+					<long xml:lang="gl">Renderizar auga dentro do cubo</long>
+					<long xml:lang="hu">Víz leképzése a kockában.</long>
+					<long xml:lang="it">Visualizzare l'acqua all'interno del cubo</long>
+					<long xml:lang="ja">キューブ内に海水を描画</long>
+					<long xml:lang="ko">큐브 안에 물을 그려넣습니다.</long>
+					<long xml:lang="pl">Wyświetla wodę wewnątrz kostki.</long>
+					<long xml:lang="ru">Показывать воду внутри куба.</long>
+					<default>true</default>
+				</option>
+				<option type="bool" name="show_water_wire">
+					<short>Render water wireframe</short>
+					<short xml:lang="cs">Vykreslovat drátový model vody</short>
+					<short xml:lang="el">Σχεδιασμός πλέγματος γραμμών νερού</short>
+					<short xml:lang="en_GB">Render water wireframe</short>
+					<short xml:lang="gl">Renderizar maia de alambre da auga</short>
+					<short xml:lang="he">צייר מים כשלד</short>
+					<short xml:lang="hu">Víz leképzése drótvázként</short>
+					<short xml:lang="it">Visualizza il wireframe dell'acqua</short>
+					<short xml:lang="ja">海水のワイヤーフレームを描画</short>
+					<short xml:lang="ko">물 와이어프레임 렌더링</short>
+					<short xml:lang="pl">Wyświetlaj siatkę szkieletową wody</short>
+					<long>Render water wireframe inside the cube.</long>
+					<long xml:lang="el">Σχεδιασμός πλέγματος γραμμών νερού μέσα στον κύβο.</long>
+					<long xml:lang="en_GB">Render water wireframe inside the cube.</long>
+					<long xml:lang="gl">Renderizar malla de alambre dentro do cubo.</long>
+					<long xml:lang="hu">Víz drótváz leképzése a kockában.</long>
+					<long xml:lang="it">Visualizza il wireframe dell'acqua all'interno del cubo</long>
+					<long xml:lang="ja">キューブ内に海水のワイヤーフレームを描画</long>
+					<long xml:lang="ko">큐브 안에 물 와이어프레임을 그려넣습니다.</long>
+					<long xml:lang="pl">Wyświetla siatkę szkieletową wody wewnątrz kostki.</long>
+					<default>false</default>
+				</option>
+				<option type="bool" name="show_ground">
+					<short>Render ground</short>
+					<short xml:lang="ca">Renderitza el terra</short>
+					<short xml:lang="cs">Vykreslovat zemi</short>
+					<short xml:lang="el">Σχεδιασμός εδάφους</short>
+					<short xml:lang="en_GB">Render ground</short>
+					<short xml:lang="fi">Piirrä maa</short>
+					<short xml:lang="gl">Renderizar chan</short>
+					<short xml:lang="hu">Csoport leképzése</short>
+					<short xml:lang="it">Visualizzare il fondo</short>
+					<short xml:lang="ja">地面を描画</short>
+					<short xml:lang="ko">지면 렌더링하기</short>
+					<short xml:lang="pl">Wyświetlaj podłoże</short>
+					<short xml:lang="ru">Показывать дно</short>
+					<long>Render ground inside the cube.</long>
+					<long xml:lang="ca">Renderitza el terra dins del cub.</long>
+					<long xml:lang="el">Σχεδιασμός εδάφους μέσα στον κύβο.</long>
+					<long xml:lang="en_GB">Render ground inside the cube.</long>
+					<long xml:lang="fi">Piirrä maa kuution sisällä</long>
+					<long xml:lang="gl">Renderizar chan dentro do cubo.</long>
+					<long xml:lang="hu">Csoport leképzése a kockában.</long>
+					<long xml:lang="it">Visualizza il fondo all'interno del cubo</long>
+					<long xml:lang="ja">キューブ内に地面を描画</long>
+					<long xml:lang="ko">큐브 안에 지면을 그려넣습니다.</long>
+					<long xml:lang="pl">Wyświetla podłoże wewnątrz kostki.</long>
+					<long xml:lang="ru">Показывать дно внутри куба.</long>
+					<default>true</default>
+				</option>
+				<option type="color" name="ground_color">
+					<short>Ground color</short>
+					<short xml:lang="ca">Color del terra</short>
+					<short xml:lang="cs">Barva země</short>
+					<short xml:lang="el">Χρώμα εδάφους</short>
+					<short xml:lang="en_GB">Ground colour</short>
+					<short xml:lang="es">Color del suelo (lejos).</short>
+					<short xml:lang="fi">Maan väri</short>
+					<short xml:lang="fr">Couleur du sol</short>
+					<short xml:lang="gl">Cor do chan</short>
+					<short xml:lang="hu">Talaj színe</short>
+					<short xml:lang="it">Colore della base</short>
+					<short xml:lang="ja">海底面の色</short>
+					<short xml:lang="ko">지면의 색</short>
+					<short xml:lang="pl">Kolor podłoża</short>
+					<short xml:lang="ru">Цвет дна</short>
+					<long>Color of ground in the cube.</long>
+					<long xml:lang="ca">Color del terra al cub.</long>
+					<long xml:lang="cs">Barva země v kostce.</long>
+					<long xml:lang="el">Χρώμα εδάφους στον κύβο.</long>
+					<long xml:lang="en_GB">Colour of ground in the cube.</long>
+					<long xml:lang="es">Color del suelo en el cubo (cerca).</long>
+					<long xml:lang="fi">Maan väri kuutiossa.</long>
+					<long xml:lang="fr">Couleur du sol dans le cube.</long>
+					<long xml:lang="gl">Cor do chan dentro do cubo.</long>
+					<long xml:lang="hu">Kocka talaj színe</long>
+					<long xml:lang="it">Colore della base del cubo</long>
+					<long xml:lang="ja">キューブ内の海底面の色</long>
+					<long xml:lang="ko">큐브 안쪽 땅의 색깔</long>
+					<long xml:lang="pl">Kolor podłoża wewnątrz kostki.</long>
+					<long xml:lang="ru">Цвет основания в кубе.</long>
+					<long xml:lang="zh_CN">立方体内底面的颜色。</long>
+					<default>
+						<red>0x8500</red>
+						<green>0x5E00</green>
+						<blue>0x0000</blue>
+						<alpha>0xFFFF</alpha>
+					</default>
+				</option>
+				<option type="float" name="water_height">
+					<short>Water surface height</short>
+					<short xml:lang="ca">Altura de la superfície de l'aigua</short>
+					<short xml:lang="cs">Výška vodní hladiny</short>
+					<short xml:lang="el">Ύψος επιφάνειας νερού</short>
+					<short xml:lang="en_GB">Water surface height</short>
+					<short xml:lang="es">Superficie de la altura del agua</short>
+					<short xml:lang="fi">Veden pinnan korkeus</short>
+					<short xml:lang="gl">Altura da superficie de auga</short>
+					<short xml:lang="he">גובה פני המים</short>
+					<short xml:lang="hu">Vízoszlop magassága</short>
+					<short xml:lang="it">Altezza superfice dell'acqua</short>
+					<short xml:lang="ja">水面の高さ</short>
+					<short xml:lang="ko">수면의 높이</short>
+					<short xml:lang="pl">Wysokość powierzchni wody</short>
+					<short xml:lang="ru">Высота уровня воды</short>
+					<long>Height of water surface in the cube.</long>
+					<long xml:lang="ca">L'altura de la superfície de l'aigua al cub.</long>
+					<long xml:lang="el">Ύψος επιφάνειας νερού μεσα στον κύβο.</long>
+					<long xml:lang="en_GB">Height of water surface in the cube.</long>
+					<long xml:lang="es">Altura de la superficie del agua en el cubo.</long>
+					<long xml:lang="gl">Altura da superficie de auga no cubo.</long>
+					<long xml:lang="hu">Vízoszlop magassága a kockában.</long>
+					<long xml:lang="it">Altezza della superfice dell'acqua nel cubo</long>
+					<long xml:lang="ja">キューブ内の水面の高さ</long>
+					<long xml:lang="ko">큐브 안쪽 수면의 높이</long>
+					<long xml:lang="pl">Wysokość powierzchni wody wewnątrz kostki</long>
+					<long xml:lang="ru">Высота уровня воды в кубе.</long>
+					<default>0.85</default>
+					<min>0.2</min>
+					<max>1</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="color" name="water_color">
+					<short>Water color</short>
+					<short xml:lang="ca">Color de l'aigua</short>
+					<short xml:lang="cs">Barva vody</short>
+					<short xml:lang="el">Χρώμα νερού</short>
+					<short xml:lang="en_GB">Water colour</short>
+					<short xml:lang="es">Color del agua</short>
+					<short xml:lang="fi">Veden väri</short>
+					<short xml:lang="gl">Cor da auga</short>
+					<short xml:lang="hu">Víz színe</short>
+					<short xml:lang="it">Colore acqua</short>
+					<short xml:lang="ja">海水の色</short>
+					<short xml:lang="ko">물 색</short>
+					<short xml:lang="pl">Kolor wody</short>
+					<short xml:lang="ru">Цвет воды</short>
+					<long>Color of water in the cube.</long>
+					<long xml:lang="ca">El color del terra al cub.</long>
+					<long xml:lang="cs">Barva vody v kostce.</long>
+					<long xml:lang="el">Χρώμα νερού στον κύβο.</long>
+					<long xml:lang="en_GB">Colour of water in the cube.</long>
+					<long xml:lang="es">Color del agua en el cubo (lejos).</long>
+					<long xml:lang="fi">Veden väri kuutiossa.</long>
+					<long xml:lang="fr">Couleur de l'eau dans le cube.</long>
+					<long xml:lang="gl">Cora da auga dentro cubo.</long>
+					<long xml:lang="hu">Kocka víz színe</long>
+					<long xml:lang="it">Colore dell'acqua nel cubo</long>
+					<long xml:lang="ja">キューブ内の海水の色</long>
+					<long xml:lang="ko">큐브 안쪽 물의 색깔</long>
+					<long xml:lang="pl">Kolor wody wewnątrz kostki.</long>
+					<long xml:lang="ru">Цвет воды в кубе.</long>
+					<long xml:lang="zh_CN">立方体内水的颜色。</long>
+					<default>
+						<red>0x0800</red>
+						<green>0x0900</green>
+						<blue>0x3000</blue>
+						<alpha>0x0800</alpha>
+					</default>
+				</option>
+				<option type="int" name="grid_quality">
+					<short>Water/Ground grid smoothness</short>
+					<short xml:lang="ca">Suavitat de la malla aigua/terra</short>
+					<short xml:lang="el">Λείανση πλέγματος Νερού/Εδάφους</short>
+					<short xml:lang="en_GB">Water/Ground grid smoothness</short>
+					<short xml:lang="es">Suavidad de la red del Agua/Suelo</short>
+					<short xml:lang="gl">Suavidade da grella de Auga/Chan</short>
+					<short xml:lang="he">רשת להחלקת מים\קרקע</short>
+					<short xml:lang="hu">Víz- és talajrács részletessége</short>
+					<short xml:lang="it">Precisione griglia acqua/fondo</short>
+					<short xml:lang="ja">海水/海底のグリッドの滑らかさ</short>
+					<short xml:lang="ko">물/지면의 격자 부드러움 정도</short>
+					<short xml:lang="pl">Gładkość powierzchni wody i podłoża</short>
+					<long>Number of subdivisions that create a finer grid.</long>
+					<long xml:lang="ca">El nombre de divisions que crea una malla més fina.</long>
+					<long xml:lang="el">Αριθμός των υποδιαιρέσεων που δημιουργούν ένα λεπτότερο πλέγμα.</long>
+					<long xml:lang="en_GB">Number of subdivisions that create a finer grid.</long>
+					<long xml:lang="es">Número de subdivisiones que crean una red más fina</long>
+					<long xml:lang="fr">Nombres de sous-divisions qui créent une grille plus fine</long>
+					<long xml:lang="gl">Número de subdivisións a crear pola grella fina.</long>
+					<long xml:lang="he">מספר תת החלוקות היוצרות רשת מפורטת יותר.</long>
+					<long xml:lang="hu">Alrégiók száma, amely finomabb felbontású rácsot eredményez.</long>
+					<long xml:lang="it">Nunero di suddivisione per creare una grigla più fine</long>
+					<long xml:lang="ja">よりきめ細かなグリッドを作成する細分区画の数</long>
+					<long xml:lang="ko">미세한 격자를 만들 구분의 갯수</long>
+					<long xml:lang="pl">Liczba fragmentów tworzących siatkę powierzchni (im więcej, tym gładsza).</long>
+					<default>3</default>
+					<min>1</min>
+					<max>7</max>
+				</option>
+				<subgroup>
+					<short>Waves</short>
+					<short xml:lang="ca">Ones</short>
+					<short xml:lang="cs">Vlny</short>
+					<short xml:lang="el">Κύματα</short>
+					<short xml:lang="en_GB">Waves</short>
+					<short xml:lang="es">Olas</short>
+					<short xml:lang="fi">Aallot</short>
+					<short xml:lang="fr">Vague</short>
+					<short xml:lang="gl">Ondas</short>
+					<short xml:lang="hu">Hullámok</short>
+					<short xml:lang="it">Onde</short>
+					<short xml:lang="ja">波</short>
+					<short xml:lang="ko">물결</short>
+					<short xml:lang="pl">Fale</short>
+					<short xml:lang="ru">Волны</short>
+					<option type="bool" name="render_waves">
+						<short>Render waves</short>
+						<short xml:lang="ca">Renderitza les ones</short>
+						<short xml:lang="cs">Vykreslovat vlny</short>
+						<short xml:lang="el">Σχεδιασμός κυμμάτων</short>
+						<short xml:lang="en_GB">Render waves</short>
+						<short xml:lang="fr">Afficher des vagues</short>
+						<short xml:lang="gl">Renderizar ondas</short>
+						<short xml:lang="he">צייר גלים</short>
+						<short xml:lang="hu">Hullámok leképzése</short>
+						<short xml:lang="it">Visualizzare le onde</short>
+						<short xml:lang="ja">波を描画</short>
+						<short xml:lang="ko">물결 렌더링</short>
+						<short xml:lang="pl">Wyświetlaj fale</short>
+						<short xml:lang="ru">Показывать волны</short>
+						<long>Render water waves inside the cube.</long>
+						<long xml:lang="ca">Renderitza les ones d'aigua dins del cub.</long>
+						<long xml:lang="el">Σχεδιασμός κυμμάτων νερού μέσα στον κύβο.</long>
+						<long xml:lang="en_GB">Render water waves inside the cube.</long>
+						<long xml:lang="gl">Renderizar ondas de auga dentro do cubo.</long>
+						<long xml:lang="hu">Víz hullámok leképzése a kockában.</long>
+						<long xml:lang="it">Visualizza le onde dell'acqua all'interno del cubo</long>
+						<long xml:lang="ja">キューブ内に波を描画</long>
+						<long xml:lang="ko">큐브 안에 물결을 그려넣습니다.</long>
+						<long xml:lang="pl">Wyświetlaj fale wodne wewnątrz kostki.</long>
+						<long xml:lang="ru">Показывать водные волны внутри куба.</long>
+						<default>true</default>
+					</option>
+					<option type="bool" name="wave_ripple">
+						<short>Ripple effect</short>
+						<short xml:lang="ca">Efecte de ris</short>
+						<short xml:lang="cs">Efekt čeření</short>
+						<short xml:lang="el">Εφέ Κυμματισμού</short>
+						<short xml:lang="en_GB">Ripple effect</short>
+						<short xml:lang="gl">Efecto de rizo</short>
+						<short xml:lang="hu">Fodrozódás effektus</short>
+						<short xml:lang="it">Effetto increspatura</short>
+						<short xml:lang="ja">波紋効果</short>
+						<short xml:lang="ko">잔물결 효과</short>
+						<short xml:lang="pl">Efekt falowania</short>
+						<long>Semi-randomize light scattering off water waves.</long>
+						<long xml:lang="el">Ημι-τυχαιοποίηση διασποράςφωτός απ' τα κύματα του νερού.</long>
+						<long xml:lang="en_GB">Semi-randomise light scattering off water waves.</long>
+						<long xml:lang="gl">Dispersión semi-aleatoria da luz  das ondas de auga.</long>
+						<long xml:lang="he">פזר את האורעל פני הגלים באופן אקראי למחצה.</long>
+						<long xml:lang="hu">Vízhullámok véletlenszerű fényszórása.</long>
+						<long xml:lang="it">Semi-casualità della luce che si dirama dalle onde.</long>
+						<long xml:lang="ja">セミ・ランダムに光を波に拡散させて当てる</long>
+						<long xml:lang="ko">물결이 흩어지는 정도에 따라 조명을 적당히 무작위하게 움직입니다.</long>
+						<long xml:lang="pl">Połowicznie losowe obliczanie rozproszenia światła na falach wodnych.</long>
+						<default>false</default>
+					</option>
+					<option type="float" name="wave_amplitude">
+						<short>Wave amplitude</short>
+						<short xml:lang="ca">Amplitud de les ones</short>
+						<short xml:lang="el">Εύρος κύματος</short>
+						<short xml:lang="en_GB">Wave amplitude</short>
+						<short xml:lang="es">Amplitud de onda</short>
+						<short xml:lang="fi">Aallonkorkeus</short>
+						<short xml:lang="gl">Amplitude da onda</short>
+						<short xml:lang="hu">Hullám magassága</short>
+						<short xml:lang="it">Ampiezza onde</short>
+						<short xml:lang="ja">波の高さ</short>
+						<short xml:lang="ko">물결의 진폭</short>
+						<short xml:lang="pl">Amplituda fali</short>
+						<short xml:lang="ru">Амплитуда волн</short>
+						<long>Amplitude of water waves.</long>
+						<long xml:lang="ca">Amplitud de les ones de l'aigua.</long>
+						<long xml:lang="cs">Velikost vodních vln.</long>
+						<long xml:lang="el">Εύρος των κυμμάτων νερού.</long>
+						<long xml:lang="en_GB">Amplitude of water waves.</long>
+						<long xml:lang="es">Amplitud de la olas</long>
+						<long xml:lang="fr">Amplitudes des vagues d'eau.</long>
+						<long xml:lang="gl">Amplitude das ondas de auga.</long>
+						<long xml:lang="he">משרעת הגלים.</long>
+						<long xml:lang="hu">Vízhullámok amplitúdója.</long>
+						<long xml:lang="it">Ampizza onde</long>
+						<long xml:lang="ja">波の高さ</long>
+						<long xml:lang="ko">물결의 넓이.</long>
+						<long xml:lang="pl">Amplituda fal wodnych.</long>
+						<default>0.02</default>
+						<min>0</min>
+						<max>0.5</max>
+						<precision>0.01</precision>
+					</option>
+					<option type="float" name="wave_frequency">
+						<short>Wave frequency</short>
+						<short xml:lang="ca">Freqüència de les ones</short>
+						<short xml:lang="el">Συχνότητα Κύματος</short>
+						<short xml:lang="en_GB">Wave frequency</short>
+						<short xml:lang="es">Frecuencia de onda</short>
+						<short xml:lang="fi">Aaltojen taajuus</short>
+						<short xml:lang="fr">Fréquence des vagues</short>
+						<short xml:lang="gl">Frecuencia da onda</short>
+						<short xml:lang="he">תדירות גלים</short>
+						<short xml:lang="hu">Hullám frekvencia</short>
+						<short xml:lang="it">Frequenza onde</short>
+						<short xml:lang="ja">波の数</short>
+						<short xml:lang="ko">물결의 진동수</short>
+						<short xml:lang="pl">Częstotliwość fali</short>
+						<short xml:lang="ru">Частота волн</short>
+						<long>Frequency of water waves.</long>
+						<long xml:lang="ca">Freqüència de les ones de l'aigua.</long>
+						<long xml:lang="cs">Četnost vodních vln.</long>
+						<long xml:lang="el">Συχνότητα των κυμμάτων νερού.</long>
+						<long xml:lang="en_GB">Frequency of water waves.</long>
+						<long xml:lang="es">Frecuencia de las olas.</long>
+						<long xml:lang="fr">Fréquence des vagues.</long>
+						<long xml:lang="gl">Frecuencia das ondas de auga.</long>
+						<long xml:lang="he">תדירות הגלים.</long>
+						<long xml:lang="hu">Vízhullámok frekvenciája.</long>
+						<long xml:lang="it">Frequenza delle onde</long>
+						<long xml:lang="ja">波の数</long>
+						<long xml:lang="ko">물결의 진동수</long>
+						<long xml:lang="pl">Częstotliwość fal wodnych</long>
+						<long xml:lang="ru">Частота водных волн.</long>
+						<default>20</default>
+						<min>0</min>
+						<max>100</max>
+						<precision>0.1</precision>
+					</option>
+					<option type="float" name="small_wave_amplitude">
+						<short>Small wave amplitude</short>
+						<short xml:lang="ca">Amplitud de les ones petites</short>
+						<short xml:lang="cs">Rozsah vlnek</short>
+						<short xml:lang="el">Έυρος μικρού κύματος</short>
+						<short xml:lang="en_GB">Small wave amplitude</short>
+						<short xml:lang="es">Amplitud de la onda pequeña</short>
+						<short xml:lang="gl">Amplitude da onda pequena</short>
+						<short xml:lang="hu">Kis hullámok nagysága</short>
+						<short xml:lang="it">Ampiezza onde piccole</short>
+						<short xml:lang="ja">さざ波の高さ</short>
+						<short xml:lang="ko">작은 물결의 진폭</short>
+						<short xml:lang="pl">Amplituda małych fal</short>
+						<short xml:lang="ru">Амплитуда маленьких волн</short>
+						<long>Amplitude of small water waves on the bigger ones.</long>
+						<long xml:lang="ca">Amplitud de les ones d'aigua petites en les grans.</long>
+						<long xml:lang="el">Εύρος των μικρών κυμμάτων νερού επάνω στα μεγαλύτερα.</long>
+						<long xml:lang="en_GB">Amplitude of small water waves on the bigger ones.</long>
+						<long xml:lang="es">Amplitud de las olas pequeñas por sobre las grandes.</long>
+						<long xml:lang="fr">Amplitude des petites vagues sur les plus grandes</long>
+						<long xml:lang="gl">Amplitude das ondas de auga pequenas dentro das máis grandes.</long>
+						<long xml:lang="he">משרעת הגלים הקטנים מעל לגלים הגדולים.</long>
+						<long xml:lang="hu">Kis vízhullámok amplitúdója a nagyobb hullámokon.</long>
+						<long xml:lang="it">Ampiezza delle onde d'acqua piccole in quelle grandi.</long>
+						<long xml:lang="ja">より大きな波の上に描画される小さな波の高さ</long>
+						<long xml:lang="ko">큰 물결 위 작은 물결의 넓이.</long>
+						<long xml:lang="pl">Amplituda małych fal wodnych na większych.</long>
+						<default>0.01</default>
+						<min>0</min>
+						<max>0.5</max>
+						<precision>0.01</precision>
+					</option>
+					<option type="float" name="small_wave_frequency">
+						<short>Small wave frequency</short>
+						<short xml:lang="ca">Freqüència de les ones petites</short>
+						<short xml:lang="cs">Četnost vlnek</short>
+						<short xml:lang="el">Συχνότητα μικρού κύματος</short>
+						<short xml:lang="en_GB">Small wave frequency</short>
+						<short xml:lang="es">Frecuencia de la ola pequeña</short>
+						<short xml:lang="gl">Frecuencia de onda pequena</short>
+						<short xml:lang="he">תדירות גלים קטנים.</short>
+						<short xml:lang="hu">Kis vízhullámok frekvenciája</short>
+						<short xml:lang="it">Frequeza onde piccole</short>
+						<short xml:lang="ja">さざ波の数</short>
+						<short xml:lang="ko">작은 물결의 진동수</short>
+						<short xml:lang="pl">Częstotliwość małych fal</short>
+						<short xml:lang="ru">Частота маленьких волн</short>
+						<long>Frequency of small water waves on the bigger ones.</long>
+						<long xml:lang="ca">Freqüència de les ones d'aigua petites en les grans.</long>
+						<long xml:lang="el">Συχνότητα των μικρών κυμμάτων νερού πάνω στα μεγαλύτερα.</long>
+						<long xml:lang="en_GB">Frequency of small water waves on the bigger ones.</long>
+						<long xml:lang="es">Frecuencia de las olas pequeñas por sobre las grandes.</long>
+						<long xml:lang="fr">Fréquence des petites vagues par rapport aux plus grandes.</long>
+						<long xml:lang="gl">Frecuencia das ondas de auga pequenas dentro das máis grandes.</long>
+						<long xml:lang="he">תדירות הגלים הקטנים מעל לגלים הגדולים.</long>
+						<long xml:lang="hu">Kis vízhullámok frekvenciája a nagyobb hullámokon.</long>
+						<long xml:lang="it">Frequenza delle onde piccole in quelle grandi</long>
+						<long xml:lang="ja">より大きな波の上に描画される小さな波の数</long>
+						<long xml:lang="ko">큰 물결 위 작은 물결의 진동 수</long>
+						<long xml:lang="pl">Częstotliwość mniejszych fal wodnych pomiędzy większymi</long>
+						<long xml:lang="ru">Частота маленьких водных волн на больших.</long>
+						<default>40</default>
+						<min>0</min>
+						<max>100</max>
+						<precision>0.1</precision>
+					</option>
+				</subgroup>
+			</group>
+			<group>
+				<short>Display</short>
+				<short xml:lang="ca">Visualització</short>
+				<short xml:lang="cs">Zobrazení</short>
+				<short xml:lang="el">Οθόνη</short>
+				<short xml:lang="en_GB">Display</short>
+				<short xml:lang="fi">Näyttö</short>
+				<short xml:lang="gl">Pantalla</short>
+				<short xml:lang="hu">Megjelenítés</short>
+				<short xml:lang="it">Visualizzazione</short>
+				<short xml:lang="ja">表示</short>
+				<short xml:lang="ko">표시</short>
+				<short xml:lang="pl">Wyświetlanie</short>
+				<option type="bool" name="rescale_width">
+					<short>Rescale for screen ratio</short>
+					<short xml:lang="ca">Reescala per a la relació de pantalla</short>
+					<short xml:lang="cs">Zvětšit na poměr obrazovky</short>
+					<short xml:lang="el">Επανακλιμάκωση για αναλογία οθόνης</short>
+					<short xml:lang="en_GB">Rescale for screen ratio</short>
+					<short xml:lang="gl">Reescalar cara o ratio de pantalla</short>
+					<short xml:lang="hu">Átméretezés a képernyő arányaihoz</short>
+					<short xml:lang="it">Ridimensionare per proporzioni video</short>
+					<short xml:lang="ja">画面の縦横比に合わせたサイズ変更</short>
+					<short xml:lang="ko">화면 비율에 따라 재조정</short>
+					<short xml:lang="pl">Skaluj do formatu ekranu</short>
+					<long>Rescale along the sides of the cube by the ratio of screen width to height.</long>
+					<long xml:lang="ca">Reescala al llarg dels costats del cub amb la relació d'ample de la pantalla a l'alçada.</long>
+					<long xml:lang="el">Επανακλιμάκωση κατα μήκος των πλευρών του κύβου με την αναλογία της οθόνης πλάτος προς ύψος.</long>
+					<long xml:lang="en_GB">Rescale along the sides of the cube by the ratio of screen width to height.</long>
+					<long xml:lang="gl">Reescala ao longo das caras do cubo polo ratio de alto ao ancho da pantalla.</long>
+					<long xml:lang="he">התאם את הגודל לצידי הקוביה על פי יחס רוחב המסך לאורכו.</long>
+					<long xml:lang="hu">A kocka oldalainak átméretezése a képernyő méretarányának megfelelően.</long>
+					<long xml:lang="it">Ridimensiona lungo i lati del cubo in base al rapporto larghezza/altezza.</long>
+					<long xml:lang="ja">画面の高さに対する幅の割合に合わせキューブの側面に沿ったサイズ変更</long>
+					<long xml:lang="ko">화면의 너비와 높이 비율에 따라서 큐브를 재조정합니다.</long>
+					<long xml:lang="pl">Skaluje obraz wzdłuż ścian kostki by uzyskać proporcje ekranu zgodne z formatem komputerowego wyświetlacza.</long>
+					<default>true</default>
+				</option>
+				<subgroup>
+					<short>Lighting</short>
+					<short xml:lang="ca">Il·luminació</short>
+					<short xml:lang="cs">Osvětlení</short>
+					<short xml:lang="el">Φωτισμός</short>
+					<short xml:lang="en_GB">Lighting</short>
+					<short xml:lang="es">Iluminación</short>
+					<short xml:lang="fi">Valaistus</short>
+					<short xml:lang="gl">Iluminación</short>
+					<short xml:lang="hu">Világosítás</short>
+					<short xml:lang="it">Illuminazione</short>
+					<short xml:lang="ja">照明</short>
+					<short xml:lang="ko">조명</short>
+					<short xml:lang="pl">Oświetlenie</short>
+					<short xml:lang="ru">Освещение</short>
+					<option type="bool" name="rotate_lighting">
+						<short>Rotate lighting</short>
+						<short xml:lang="ca">Gir de la il·luminació</short>
+						<short xml:lang="el">Περιστροφή φωτισμού</short>
+						<short xml:lang="en_GB">Rotate lighting</short>
+						<short xml:lang="es">Rotar iluminación</short>
+						<short xml:lang="fi">Käännä valaistusta</short>
+						<short xml:lang="gl">Rotación de iluminación</short>
+						<short xml:lang="he">סובב אור</short>
+						<short xml:lang="hu">Fények forgatása</short>
+						<short xml:lang="it">Ruotare la luce</short>
+						<short xml:lang="ja">照明を回転</short>
+						<short xml:lang="ko">조명 회전</short>
+						<short xml:lang="pl">Obracaj oświetlenie</short>
+						<short xml:lang="ru">Вращать освещение</short>
+						<long>Preserve light direction when rotating the cube.</long>
+						<long xml:lang="ca">Mantén la direcció de la llum en girar el cub.</long>
+						<long xml:lang="el">Διατήρηση κατεύθυνσης του φωτός όταν περιστρέφεται ο κύβος.</long>
+						<long xml:lang="en_GB">Preserve light direction when rotating the cube.</long>
+						<long xml:lang="fi">Säilytä valon suunta kuutiota käännettäessä</long>
+						<long xml:lang="fr">Conserver la direction de la lumière pendant la rotation du cube.</long>
+						<long xml:lang="gl">Preservar a dirección da luz cando se rota o cubo.</long>
+						<long xml:lang="hu">Fényirányok megtartása a kocka forgatása közben</long>
+						<long xml:lang="it">Preserva la direzione della luce alla rotazione del cubo</long>
+						<long xml:lang="ja">キューブ回転時に照明方向を保持</long>
+						<long xml:lang="ko">큐브를 회전시킬 때 조명의 위치를 보존합니다.</long>
+						<long xml:lang="pl">Zachowaj kierunek światła podczas obracania kostki</long>
+						<long xml:lang="ru">Сохранять направление света при вращении куба.</long>
+						<default>false</default>
+					</option>
+					<option type="float" name="light_inclination">
+						<short>Light inclination</short>
+						<short xml:lang="ca">Inclinació de la llum</short>
+						<short xml:lang="el">Γέρσιμο φωτός</short>
+						<short xml:lang="en_GB">Light inclination</short>
+						<short xml:lang="es">Inclinación de la luz</short>
+						<short xml:lang="fr">Inclinaison de la lumière</short>
+						<short xml:lang="gl">Inclinación da Luz</short>
+						<short xml:lang="he">הטייתהאור</short>
+						<short xml:lang="hu">Megvilágítás beesési szöge</short>
+						<short xml:lang="it">Inclinazione luce</short>
+						<short xml:lang="ja">光の傾斜角度</short>
+						<short xml:lang="ko">조명의 기울어진 정도</short>
+						<short xml:lang="pl">Nachylenie światła</short>
+						<short xml:lang="ru">Отклонение света</short>
+						<long>The angle of light rays from the horizon in degrees (0 is from the viewer's perspective, 90 is from on top). Only has effect when Rotate Lighting is false.</long>
+						<long xml:lang="ca">L'angle dels raigs de llum des de l'horitzó en graus (0 és des de la perspectiva de l'espectador, 90 és de dalt). Només té efecte quan el Gir de la il·luminació és fals.</long>
+						<long xml:lang="el">Η γωνία των ακτίνων φωτός απ' τον ορίζοντα σε μοίρες (0 είναι παράλληλα στην δική μας οπτική γωνία, 90 είναι απο πάνω). Έχει εφαρμογή μόνο όταν ο Περιστροφή Φωτισμού είναι απενεργοποιημένη. </long>
+						<long xml:lang="en_GB">The angle of light rays from the horizon in degrees (0 is from the viewer's perspective, 90 is from on top). Only has effect when Rotate Lighting is false.</long>
+						<long xml:lang="es">El ángulo de los rayos de luz desde el horizonte en grados (0 corresponde a la perspectiva del espectador, 90 corresponde a la cima). Sólo produce efectos cuando Rotar Iluminación está desactivado.</long>
+						<long xml:lang="gl">O ángulo dos raios de luz dende o horizonte en graos (0 se dende a perspectiva do viso, 90 dende arriba). So ten efecto cando Iluminación Rotativa é falso.</long>
+						<long xml:lang="he">זווית קרני האור מעל האופק במעלות (0 פירושו מנקודת מבטו של הצופה, 90 פירושו היישר מלמעלה). רלוונטית רק כאשר "סיבוב אור" מוגדר כ-"לא".</long>
+						<long xml:lang="hu">A fénysugarak beesési szöge a vízszinteshez képest fokban megadva. (A 0 megegyezik a néző perspektívájával, a 90 megegyezik a függőlegessel.) Csak akkor van hatása, ha a „Fények forgatása” beállítás ki van kapcsolva.</long>
+						<long xml:lang="it">L'angolo dei raggi di luce (in gradi) dall'orizzonte (0 per la prospettiva dell'utente, 90 dall'alto). Ha effetto solamente se «Ruotare la luce» è impostata a FALSO.</long>
+						<long xml:lang="ja">光線の水平からの傾斜角度（0 を指定するとちょうど観覧側の視点から、90 では真上から）。照明の回転が無効のときにのみ働きます。</long>
+						<long xml:lang="ko">수평으로부터 광선의 각도입니다.(0은 보는 사람의 관점에서부터이고, 90은 꼭대기부터입니다.) 이것은 조명 회전이 꺼져있을때만 적용됩니다.</long>
+						<long xml:lang="pl">Nachylenie promieni świetlnych w stopniach (0° - z perspektywy oglądającego, 90° - z góry). Jest stosowane wyłącznie, gdy opcja "Obracaj oświetlenie" jest wyłączona.</long>
+						<default>90</default>
+						<min>0</min>
+						<max>180</max>
+						<precision>0.1</precision>
+					</option>
+					<option type="float" name="light_ambient">
+						<short>Ambient light</short>
+						<short xml:lang="ca">Llum ambiental</short>
+						<short xml:lang="el">Περιβάλλον φως</short>
+						<short xml:lang="en_GB">Ambient light</short>
+						<short xml:lang="es">Luz de ambiente</short>
+						<short xml:lang="fi">Ympäröivä valo</short>
+						<short xml:lang="fr">Lumière ambiante</short>
+						<short xml:lang="gl">Luz Ambiente</short>
+						<short xml:lang="he">אור אופף</short>
+						<short xml:lang="hu">Háttérfény</short>
+						<short xml:lang="it">Luce ambientale</short>
+						<short xml:lang="ja">環境光</short>
+						<short xml:lang="ko">주위 밝기</short>
+						<short xml:lang="pl">Otaczające oświetlenie</short>
+						<short xml:lang="ru">Рассеянный свет</short>
+						<long>Component of light coming from all directions equally.</long>
+						<long xml:lang="el">Συνιστώσα φωτός ερχόμενη απο όλες τις κατευθύνσεις εξίσου.</long>
+						<long xml:lang="en_GB">Component of light coming from all directions equally.</long>
+						<long xml:lang="fi">Kaikista suunnista yhtä suuresti tulevan valon määrä.</long>
+						<long xml:lang="gl">A compoñente de luz proven de tódalas direccións equitativamente.</long>
+						<long xml:lang="he">מרכיב האור מגיע מכל העברים במידה שווה.</long>
+						<long xml:lang="hu">A fénysugarak minden irányból azonos erősségűek.</long>
+						<long xml:lang="it">Componente della luce in arrivo da tutte le direzioni allo stesso modo</long>
+						<long xml:lang="ja">あらゆる方向から均等に来る光</long>
+						<long xml:lang="ko">모든 방향에서 동등하게 오는 빛의 요소</long>
+						<long xml:lang="pl">Część światła dochodzącego jednakowo ze wszystkich stron.</long>
+						<default>0.3</default>
+						<min>0.0</min>
+						<max>0.6</max>
+						<precision>0.01</precision>
+					</option>
+				</subgroup>
+			</group>
+		</options>
+	</plugin>
+</compiz>

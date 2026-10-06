@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<compiz>
+    <plugin name="stars" useBcop="true">
+    <short>Stars</short>
+    <long>Stars elements plugin</long>
+    <category>Extras</category>
+	<deps>
+	    <requirement>
+		<plugin>elements</plugin>
+	    </requirement>
+	    <relation type="after">
+		<plugin>elements</plugin>
+	    </relation>
+	</deps>
+	<options>
+	<group>
+	    <short>Stars</short>
+	    <option name="autostart" type="bool">
+		    <short>Autostart</short>
+		    <long>Automatically start this element when the plugin is loaded</long>
+		    <default>false</default>
+	    </option>
+	    <option name="toggle_star" type="key">
+		    <short>Toggle all stars elements</short>
+		    <long>Toggle all stars elements defined in the elements
+			   list</long>
+		    <default>&lt;Super&gt;&lt;Alt&gt;t</default>
+	    </option>
+	    <option name="star_offset_x" type="int">
+		    <short>Star X Offset</short>
+		    <long>The X point on the screen where stars should start</long>
+		    <default>0</default>
+		    <min>-1000</min>
+		    <max>1000</max>
+	    </option>
+	    <option name="star_offset_y" type="int">
+		    <short>Star Y Offset</short>
+		    <long>The Y point on the screen where stars should start</long>
+		    <default>0</default>
+		    <min>-1000</min>
+		    <max>1000</max>
+	    </option>
+	</group>
+	</options>
+
+      <extension base_plugin="elements" screen="true">
+	<base_option>element_type</base_option>
+	<restriction>
+	  <value>stars</value>
+	  <name>Stars</name>
+	</restriction>
+      </extension>
+
+    </plugin>
+</compiz>

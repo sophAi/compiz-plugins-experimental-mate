@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.autumn" gettext-domain="compiz">
+    <key type="b" name="autostart">
+      <default>false</default>
+      <summary>Autostart</summary>
+      <description>Automatically start this element when the plugin is loaded</description>
+    </key>
+    <key type="s" name="toggle-autumn">
+      <default>'&lt;Super&gt;&lt;Alt&gt;a'</default>
+      <summary>Toggle all autumn elements</summary>
+      <description>Toggle all autumn elements defined in the elements
+			   list</description>
+    </key>
+    <key type="d" name="x-sway">
+      <default>35.0</default>
+      <summary>Sway Of leaves</summary>
+      <description>sway of leaves (0.0 - 100.0)</description>
+    </key>
+    <key type="d" name="y-sway">
+      <default>60.0</default>
+      <summary>Y Sway Gravity</summary>
+      <description>Speed of falling leaves (0.0 - 100.0)</description>
+    </key>
+  </schema>
+</schemalist>

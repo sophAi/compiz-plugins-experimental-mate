@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.throw" gettext-domain="compiz">
+    <key type="d" name="velocity-x">
+      <default>10.0</default>
+      <summary>X Velocity Multiplier</summary>
+      <description>X Velocity Multipler (1.0 - 100.0)</description>
+    </key>
+    <key type="d" name="velocity-y">
+      <default>10.0</default>
+      <summary>Y Velocity Multiplier</summary>
+      <description>Y Velocity Multipler (1.0 - 100.0)</description>
+    </key>
+    <key type="d" name="friction-constant">
+      <default>10.0</default>
+      <summary>Friction constant</summary>
+      <description>How much friction the screen provides (1.0 - 100.0)</description>
+    </key>
+    <key type="b" name="constrain-x">
+      <default>false</default>
+      <summary>Constrain X</summary>
+      <description>Constrain window in display width</description>
+    </key>
+    <key type="b" name="constrain-y">
+      <default>true</default>
+      <summary>Constrain Y</summary>
+      <description>Constrain window in display height</description>
+    </key>
+  </schema>
+</schemalist>

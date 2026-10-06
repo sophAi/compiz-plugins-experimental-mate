@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="static">
+		<short>Static Windows</short>
+		<short xml:lang="ca">Finestres estàtiques</short>
+		<short xml:lang="en_GB">Static Windows</short>
+		<long>Keep windows such as dock or panels static</long>
+		<long xml:lang="ca">Mantén estàtiques les finestres com ara els acobladors i els plafons</long>
+		<long xml:lang="en_GB">Keep windows such as dock or panels static</long>
+		<category>Desktop</category>
+		<deps>
+			<relation type="after">
+				<plugin>3d</plugin>
+				<plugin>expo</plugin>
+			</relation>
+			<relation type="before">
+				<plugin>zoom</plugin>
+				<plugin>ezoom</plugin>
+			</relation>
+		</deps>
+		<options>
+			<group>
+				<short>General</short>
+				<short xml:lang="ca">General</short>
+				<short xml:lang="cs">Obecné</short>
+				<short xml:lang="de">Allgemein</short>
+				<short xml:lang="el">Γενικά</short>
+				<short xml:lang="en_GB">General</short>
+				<short xml:lang="es">General</short>
+				<short xml:lang="eu">Orokorra</short>
+				<short xml:lang="fi">Yleiset</short>
+				<short xml:lang="fr">Général</short>
+				<short xml:lang="gl">Xeral</short>
+				<short xml:lang="gu">સામાન્ય</short>
+				<short xml:lang="he">כללי</short>
+				<short xml:lang="hi">सामान्य</short>
+				<short xml:lang="hu">Általános</short>
+				<short xml:lang="it">Generale</short>
+				<short xml:lang="ja">一般</short>
+				<short xml:lang="ko">일반</short>
+				<short xml:lang="nb">Generelt</short>
+				<short xml:lang="nl">Algemeen</short>
+				<short xml:lang="pl">Ogólne</short>
+				<short xml:lang="pt">Geral</short>
+				<short xml:lang="pt_BR">Geral</short>
+				<short xml:lang="ru">Общие</short>
+				<short xml:lang="sv">Allmänt</short>
+				<short xml:lang="tr">Genel</short>
+				<short xml:lang="zh_CN">常规</short>
+				<option type="match" name="window_match">
+					<short>Window Match</short>
+					<short xml:lang="ar">تطابق النافذة</short>
+					<short xml:lang="bn">উইন্ডো মেলানো</short>
+					<short xml:lang="ca">Concordances de les finestres</short>
+					<short xml:lang="cs">Typy oken</short>
+					<short xml:lang="de">Betroffene Fenster</short>
+					<short xml:lang="el">Ταίριασμα Παραθύρου</short>
+					<short xml:lang="en_GB">Window Match</short>
+					<short xml:lang="es">Coincidir ventanas</short>
+					<short xml:lang="eu">Leiho parekatzea</short>
+					<short xml:lang="fi">Ikkunan sovitus</short>
+					<short xml:lang="fr">Types de fenêtres</short>
+					<short xml:lang="gl">Coincidencia de Fiestra</short>
+					<short xml:lang="gu">વિન્ડો જોડણી</short>
+					<short xml:lang="he">חלונות תואמים</short>
+					<short xml:lang="hi">विंडो मिलान</short>
+					<short xml:lang="hu">Ablak összerendelés</short>
+					<short xml:lang="it">Finestre corrispondenti</short>
+					<short xml:lang="ja">対象ウィンドウ</short>
+					<short xml:lang="ko">일치하는 창</short>
+					<short xml:lang="nb">Samsvar mellom vinduer</short>
+					<short xml:lang="nl">Venster match</short>
+					<short xml:lang="pl">Układ okna</short>
+					<short xml:lang="pt">Tipos Janelas</short>
+					<short xml:lang="pt_BR">Tipos de janelas</short>
+					<short xml:lang="ru">Соответствие окна</short>
+					<short xml:lang="sv">Fönstermatchning</short>
+					<short xml:lang="tr">Pencere Eşlemesi</short>
+					<short xml:lang="zh_CN">窗口匹配</short>
+					<long>Windows that should be kept static during transformations.</long>
+					<long xml:lang="ca">Les finestres que haurien de mantenir-se estàtiques durant les transformacions.</long>
+					<long xml:lang="en_GB">Windows that should be kept static during transformations.</long>
+					<default>Dock</default>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

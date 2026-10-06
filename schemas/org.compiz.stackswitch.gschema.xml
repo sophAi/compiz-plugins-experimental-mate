@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.stackswitch" gettext-domain="compiz">
+    <key type="s" name="next-key">
+      <default>'&lt;Super&gt;Tab'</default>
+      <summary>Next Window</summary>
+      <description>Show switcher if not visible and select next window.</description>
+    </key>
+    <key type="s" name="next-button">
+      <default>'Disabled'</default>
+      <summary>Next Window</summary>
+      <description>Show switcher if not visible and select next window.</description>
+    </key>
+    <key type="s" name="prev-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;Tab'</default>
+      <summary>Previous Window</summary>
+      <description>Show switcher if not visible and select previous window.</description>
+    </key>
+    <key type="s" name="prev-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window</summary>
+      <description>Show switcher if not visible and select previous window.</description>
+    </key>
+    <key type="s" name="next-all-key">
+      <default>'&lt;Super&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Next Window (All Workspaces)</summary>
+      <description>Show switcher if not visible and select next window out of all windows.</description>
+    </key>
+    <key type="s" name="next-all-button">
+      <default>'Disabled'</default>
+      <summary>Next Window (All Workspaces)</summary>
+      <description>Show switcher if not visible and select next window out of all windows.</description>
+    </key>
+    <key type="s" name="prev-all-key">
+      <default>'&lt;Super&gt;&lt;Shift&gt;&lt;Alt&gt;Tab'</default>
+      <summary>Previous Window (All Workspaces)</summary>
+      <description>Show switcher if not visible and select previous window out of all windows.</description>
+    </key>
+    <key type="s" name="prev-all-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window (All Workspaces)</summary>
+      <description>Show switcher if not visible and select previous window out of all windows.</description>
+    </key>
+    <key type="s" name="next-group-key">
+      <default>'Disabled'</default>
+      <summary>Next Window (Group)</summary>
+      <description>Show switcher if not visible and select next window of the current application.</description>
+    </key>
+    <key type="s" name="next-group-button">
+      <default>'Disabled'</default>
+      <summary>Next Window (Group)</summary>
+      <description>Show switcher if not visible and select next window of the current application.</description>
+    </key>
+    <key type="s" name="prev-group-key">
+      <default>'Disabled'</default>
+      <summary>Previous Window (Group)</summary>
+      <description>Show switcher if not visible and select previous window of the current application.</description>
+    </key>
+    <key type="s" name="prev-group-button">
+      <default>'Disabled'</default>
+      <summary>Previous Window (Group)</summary>
+      <description>Show switcher if not visible and select previous window of the current application.</description>
+    </key>
+    <key type="d" name="speed">
+      <default>1.5</default>
+      <summary>Speed</summary>
+      <description>Animation speed (0.1 - 50.0)</description>
+    </key>
+    <key type="d" name="timestep">
+      <default>1.2</default>
+      <summary>Timestep</summary>
+      <description>Animation timestep (0.1 - 50.0)</description>
+    </key>
+    <key type="i" name="inactive-opacity">
+      <default>100</default>
+      <summary>Inactive Window Opacity</summary>
+      <description>Amount of opacity (in percent) for windows in the switcher which are not selected (1 - 100)</description>
+    </key>
+    <key type="b" name="inactive-rotate">
+      <default>true</default>
+      <summary>Rotate inactive windows</summary>
+      <description>Should not selected windows be rotated</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'Normal | Dialog | ModalDialog | Utility | Unknown'</default>
+      <summary>Windows</summary>
+      <description>Windows that should be shown in the switcher (match)</description>
+    </key>
+    <key type="b" name="darken-back">
+      <default>true</default>
+      <summary>Darken Background</summary>
+      <description>Darken background when showing the stack</description>
+    </key>
+    <key type="b" name="minimized">
+      <default>true</default>
+      <summary>Show Minimized</summary>
+      <description>Show windows that are minimized, shaded or in show desktop mode.</description>
+    </key>
+    <key type="i" name="tilt">
+      <default>30</default>
+      <summary>Tilt</summary>
+      <description>Tilt angle of the background. (0 - 90)</description>
+    </key>
+    <key type="b" name="window-title">
+      <default>true</default>
+      <summary>Show Window Title</summary>
+      <description>Show window title of currently selected window.</description>
+    </key>
+    <key type="b" name="title-font-bold">
+      <default>false</default>
+      <summary>Bold Font</summary>
+      <description>Selects if the window title should be displayed in bold font or not.</description>
+    </key>
+    <key type="s" name="title-font-family">
+      <default>'Sans'</default>
+      <summary>Font Family</summary>
+      <description>Font family for the window title</description>
+    </key>
+    <key type="i" name="title-font-size">
+      <default>16</default>
+      <summary>Font Size</summary>
+      <description>Font size for the window title (6 - 96)</description>
+    </key>
+    <key type="s" name="title-back-color">
+      <default>'#00000099'</default>
+      <summary>Background Color</summary>
+      <description>Background color for the window title</description>
+    </key>
+    <key type="s" name="title-font-color">
+      <default>'#ffffffff'</default>
+      <summary>Font Color</summary>
+      <description>Font color for the window title</description>
+    </key>
+    <key type="i" name="title-text-placement">
+      <default>0</default>
+      <summary>Text Placement</summary>
+      <description>Selects where to place the window title. (0 = On Thumbnail, 1 = Centered on screen, 2 = Above, 3 = Below)</description>
+    </key>
+  </schema>
+</schemalist>

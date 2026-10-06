@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.static" gettext-domain="compiz">
+    <key type="s" name="window-match">
+      <default>'Dock'</default>
+      <summary>Window Match</summary>
+      <description>Windows that should be kept static during transformations. (match)</description>
+    </key>
+  </schema>
+</schemalist>

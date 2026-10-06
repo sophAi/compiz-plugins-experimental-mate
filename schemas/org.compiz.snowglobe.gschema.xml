@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.snowglobe" gettext-domain="compiz">
+    <key type="d" name="speed-factor">
+      <default>1</default>
+      <summary>Speed factor</summary>
+      <description>Multiply the speed of the snowflakes by this factor. (0.5 - 10)</description>
+    </key>
+    <key type="i" name="num-snowflakes">
+      <default>100</default>
+      <summary>Number of snowflakes</summary>
+      <description>Maximum number of snowflakes. (0 - 1000)</description>
+    </key>
+    <key type="d" name="snowflake-size">
+      <default>1</default>
+      <summary>Size of snowflakes</summary>
+      <description>Size of snowflakes. (0.1 - 5)</description>
+    </key>
+    <key type="b" name="show-snowman">
+      <default>false</default>
+      <summary>Render snowman</summary>
+      <description>Render a snowman inside the cube.</description>
+    </key>
+    <key type="d" name="snowman-size">
+      <default>0.6</default>
+      <summary>Size of snowman</summary>
+      <description>Size of snowman inside the cube. (0.1 - 1)</description>
+    </key>
+    <key type="b" name="shake-cube">
+      <default>true</default>
+      <summary>Interaction</summary>
+      <description>Snowflakes fall according to cube orientation.</description>
+    </key>
+    <key type="b" name="show-water">
+      <default>true</default>
+      <summary>Render water</summary>
+      <description>Render water inside the cube.</description>
+    </key>
+    <key type="b" name="show-ground">
+      <default>true</default>
+      <summary>Render ground</summary>
+      <description>Render ground inside the cube.</description>
+    </key>
+    <key type="s" name="water-color">
+      <default>'#0808300f'</default>
+      <summary>Water opacity</summary>
+      <description>Opacity of water in the cube.</description>
+    </key>
+    <key type="i" name="grid-quality">
+      <default>3</default>
+      <summary>Ground grid smoothnes</summary>
+      <description>Number of subdivisions that create a finer grid. (1 - 10)</description>
+    </key>
+  </schema>
+</schemalist>

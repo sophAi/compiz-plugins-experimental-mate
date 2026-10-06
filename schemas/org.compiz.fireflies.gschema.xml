@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.fireflies" gettext-domain="compiz">
+    <key type="b" name="autostart">
+      <default>false</default>
+      <summary>Autostart</summary>
+      <description>Automatically start this element when the plugin is loaded</description>
+    </key>
+    <key type="s" name="toggle-firefly">
+      <default>'&lt;Super&gt;&lt;Alt&gt;f'</default>
+      <summary>Toggle all fireflies elements</summary>
+      <description>Toggle all fireflies elements defined in the elements
+			   list</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="earth">
+		<short>Earth</short>
+		<short xml:lang="es">Tierra</short>
+		<long>Display a realtime lit 3d earth in the desktop cube</long>
+		<long xml:lang="es">Muestre una tierra 3d en tiempo real en el cubo de escritorio</long>
+		<category>Effects</category>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+			</relation>
+			<relation type="before">
+				<plugin>cubeaddon</plugin>
+			</relation>
+			<requirement>
+				<plugin>cube</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<option type="float" name="latitude">
+				<short>Latitude</short>
+				<short xml:lang="es">Latitud</short>
+				<long>Enter a positive value for a North latitude, negative for a South one</long>
+				<long xml:lang="es">Ingrese un valor positivo para una latitud norte, negativo para una sur</long>
+				<min>-180</min>
+				<max>180</max>
+				<default>0</default>
+				<precision>1</precision>
+			</option>
+			<option type="float" name="longitude">
+				<short>Longitude</short>
+				<short xml:lang="es">Longitud</short>
+				<long>Enter a positive value for a West longitude, negative for an East one</long>
+				<long xml:lang="es">Ingrese un valor positivo para una longitud Oeste, negativo para uno Este</long>
+				<min>-180</min>
+				<max>180</max>
+				<default>0</default>
+				<precision>1</precision>
+			</option>
+			<option type="float" name="timezone">
+				<short>Time Zone</short>
+				<short xml:lang="es">Zona horaria</short>
+				<long>Time difference from GMT (without taking account of DST)</long>
+				<long xml:lang="es">Diferencia horaria de GMT (sin tener en cuenta el horario de verano)</long>
+				<min>-12</min>
+				<max>12</max>
+				<default>0</default>
+				<precision>0.5</precision>
+			</option>
+			<option type="bool" name="shaders">
+				<short>Use shaders</short>
+				<short xml:lang="es">Usar sombreadores</short>
+				<long>Make use of the shaders if possible</long>
+				<long xml:lang="es">Haga uso de los sombreadores si es posible</long>
+				<default>true</default>
+			</option>
+			<option type="bool" name="clouds">
+				<short>Realtime cloudmap</short>
+				<short xml:lang="es">Mapa de nubes en tiempo real</short>
+				<long>Download a cloudmap every 3 hour</long>
+				<long xml:lang="es">Descargue un mapa de la nube cada 3 horas</long>
+				<default>false</default>
+			</option>
+			<option type="float" name="rotation">
+				<short>Rotation speed</short>
+				<short xml:lang="ca">Velocitat del gir</short>
+				<short xml:lang="cs">Rychlost rotace</short>
+				<short xml:lang="el">Ταχύτητα περιστροφής</short>
+				<short xml:lang="en_GB">Rotation speed</short>
+				<short xml:lang="fi">Kiertämisen nopeus</short>
+				<short xml:lang="fr">Vitesse de rotation</short>
+				<short xml:lang="gl">Velocidade da Rotación</short>
+				<short xml:lang="he">מהירות סיבוב</short>
+				<short xml:lang="hu">Forgás sebessége</short>
+				<short xml:lang="it">Velocità rotazione</short>
+				<short xml:lang="ja">回転速度</short>
+				<short xml:lang="ko">회전 속도</short>
+				<short xml:lang="nb">Rotasjonshastighet</short>
+				<short xml:lang="pl">Szybkość obrotu</short>
+				<short xml:lang="pt">Velocidade usada na rotação</short>
+				<short xml:lang="ru">Скорость вращения</short>
+				<short xml:lang="sv">Rotationshastighet</short>
+				<short xml:lang="zh_CN">旋转速度</short>
+				<long>Make the whole scene rotate</long>
+				<min>-1</min>
+				<max>1</max>
+				<default>0</default>
+				<precision>0.001</precision>
+			</option>
+			<option type="string" name="clouds_url">
+				<short>Realtime cloudmap url</short>
+				<short xml:lang="es">URL del mapa en la nube en tiempo real</short>
+				<long>Url from which realtime cloudmap texture will be downloaded</long>
+				<long xml:lang="es">URL que descargará la textura del mapa en la nube en tiempo real</long>
+				<default>http://home.megapass.co.kr/~holywatr/cloud_data/clouds_2048.jpg</default>
+			</option>
+			<option type="float" name="earth_size">
+				<short>Earth size</short>
+				<short xml:lang="es">Tamaño de tierra</short>
+				<long>Size of earth</long>
+				<long xml:lang="es">Tamaño de la tierra</long>
+				<min>0.1</min>
+				<max>1</max>
+				<default>0.7</default>
+				<precision>0.01</precision>
+			</option>
+		</options>
+	</plugin>
+</compiz>

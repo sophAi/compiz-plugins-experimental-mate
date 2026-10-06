@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<compiz>
+    <plugin name="autumn" useBcop="true">
+    <short>Autumn</short>
+    <long>Autumn Elements Plugin</long>
+    <category>Extras</category>
+	<deps>
+	    <requirement>
+		<plugin>elements</plugin>
+	    </requirement>
+	    <relation type="after">
+		<plugin>elements</plugin>
+	    </relation>
+	</deps>
+	<options>
+	<group>
+	    <short>Autumn</short>
+		<option name="autostart" type="bool">
+		    <short>Autostart</short>
+		    <long>Automatically start this element when the plugin is loaded</long>
+		    <default>false</default>
+		</option>
+		<option name="toggle_autumn" type="key">
+		    <short>Toggle all autumn elements</short>
+		    <long>Toggle all autumn elements defined in the elements
+			   list</long>
+		    <default>&lt;Super&gt;&lt;Alt&gt;a</default>
+		</option>
+		<option name="x_sway" type="float">
+			<short>Sway Of leaves</short>
+			<long>sway of leaves</long>
+			<default>35.0</default>
+			<min>0.0</min>
+			<max>100.0</max>
+		</option>
+		<option name="y_sway" type="float">
+			<short>Y Sway Gravity</short>
+			<long>Speed of falling leaves</long>
+			<default>60.0</default>
+			<min>0.0</min>
+			<max>100.0</max>
+		</option>
+	</group>
+	</options>
+
+      <extension base_plugin="elements" screen="true">
+	<base_option>element_type</base_option>
+	<restriction>
+	  <value>autumn</value>
+	  <name>Autumn</name>
+	</restriction>
+      </extension>
+
+    </plugin>
+</compiz>

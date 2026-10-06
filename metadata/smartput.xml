@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="smartput">
+		<short>Smart Put</short>
+		<short xml:lang="ca">Posada intel·ligent</short>
+		<short xml:lang="en_GB">Smart Put</short>
+		<long>Smart way to fit windows.</long>
+		<long xml:lang="ca">Una manera intel·ligent d'ajustar les finestres.</long>
+		<long xml:lang="en_GB">Smart way to fit windows.</long>
+		<category>Window Management</category>
+		<options>
+			<group>
+				<short>Bindings</short>
+				<short xml:lang="ar">الأغلفة</short>
+				<short xml:lang="bn">সীমাবদ্ধতা</short>
+				<short xml:lang="ca">Vinculacions</short>
+				<short xml:lang="cs">Klávesové zkratky</short>
+				<short xml:lang="de">Tastenkombinationen</short>
+				<short xml:lang="el">Συνδυασμοί</short>
+				<short xml:lang="en_GB">Bindings</short>
+				<short xml:lang="es">Combinaciones de teclado</short>
+				<short xml:lang="eu">Laster-teklak</short>
+				<short xml:lang="fi">Näppäinyhdistelmät</short>
+				<short xml:lang="fr">Raccourcis</short>
+				<short xml:lang="gl">Atallos</short>
+				<short xml:lang="gu">બાઈન્ડીંગો</short>
+				<short xml:lang="he">צימודים</short>
+				<short xml:lang="hi">बाइंडिंग</short>
+				<short xml:lang="hu">Összerendelések</short>
+				<short xml:lang="it">Associazioni</short>
+				<short xml:lang="ja">割り当て</short>
+				<short xml:lang="ko">바로가기</short>
+				<short xml:lang="nb">Hurtigtast</short>
+				<short xml:lang="nl">Bindingen</short>
+				<short xml:lang="pl">Skróty klawiszowe</short>
+				<short xml:lang="pt">Atalhos</short>
+				<short xml:lang="pt_BR">Atalhos</short>
+				<short xml:lang="ru">Сочетания клавиш</short>
+				<short xml:lang="sv">Bindningar</short>
+				<short xml:lang="tr">Bağlayıcılar</short>
+				<short xml:lang="zh_CN">绑定</short>
+				<option type="key" name="trigger_key">
+					<short>Apply Smart Put on current window.</short>
+					<short xml:lang="ca">Aplica la posada intel·ligent a la finestra actual.</short>
+					<short xml:lang="en_GB">Apply Smart Put on current window.</short>
+					<long>Apply Smart Put on current window.</long>
+					<long xml:lang="ca">Aplica la posada intel·ligent a la finestra actual.</long>
+					<long xml:lang="en_GB">Apply Smart Put on current window.</long>
+					<default>&lt;Super&gt;&lt;Shift&gt;KP_Multiply</default>
+				</option>
+				<option type="button" name="trigger_button">
+					<short>Initiate Smartput on current window.</short>
+					<short xml:lang="ca">Inicia la posada intel·ligent en la finestra activa.</short>
+					<short xml:lang="en_GB">Initiate Smart put on current window.</short>
+					<long>Initiate Smart Put on current window.</long>
+					<long xml:lang="ca">Inicia la posada intel·ligent en la finestra activa.</long>
+					<long xml:lang="en_GB">Initiate Smart Put on current window.</long>
+					<default>Button8</default>
+				</option>
+				<option type="button" name="trigger_all_button">
+					<short>Initiate Smartput on current viewport</short>
+					<short xml:lang="ca">Inicia la posada intel·ligent en l'àrea de visualització activa</short>
+					<short xml:lang="en_GB">Initiate Smart put on current viewport</short>
+					<long>Smart Put!!!</long>
+					<long xml:lang="ca">posada intel·ligent!!!</long>
+					<long xml:lang="en_GB">Smart Put!!!</long>
+					<default>Button9</default>
+				</option>
+				<option type="key" name="undo_key">
+					<short>Undo Smart Put on last "smartputed" window</short>
+					<short xml:lang="ca">Desfés la posada intel·ligent en l'última finestra que s'ha aplicat</short>
+					<short xml:lang="en_GB">Undo Smart Put on last "smartputed" window</short>
+					<long>Undo!!!</long>
+					<long xml:lang="ca">Desfés!!!</long>
+					<long xml:lang="en_GB">Undo!!!</long>
+					<default>&lt;Super&gt;&lt;Control&gt;KP_Multiply</default>
+				</option>
+				<option type="bool" name="use_triggerkey_forundo">
+					<short>Also use apply-key to undo</short>
+					<short xml:lang="ca">Utilitza també la tecla de desfés per a desfer</short>
+					<short xml:lang="en_GB">Also use apply-key to undo</short>
+					<long>If set, you can also use the same key for undo as you use for applying.</long>
+					<long xml:lang="ca">Si s'estableix, també podreu utilitzar la mateixa tecla que utilitzeu per a l'aplicació de l'operació de desfer.</long>
+					<long xml:lang="en_GB">If set, you can also use the same key for undo as you use for applying.</long>
+					<default>false</default>
+				</option>
+			</group>
+			<group>
+				<short>Options</short>
+				<short xml:lang="ar">خيارات</short>
+				<short xml:lang="ca">Opcions</short>
+				<short xml:lang="cs">Nastavení</short>
+				<short xml:lang="de">Optionen</short>
+				<short xml:lang="el">Ιδιότητες</short>
+				<short xml:lang="en_GB">Options</short>
+				<short xml:lang="es">Opciones</short>
+				<short xml:lang="eu">Aukerak</short>
+				<short xml:lang="fi">Valinnat</short>
+				<short xml:lang="fr">Options</short>
+				<short xml:lang="gl">Opcións</short>
+				<short xml:lang="gu">વિકલ્પો</short>
+				<short xml:lang="he">אפשרויות</short>
+				<short xml:lang="hi">विकल्प</short>
+				<short xml:lang="hu">Beállítások</short>
+				<short xml:lang="it">Opzioni</short>
+				<short xml:lang="ja">オプション</short>
+				<short xml:lang="ko">옵션</short>
+				<short xml:lang="nb">Valg</short>
+				<short xml:lang="nl">Optie's</short>
+				<short xml:lang="pl">Opcje</short>
+				<short xml:lang="pt">Opções</short>
+				<short xml:lang="pt_BR">Opções</short>
+				<short xml:lang="ru">Функции</short>
+				<short xml:lang="sv">Alternativ</short>
+				<short xml:lang="tr">Seçenekler</short>
+				<short xml:lang="zh_CN">选项</short>
+				<option type="bool" name="allow_windows_stack">
+					<short>Allow stack windows</short>
+					<short xml:lang="ca">Permet apilar les finestres</short>
+					<short xml:lang="en_GB">Allow stack windows</short>
+					<long>Stack windows on each other if there is no place left to place them.</long>
+					<long xml:lang="ca">Apila les finestres damunt d'una altra si no hi ha prou espai per a col·locar-les.</long>
+					<long xml:lang="en_GB">Stack windows on each other if there is no place left to place them.</long>
+					<default>false</default>
+				</option>
+				<option type="bool" name="allow_windows_shrink">
+					<short>Allow windows shrink</short>
+					<short xml:lang="ca">Permet que les finestres s'encongeixen</short>
+					<short xml:lang="en_GB">Allow windows shrink</short>
+					<long>Just place the window when the new size is larger than the old one.</long>
+					<long xml:lang="ca">Col·loca la finestra quan la mida nova és més gran que l'anterior.</long>
+					<long xml:lang="en_GB">Just place the window when the new size is larger than the old one.</long>
+					<default>false</default>
+				</option>
+				<option type="int" name="window_minheight">
+					<short>Minimal window height</short>
+					<short xml:lang="ca">Alçada mínima de la finestra</short>
+					<short xml:lang="en_GB">Minimal window height</short>
+					<long>Minimal height that the new window must have at least.</long>
+					<long xml:lang="ca">L'alçada mínima que la finestra nova ha de tenir com a mínim.</long>
+					<long xml:lang="en_GB">Minimal height that the new window must have at least.</long>
+					<default>50</default>
+					<min>5</min>
+					<max>6000</max>
+				</option>
+				<option type="int" name="window_minwidth">
+					<short>Minimal window width</short>
+					<short xml:lang="ca">Amplada mínima de la finestra</short>
+					<short xml:lang="en_GB">Minimal window width</short>
+					<long>Minimal width that the new window must have at least.</long>
+					<long xml:lang="ca">L'amplada mínima que la finestra nova ha de tenir com a mínim.</long>
+					<long xml:lang="en_GB">Minimal width that the new window must have at least.</long>
+					<default>50</default>
+					<min>5</min>
+					<max>6000</max>
+				</option>
+				<option type="int" name="window_margin">
+					<short>Window margin</short>
+					<short xml:lang="ca">Marge de la finestra</short>
+					<short xml:lang="en_GB">Window margin</short>
+					<long>The distance between windows.</long>
+					<long xml:lang="ca">La distancia entre les finestres.</long>
+					<long xml:lang="en_GB">The distance between windows.</long>
+					<default>0</default>
+					<min>0</min>
+					<max>500</max>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

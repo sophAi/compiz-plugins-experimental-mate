@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="anaglyph">
+		<short>Anaglyph</short>
+		<short xml:lang="en_GB">Anaglyph</short>
+		<short xml:lang="es">Anáglifo</short>
+		<long>Anaglyph window and Desktop</long>
+		<long xml:lang="en_GB">Anaglyph window and Desktop</long>
+		<long xml:lang="es">Escritorio y ventana en Anaglifo</long>
+		<category>Effects</category>
+		<deps>
+			<relation type="after">
+				<plugin>ring</plugin>
+				<plugin>shift</plugin>
+				<plugin>scale</plugin>
+			</relation>
+		</deps>
+		<options>
+			<option type="key" name="window_toggle_key">
+				<short>Initiate Window</short>
+				<short xml:lang="ca">Inicia la finestra</short>
+				<short xml:lang="en_GB">Initiate Window</short>
+				<short xml:lang="es">Iniciar en la ventana</short>
+				<long>Start anaglyph window</long>
+				<long xml:lang="en_GB">Start anaglyph window</long>
+				<long xml:lang="es">Comience la ventana en anaglifo</long>
+			</option>
+			<option type="key" name="screen_toggle_key">
+				<short>Initiate Screen</short>
+				<short xml:lang="ca">Inicia la pantalla</short>
+				<short xml:lang="en_GB">Initiate Screen</short>
+				<short xml:lang="es">Iniciar en Escritorio</short>
+				<long>Start anaglyph screen</long>
+				<long xml:lang="en_GB">Start anaglyph screen</long>
+				<long xml:lang="es">Iniciar en pantalla anaglifo</long>
+			</option>
+			<option type="button" name="window_toggle_button">
+				<short>Initiate Window Button</short>
+				<short xml:lang="ca">Inicia el botó de la finestra</short>
+				<short xml:lang="en_GB">Initiate Window Button</short>
+				<long>Start anaglyph active window</long>
+				<long xml:lang="en_GB">Start anaglyph active window</long>
+				<long xml:lang="es">Iniciar anaglifo en la ventana activa</long>
+			</option>
+			<option type="button" name="screen_toggle_button">
+				<short>Initiate Screen Button</short>
+				<short xml:lang="ca">Inicia el botó de la pantalla</short>
+				<short xml:lang="en_GB">Initiate Screen Button</short>
+				<long>Start anaglyph screen</long>
+				<long xml:lang="en_GB">Start anaglyph screen</long>
+				<long xml:lang="es">Iniciar en pantalla anaglifo</long>
+			</option>
+			<option type="match" name="anaglyph_match">
+				<short>Anaglyph Windows</short>
+				<short xml:lang="en_GB">Anaglyph Windows</short>
+				<short xml:lang="es">Ventanas Anaglifo</short>
+				<long>Windows to be anaglyph by default</long>
+				<long xml:lang="en_GB">Windows to be anaglyph by default</long>
+				<long xml:lang="es">Ventanas para ser anaglifo por defecto</long>
+				<default>any</default>
+			</option>
+			<option type="match" name="exclude_match">
+				<short>Exclude Windows</short>
+				<short xml:lang="de">Ausgeschlossene Fenster</short>
+				<short xml:lang="el">Αποκλεισμός Παραθύρων</short>
+				<short xml:lang="en_GB">Exclude Windows</short>
+				<short xml:lang="es">Ventanas excluídas</short>
+				<short xml:lang="eu">Kontuan ez hartzeko leihoak</short>
+				<short xml:lang="fi">Ei käytössä näissä ikkunoissa</short>
+				<short xml:lang="fr">Exclure les fenêtres</short>
+				<short xml:lang="gl">Excluír Fiestras</short>
+				<short xml:lang="gu">વિન્ડો નહિં સમાવો</short>
+				<short xml:lang="he">התעלם מחלונות</short>
+				<short xml:lang="hi">विंडोज़ निकालें</short>
+				<short xml:lang="hu">Kizárt ablakok</short>
+				<short xml:lang="it">Escludi finestre</short>
+				<short xml:lang="ja">適用除外ウィンドウ</short>
+				<short xml:lang="ko">제외할 창</short>
+				<short xml:lang="nb">Ekskluder vinduer</short>
+				<short xml:lang="nl">Vensters uitsluiting</short>
+				<short xml:lang="pl">Wyklucz okna</short>
+				<short xml:lang="pt">Excluir Janelas</short>
+				<short xml:lang="pt_BR">Excluir Janelas</short>
+				<short xml:lang="sv">Exkludera fönster</short>
+				<short xml:lang="tr">Pencereleri Hariç Tut</short>
+				<short xml:lang="zh_CN">排除窗口</short>
+				<long>Windows to exclude from anaglyph</long>
+				<long xml:lang="en_GB">Windows to exclude from anaglyph</long>
+				<long xml:lang="es">Ventanas para excluir anaglifo</long>
+				<default />
+			</option>
+			<option type="float" name="offset">
+				<short>Offset</short>
+				<short xml:lang="ca">Desplaçament</short>
+				<short xml:lang="en_GB">Offset</short>
+				<long>offset anaglyph</long>
+				<long xml:lang="en_GB">offset anaglyph</long>
+				<default>2.0</default>
+				<min>-8.0</min>
+				<max>8.0</max>
+				<precision>0.1</precision>
+			</option>
+			<option type="float" name="desktop_offset">
+				<short>Increase Desktop deep</short>
+				<short xml:lang="ca">Augmenta la profunditat de l'escriptori</short>
+				<short xml:lang="en_GB">Increase Desktop deep</short>
+				<short xml:lang="es">profundidad de escritorio aumentado</short>
+				<long>Increase Desktop deep</long>
+				<long xml:lang="ca">Augmenta la profunditat de l'escriptori</long>
+				<long xml:lang="en_GB">Increase Desktop deep</long>
+				<long xml:lang="es">profundidad de escritorio aumentado</long>
+				<default>2.0</default>
+				<min>1.0</min>
+				<max>2.0</max>
+				<precision>0.1</precision>
+			</option>
+			<option type="bool" name="desaturate">
+				<short>Desaturate</short>
+				<short xml:lang="en_GB">Saturation</short>
+				<short xml:lang="es">Desaturar</short>
+				<long>Desaturate</long>
+				<long xml:lang="en_GB">Saturation</long>
+				<long xml:lang="es">Desaturar</long>
+				<default>false</default>
+			</option>
+			<option type="bool" name="mipmaps">
+				<short>Mipmaps</short>
+				<short xml:lang="ca">Mipmaps</short>
+				<short xml:lang="de">Mipmaps benutzen</short>
+				<short xml:lang="el">Mipmaps</short>
+				<short xml:lang="en_GB">Mipmaps</short>
+				<short xml:lang="eu">Mipmaps</short>
+				<short xml:lang="fi">Mipmapit</short>
+				<short xml:lang="fr">Mipmaps</short>
+				<short xml:lang="gl">Mapas de imaxes</short>
+				<short xml:lang="gu">મીપમેપ</short>
+				<short xml:lang="he">Mipmaps</short>
+				<short xml:lang="hi">मिपमैप</short>
+				<short xml:lang="hu">MIP térképek</short>
+				<short xml:lang="it">Mipmap</short>
+				<short xml:lang="ja">ミップマップ</short>
+				<short xml:lang="ko">Mipmap</short>
+				<short xml:lang="nb">MIP-kart</short>
+				<short xml:lang="nl">Mipmaps</short>
+				<short xml:lang="pl">Mipmapy</short>
+				<short xml:lang="pt">Mipmaps</short>
+				<short xml:lang="pt_BR">Mipmaps</short>
+				<short xml:lang="ru">Mip-карты</short>
+				<short xml:lang="sv">Mipmaps</short>
+				<short xml:lang="zh_CN">Mipmaps</short>
+				<long>Mipmaps</long>
+				<long xml:lang="ca">Mipmaps</long>
+				<long xml:lang="de">Mipmaps benutzen</long>
+				<long xml:lang="el">Mipmaps</long>
+				<long xml:lang="en_GB">Mipmaps</long>
+				<long xml:lang="eu">Mipmaps</long>
+				<long xml:lang="fi">Mipmapit</long>
+				<long xml:lang="fr">Mipmaps</long>
+				<long xml:lang="gl">Mapas de imaxes</long>
+				<long xml:lang="gu">મીપમેપ</long>
+				<long xml:lang="he">Mipmaps</long>
+				<long xml:lang="hi">मिपमैप</long>
+				<long xml:lang="hu">MIP térképek</long>
+				<long xml:lang="it">Mipmap</long>
+				<long xml:lang="ja">ミップマップ</long>
+				<long xml:lang="ko">Mipmap</long>
+				<long xml:lang="nb">MIP-kart</long>
+				<long xml:lang="nl">Mipmaps</long>
+				<long xml:lang="pl">Mipmapy</long>
+				<long xml:lang="pt">Mipmaps</long>
+				<long xml:lang="pt_BR">Mipmaps</long>
+				<long xml:lang="ru">Mip-карты</long>
+				<long xml:lang="sv">Mipmaps</long>
+				<long xml:lang="zh_CN">Mipmaps</long>
+				<default>false</default>
+			</option>
+		</options>
+	</plugin>
+</compiz>

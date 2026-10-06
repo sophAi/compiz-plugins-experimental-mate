@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<compiz>
+    <plugin name="bubbles" useBcop="true">
+    <_short>Bubbles</_short>
+    <_long>Bubbles Elements Plugin</_long>
+    <category>Extras</category>
+	<deps>
+	    <requirement>
+		<plugin>elements</plugin>
+	    </requirement>
+	    <relation type="after">
+		<plugin>elements</plugin>
+	    </relation>
+	</deps>
+	<options>
+	<group>
+		<_short>Bubbles</_short>
+		    <option name="autostart" type="bool">
+			    <_short>Autostart</_short>
+			    <_long>Automatically start this element when the plugin is loaded</_long>
+			    <default>false</default>
+		    </option>
+		    <option name="toggle_bubble" type="key">
+			    <_short>Toggle all bubbles elements</_short>
+			    <_long>Toggle all bubbles elements defined in the elements
+				   list</_long>
+			    <default>&lt;Super&gt;&lt;Alt&gt;b</default>
+		    </option>
+		    <option name="viscosity" type="float">
+			    <_short>Viscosity of liquid</_short>
+			    <_long>Viscosity of liquid</_long>
+			    <default>80.0</default>
+			    <min>0.0</min>
+			    <max>100.0</max>
+		    </option>
+	</group>
+	</options>
+
+      <extension base_plugin="elements" screen="true">
+	<base_option>element_type</base_option>
+	<restriction>
+	  <value>bubbles</value>
+	  <_name>Bubbles</_name>
+	</restriction>
+      </extension>
+    </plugin>
+</compiz>

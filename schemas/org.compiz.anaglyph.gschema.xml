@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.anaglyph" gettext-domain="compiz">
+    <key type="s" name="window-toggle-key">
+      <default>'Disabled'</default>
+      <summary>Initiate Window</summary>
+      <description>Start anaglyph window</description>
+    </key>
+    <key type="s" name="screen-toggle-key">
+      <default>'Disabled'</default>
+      <summary>Initiate Screen</summary>
+      <description>Start anaglyph screen</description>
+    </key>
+    <key type="s" name="window-toggle-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Window Button</summary>
+      <description>Start anaglyph active window</description>
+    </key>
+    <key type="s" name="screen-toggle-button">
+      <default>'Disabled'</default>
+      <summary>Initiate Screen Button</summary>
+      <description>Start anaglyph screen</description>
+    </key>
+    <key type="s" name="anaglyph-match">
+      <default>'any'</default>
+      <summary>Anaglyph Windows</summary>
+      <description>Windows to be anaglyph by default (match)</description>
+    </key>
+    <key type="s" name="exclude-match">
+      <default>''</default>
+      <summary>Exclude Windows</summary>
+      <description>Windows to exclude from anaglyph (match)</description>
+    </key>
+    <key type="d" name="offset">
+      <default>2.0</default>
+      <summary>Offset</summary>
+      <description>offset anaglyph (-8.0 - 8.0)</description>
+    </key>
+    <key type="d" name="desktop-offset">
+      <default>2.0</default>
+      <summary>Increase Desktop deep</summary>
+      <description>Increase Desktop deep (1.0 - 2.0)</description>
+    </key>
+    <key type="b" name="desaturate">
+      <default>false</default>
+      <summary>Desaturate</summary>
+      <description>Desaturate</description>
+    </key>
+    <key type="b" name="mipmaps">
+      <default>false</default>
+      <summary>Mipmaps</summary>
+      <description>Mipmaps</description>
+    </key>
+  </schema>
+</schemalist>

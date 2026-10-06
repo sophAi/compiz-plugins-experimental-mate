@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.screensaver" gettext-domain="compiz">
+    <key type="s" name="initiate-key">
+      <default>'Disabled'</default>
+      <summary>Initiate</summary>
+      <description>Start and stop the screensaver</description>
+    </key>
+    <key type="s" name="initiate-button">
+      <default>'Disabled'</default>
+      <summary>Initiate</summary>
+      <description>Start and stop the screensaver</description>
+    </key>
+    <key type="s" name="initiate-edge">
+      <default>''</default>
+      <summary>Initiate</summary>
+      <description>Start and stop the screensaver</description>
+    </key>
+    <key type="i" name="mode">
+      <default>0</default>
+      <summary>Screensaver mode</summary>
+      <description>Screensaver mode. (0 = Flying windows, 1 = Rotating cube)</description>
+    </key>
+    <key type="b" name="start-automatically">
+      <default>true</default>
+      <summary>Start Automatically</summary>
+      <description>Start Automatically.</description>
+    </key>
+    <key type="d" name="after">
+      <default>5.0</default>
+      <summary>After (min)</summary>
+      <description>After (min). (0.1 - 1000.0)</description>
+    </key>
+    <key type="d" name="fade-in-duration">
+      <default>3.0</default>
+      <summary>Fade In duration (sec)</summary>
+      <description>Fade In duration (sec). (0.0 - 10.0)</description>
+    </key>
+    <key type="d" name="fade-out-duration">
+      <default>1.0</default>
+      <summary>Fade Out duration (sec)</summary>
+      <description>Fade Out duration (sec). (0.0 - 10.0)</description>
+    </key>
+    <key type="s" name="window-match">
+      <default>'type=Normal | Dialog | ModalDialog | Utility | Unknown'</default>
+      <summary>ScreenSaver Windows</summary>
+      <description>:) (match)</description>
+    </key>
+    <key type="b" name="mipmaps">
+      <default>false</default>
+      <summary>Mipmaps</summary>
+      <description>Generate mipmaps</description>
+    </key>
+    <key type="d" name="attraction-depth">
+      <default>1.5</default>
+      <summary>Attraction Depth</summary>
+      <description>Attraction Depth. (0.0 - 10.0)</description>
+    </key>
+    <key type="d" name="attraction-repulsion-ratio">
+      <default>50.0</default>
+      <summary>Attraction/Repulsion ratio</summary>
+      <description>Attraction/Repulsion ratio. (0.0 - 100.0)</description>
+    </key>
+    <key type="b" name="bounce">
+      <default>true</default>
+      <summary>Bounce</summary>
+      <description>Make windows bounce on the floor, still buggy, but essential with cube reflexion.</description>
+    </key>
+    <key type="d" name="cube-rotation-speed">
+      <default>1.0</default>
+      <summary>Cube rotation speed</summary>
+      <description>Cube rotation speed (-10.0 - 10.0)</description>
+    </key>
+    <key type="d" name="cube-zoom">
+      <default>0.5</default>
+      <summary>Zoom</summary>
+      <description>Zoom (0.0 - 2.0)</description>
+    </key>
+  </schema>
+</schemalist>

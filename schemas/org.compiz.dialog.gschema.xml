@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.dialog" gettext-domain="compiz">
+    <key type="s" name="dialogtypes">
+      <default>'(override_redirect=0) &amp; !( class=Firefox &amp; type=Utility ) &amp; !(class=plasmashell) &amp; !(type=Menu | class=Gimp | class=Inkscape | (class=Firefox &amp; type=Tooltip)) &amp; !type=Tooltip'</default>
+      <summary>Dialog Match</summary>
+      <description>Dialogs which will trigger fading (match)</description>
+    </key>
+    <key type="d" name="speed">
+      <default>16</default>
+      <summary>Speed</summary>
+      <description>The speed of the animation (1 - 100)</description>
+    </key>
+    <key type="d" name="opacity">
+      <default>80</default>
+      <summary>Opacity</summary>
+      <description>The opacity of windows with open dialogs (0 - 100)</description>
+    </key>
+    <key type="d" name="saturation">
+      <default>18</default>
+      <summary>Saturation</summary>
+      <description>The saturation of windows with open dialogs (0 - 100)</description>
+    </key>
+    <key type="d" name="brightness">
+      <default>60</default>
+      <summary>Brightness</summary>
+      <description>The brightness of windows with open dialogs (0 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,219 @@
+compiz-plugins-experimental (2:0.8.18-4+mint22.3) noble; urgency=medium
+
+  * Rebuild for Linux Mint 22.3 (Ubuntu 24.04 noble base).
+  * Update gcc-14 compatibility and patch series.
+  * Allow compiz-core dependency compatibility.
+
+ -- Antigravity Assistant <assistant@antigravity>  Wed, 30 Sep 2026 16:50:00 +0800
+
+compiz-plugins-experimental (2:0.8.18-4) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * patches/implicit-function-declaration: Fix build with
+    -Werror=implicit-function-declaration (Closes: Bug#1073301)
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 16 Jun 2024 17:12:07 +0200
+
+compiz-plugins-experimental (2:0.8.18-3) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * control: Fix using Breaks+Replaces rather than Conflics+Replaces.
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on compiz-bcop,
+      compiz-plugins-extra, compiz-plugins-main and libdecoration0-dev.
+    + compiz-plugins-experimental: Drop versioned constraint on
+      compiz-plugins-extra and compiz-plugins-main in Depends.
+    + compiz-plugins-experimental: Drop versioned constraint on compiz-plugins
+      in Replaces.
+    + compiz-plugins-experimental: Drop versioned constraint on compiz-plugins
+      in Breaks.
+
+  [ Samuel Thibault ]
+  * control: Remove .git from end of gitlab URL in Homepage field
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 17 Sep 2022 21:32:27 +0200
+
+compiz-plugins-experimental (2:0.8.18-2) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * Update upstream URL
+  * control: Bump Standards-Version to 4.6.0 (no change)
+  * watch: Update URL.
+  * control: Set Rules-Requires-Root to no.
+  * control: Drop libxml-parser-perl build-dep, not actually needed.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Drop unnecessary dependency on dh-autoreconf.
+  * Refer to specific version of license GPL-2, GPL-2+.
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Update standards version to 4.5.1, no changes needed.
+  * Add patch ac-path-pkgconfig.patch: Use cross-build compatible macro for
+    finding pkg-config.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 08 Jan 2022 17:49:22 +0100
+
+compiz-plugins-experimental (2:0.8.18-1) unstable; urgency=medium
+
+  * New upstream release. Closes: Bug#957097.
+    - control: Bump compiz dependency to 0.8.18 to get latest
+    compiz-core-abiversion.
+  * watch: Generalize pattern.
+  * control: Remove Cyril from uploaders.
+  * watch: switch to gitlab
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 06 Apr 2020 01:28:23 +0200
+
+compiz-plugins-experimental (2:0.8.16-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 15 Dec 2018 02:38:18 +0100
+
+compiz-plugins-experimental (2:0.8.16-1) experimental; urgency=medium
+
+  * New upstream release.
+    - control: Bump compiz dependency.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 17 Nov 2018 13:46:57 +0100
+
+compiz-plugins-experimental (2:0.8.14-1) unstable; urgency=medium
+
+  * Split back packaging according to compiz-reloaded new upstream, and bump
+    epoch accordingly
+  * Switch to hypra maintenance team
+  * Restore non-reloaded package names
+  * Keep compatibility with packages in Debian
+  * Add libpango1.0-dev, libxss-dev, libcurl-dev | libcurl4-openssl-dev
+    build-deps.
+  * Update copyright file
+  * Generate dbgsym packages
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 27 Oct 2018 21:11:55 +0200
+
+compiz-plugins-experimental (1:0.9.13.1+18.04.20180302-2) unstable; urgency=medium
+
+  * Last compiz-from-launchpad upload.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 20 Oct 2018 15:14:00 +0200
+
+compiz-plugins-experimental (1:0.8.4-4ubuntu1) maverick; urgency=low
+
+  * Bumped epoch
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Thu, 17 Jun 2010 10:12:18 +1000
+
+compiz-plugins-experimental (0.8.14-0~stretch1) stretch; urgency=low
+
+  * New upstream release.
+    - rename source package to reloaded version
+    - rename packaging to experimental instead of unsupported
+  * Add override dh_strip to no create automatic dbgsym.
+  * Bump standards to version 3.9.8.
+
+ -- Jof Thibaut <compiz@tuxfamily.org>  Sun, 25 Jun 2017 14:23:27 +0200
+
+compiz-fusion-plugins-unsupported (0.8.12-0~jessie1) jessie; urgency=low
+
+  * New upstream release.
+    - forked on Github : Compiz Reloaded
+  * Switch to format 3.0 (quilt).
+  * Update compat and rules for debhelper 9.
+  * Bump standards to version 3.9.6.
+  * Change Priority to optional.
+  * Update copyright to format 1.0 and Homepage link.
+  * Drop libgconf-dev on build-depends.
+  * Remove upstream_git_set-include-order.patch, applied upstream.
+
+ -- Jof Thibaut <compiz@tuxfamily.org>  Fri, 26 Feb 2016 18:17:30 +0100
+
+compiz-fusion-plugins-unsupported (0.8.4-3) unstable; urgency=low
+
+  * Add Vcs-* fields.
+  * Tighten dependencies on compiz-core:
+     - Add ${compizcore:Depends} to Depends.
+     - Use dpkg-query to extract the name of the package provided by
+       compiz-core (e.g. compiz-core-abiversion-20090619), and use it in
+       dh_gencontrol.
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 24 Mar 2010 01:19:26 +0100
+
+compiz-fusion-plugins-unsupported (0.8.4-2) unstable; urgency=low
+
+  * Add extra install rules for new svg files in 0.8.4.
+  * Incorporate quilt into the build system.
+  * New patch upstream_git_set-include-order.patch backported from
+    upstream git to fix FTBFS on systems with an older -unsupported
+    package installed.
+
+ -- Sean Finney <seanius@debian.org>  Fri, 12 Feb 2010 16:03:06 +0100
+
+compiz-fusion-plugins-unsupported (0.8.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Build-Depends against compiz-dev to >= 0.8.4 for ABI bump.
+
+ -- Sean Finney <seanius@debian.org>  Thu, 11 Feb 2010 22:00:05 +0100
+
+compiz-fusion-plugins-unsupported (0.8.2-1) unstable; urgency=low
+
+  * New upstream release
+  * gbp.conf for use with git-buildpackage
+  * bump compiz-related build-deps to >= 0.8.2
+  * gbp.conf for use with git-buildpackage
+  * bump compiz-related build-deps to >= 0.8.2
+  * add build-dep on -plugins-main
+  * include the compiz-elements.h header file though it may not be
+    necessary
+
+ -- Sean Finney <seanius@debian.org>  Tue, 07 Apr 2009 09:52:31 +0200
+
+compiz-fusion-plugins-unsupported (0.7.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Sean Finney <seanius@debian.org>  Tue, 03 Jun 2008 01:05:15 +0200
+
+compiz-fusion-plugins-unsupported (0.7.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build-deps on bcop and compiz-dev to >= 0.7.3.
+  * Re-add po/Makefile.in.in to UPSTREAM_PRESERVE to keep builds clean
+
+ -- Sean Finney <seanius@debian.org>  Mon, 19 May 2008 20:22:08 +0200
+
+compiz-fusion-plugins-unsupported (0.6.0-3) unstable; urgency=low
+
+  [Emilio Scalise]
+  * Added missing build dependencies: librsvg2-dev, libcairo2-dev, libsm-dev,
+    libglu1-mesa-dev, libdbus-1-dev, libdecoration0-dev, libxml-parser-perl,
+    x11proto-core-dev, libxrender-dev.
+
+ -- Sean Finney <seanius@debian.org>  Fri, 21 Dec 2007 21:11:14 +0100
+
+compiz-fusion-plugins-unsupported (0.6.0-2) unstable; urgency=low
+
+  * Remove autofoo generated content and create/remove it as part of the
+    standard build process instead.
+  * FTBFS fixes:  add Build-Deps on automake1.9, compiz-fusion-bcop,
+    libgconf2-dev, libglib2.0-dev, libtool, libxml2-dev, libxslt1-dev
+
+ -- Sean Finney <seanius@debian.org>  Sat, 24 Nov 2007 19:36:27 +0100
+
+compiz-fusion-plugins-unsupported (0.6.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Sean Finney <seanius@debian.org>  Sun, 11 Nov 2007 17:50:50 +0100

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="throw">
+		<short>Throw Windows</short>
+		<short xml:lang="ca">Llançament de finestres</short>
+		<short xml:lang="en_GB">Throw Windows</short>
+		<long>Windows have a velocity once they are released after moving</long>
+		<long xml:lang="ca">Les finestres tenen una velocitat una vegada són alliberades després del moviment</long>
+		<long xml:lang="en_GB">Windows have a velocity once they are released after moving</long>
+		<category>Utility</category>
+		<deps>
+			<relation type="after">
+				<plugin>resize</plugin>
+			</relation>
+		</deps>
+		<options>
+			<group>
+				<option type="float" name="velocity_x">
+					<short>X Velocity Multiplier</short>
+					<short xml:lang="ca">Multiplicador de la velocitat X</short>
+					<short xml:lang="en_GB">X Velocity Multiplier</short>
+					<long>X Velocity Multipler</long>
+					<long xml:lang="ca">Multiplicador de la velocitat X</long>
+					<long xml:lang="en_GB">X Velocity Multipler</long>
+					<min>1.0</min>
+					<max>100.0</max>
+					<default>10.0</default>
+				</option>
+				<option type="float" name="velocity_y">
+					<short>Y Velocity Multiplier</short>
+					<short xml:lang="ca">Multiplicador de la velocitat Y</short>
+					<short xml:lang="en_GB">Y Velocity Multiplier</short>
+					<long>Y Velocity Multipler</long>
+					<long xml:lang="ca">Multiplicador de la velocitat Y</long>
+					<long xml:lang="en_GB">Y Velocity Multipler</long>
+					<min>1.0</min>
+					<max>100.0</max>
+					<default>10.0</default>
+				</option>
+				<option type="float" name="friction_constant">
+					<short>Friction constant</short>
+					<short xml:lang="ca">Constant de fricció</short>
+					<short xml:lang="en_GB">Friction constant</short>
+					<long>How much friction the screen provides</long>
+					<long xml:lang="ca">Quina quantitat de fricció proporciona la finestra</long>
+					<long xml:lang="en_GB">How much friction the screen provides</long>
+					<min>1.0</min>
+					<max>100.0</max>
+					<default>10.0</default>
+				</option>
+				<option type="bool" name="constrain_x">
+					<short>Constrain X</short>
+					<short xml:lang="ca">Restringeix X</short>
+					<short xml:lang="en_GB">Constrain X</short>
+					<long>Constrain window in display width</long>
+					<long xml:lang="ca">Restringeix la finestra a l'ample de la pantalla</long>
+					<long xml:lang="en_GB">Constrain window in display width</long>
+					<default>false</default>
+				</option>
+				<option type="bool" name="constrain_y">
+					<short>Constrain Y</short>
+					<short xml:lang="ca">Restringeix Y</short>
+					<short xml:lang="en_GB">Constrain Y</short>
+					<long>Constrain window in display height</long>
+					<long xml:lang="ca">Restringeix la finestra a l'altura de la pantalla</long>
+					<long xml:lang="en_GB">Constrain window in display height</long>
+					<default>true</default>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

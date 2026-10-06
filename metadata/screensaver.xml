@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="screensaver">
+		<short>Screen Saver</short>
+		<short xml:lang="ca">Estalvi de pantalla</short>
+		<short xml:lang="en_GB">Screen Saver</short>
+		<long>Screen Saver</long>
+		<long xml:lang="ca">Estalvi de pantalla</long>
+		<long xml:lang="en_GB">Screen Saver</long>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+			</relation>
+		</deps>
+		<category>Extras</category>
+		<options>
+			<group>
+				<short>Bindings</short>
+				<short xml:lang="ar">الأغلفة</short>
+				<short xml:lang="bn">সীমাবদ্ধতা</short>
+				<short xml:lang="ca">Vinculacions</short>
+				<short xml:lang="cs">Klávesové zkratky</short>
+				<short xml:lang="de">Tastenkombinationen</short>
+				<short xml:lang="el">Συνδυασμοί</short>
+				<short xml:lang="en_GB">Bindings</short>
+				<short xml:lang="es">Combinaciones de teclado</short>
+				<short xml:lang="eu">Laster-teklak</short>
+				<short xml:lang="fi">Näppäinyhdistelmät</short>
+				<short xml:lang="fr">Raccourcis</short>
+				<short xml:lang="gl">Atallos</short>
+				<short xml:lang="gu">બાઈન્ડીંગો</short>
+				<short xml:lang="he">צימודים</short>
+				<short xml:lang="hi">बाइंडिंग</short>
+				<short xml:lang="hu">Összerendelések</short>
+				<short xml:lang="it">Associazioni</short>
+				<short xml:lang="ja">割り当て</short>
+				<short xml:lang="ko">바로가기</short>
+				<short xml:lang="nb">Hurtigtast</short>
+				<short xml:lang="nl">Bindingen</short>
+				<short xml:lang="pl">Skróty klawiszowe</short>
+				<short xml:lang="pt">Atalhos</short>
+				<short xml:lang="pt_BR">Atalhos</short>
+				<short xml:lang="ru">Сочетания клавиш</short>
+				<short xml:lang="sv">Bindningar</short>
+				<short xml:lang="tr">Bağlayıcılar</short>
+				<short xml:lang="zh_CN">绑定</short>
+				<option type="key" name="initiate_key">
+					<short>Initiate</short>
+					<short xml:lang="ca">Inicia</short>
+					<short xml:lang="cs">Spustit</short>
+					<short xml:lang="de">Auslösen</short>
+					<short xml:lang="el">Εισαγωγή</short>
+					<short xml:lang="en_GB">Initiate</short>
+					<short xml:lang="es">Iniciar</short>
+					<short xml:lang="eu">Hasi</short>
+					<short xml:lang="fi">Aloita</short>
+					<short xml:lang="fr">Initialiser</short>
+					<short xml:lang="gl">Iniciar</short>
+					<short xml:lang="gu">આરંભ કરો</short>
+					<short xml:lang="he">הפעל</short>
+					<short xml:lang="hi">आरंभ करें</short>
+					<short xml:lang="hu">Kezdeti</short>
+					<short xml:lang="it">Avvia</short>
+					<short xml:lang="ja">開始</short>
+					<short xml:lang="ko">시작</short>
+					<short xml:lang="nb">Start</short>
+					<short xml:lang="nl">Initiëer</short>
+					<short xml:lang="pl">Rozpocznij</short>
+					<short xml:lang="pt">Iniciar</short>
+					<short xml:lang="pt_BR">Iniciar</short>
+					<short xml:lang="ru">Вызов</short>
+					<short xml:lang="sv">Initiera</short>
+					<short xml:lang="tr">Başlat</short>
+					<short xml:lang="zh_CN">启动</short>
+					<long>Start and stop the screensaver</long>
+					<long xml:lang="ca">Inicia i atura l'estalvi de pantalla</long>
+					<long xml:lang="en_GB">Start and stop the screen saver</long>
+				</option>
+				<option type="button" name="initiate_button">
+					<short>Initiate</short>
+					<short xml:lang="ca">Inicia</short>
+					<short xml:lang="cs">Spustit</short>
+					<short xml:lang="de">Auslösen</short>
+					<short xml:lang="el">Εισαγωγή</short>
+					<short xml:lang="en_GB">Initiate</short>
+					<short xml:lang="es">Iniciar</short>
+					<short xml:lang="eu">Hasi</short>
+					<short xml:lang="fi">Aloita</short>
+					<short xml:lang="fr">Initialiser</short>
+					<short xml:lang="gl">Iniciar</short>
+					<short xml:lang="gu">આરંભ કરો</short>
+					<short xml:lang="he">הפעל</short>
+					<short xml:lang="hi">आरंभ करें</short>
+					<short xml:lang="hu">Kezdeti</short>
+					<short xml:lang="it">Avvia</short>
+					<short xml:lang="ja">開始</short>
+					<short xml:lang="ko">시작</short>
+					<short xml:lang="nb">Start</short>
+					<short xml:lang="nl">Initiëer</short>
+					<short xml:lang="pl">Rozpocznij</short>
+					<short xml:lang="pt">Iniciar</short>
+					<short xml:lang="pt_BR">Iniciar</short>
+					<short xml:lang="ru">Вызов</short>
+					<short xml:lang="sv">Initiera</short>
+					<short xml:lang="tr">Başlat</short>
+					<short xml:lang="zh_CN">启动</short>
+					<long>Start and stop the screensaver</long>
+					<long xml:lang="ca">Inicia i atura l'estalvi de pantalla</long>
+					<long xml:lang="en_GB">Start and stop the screen saver</long>
+				</option>
+				<option type="edge" name="initiate_edge">
+					<short>Initiate</short>
+					<short xml:lang="ca">Inicia</short>
+					<short xml:lang="cs">Spustit</short>
+					<short xml:lang="de">Auslösen</short>
+					<short xml:lang="el">Εισαγωγή</short>
+					<short xml:lang="en_GB">Initiate</short>
+					<short xml:lang="es">Iniciar</short>
+					<short xml:lang="eu">Hasi</short>
+					<short xml:lang="fi">Aloita</short>
+					<short xml:lang="fr">Initialiser</short>
+					<short xml:lang="gl">Iniciar</short>
+					<short xml:lang="gu">આરંભ કરો</short>
+					<short xml:lang="he">הפעל</short>
+					<short xml:lang="hi">आरंभ करें</short>
+					<short xml:lang="hu">Kezdeti</short>
+					<short xml:lang="it">Avvia</short>
+					<short xml:lang="ja">開始</short>
+					<short xml:lang="ko">시작</short>
+					<short xml:lang="nb">Start</short>
+					<short xml:lang="nl">Initiëer</short>
+					<short xml:lang="pl">Rozpocznij</short>
+					<short xml:lang="pt">Iniciar</short>
+					<short xml:lang="pt_BR">Iniciar</short>
+					<short xml:lang="ru">Вызов</short>
+					<short xml:lang="sv">Initiera</short>
+					<short xml:lang="tr">Başlat</short>
+					<short xml:lang="zh_CN">启动</short>
+					<long>Start and stop the screensaver</long>
+					<long xml:lang="ca">Inicia i atura l'estalvi de pantalla</long>
+					<long xml:lang="en_GB">Start and stop the screen saver</long>
+				</option>
+			</group>
+			<option type="int" name="mode">
+				<short>Screensaver mode</short>
+				<short xml:lang="ca">Mode d'estalvi de pantalla</short>
+				<short xml:lang="en_GB">Screen saver mode</short>
+				<long>Screensaver mode.</long>
+				<long xml:lang="ca">Mode d'estalvi de pantalla.</long>
+				<long xml:lang="en_GB">Screen saver mode.</long>
+				<default>0</default>
+				<min>0</min>
+				<max>1</max>
+				<desc>
+					<value>0</value>
+					<name>Flying windows</name>
+				</desc>
+				<desc>
+					<value>1</value>
+					<name>Rotating cube</name>
+				</desc>
+			</option>
+			<option type="bool" name="start_automatically">
+				<short>Start Automatically</short>
+				<short xml:lang="ca">Inicia automàticament</short>
+				<short xml:lang="en_GB">Start Automatically</short>
+				<long>Start Automatically.</long>
+				<long xml:lang="ca">Inicia automàticament.</long>
+				<long xml:lang="en_GB">Start Automatically.</long>
+				<default>true</default>
+			</option>
+			<option type="float" name="after">
+				<short>After (min)</short>
+				<short xml:lang="ca">Després de (min)</short>
+				<short xml:lang="en_GB">After (min)</short>
+				<long>After (min).</long>
+				<long xml:lang="ca">Després de (min).</long>
+				<long xml:lang="en_GB">After (min).</long>
+				<default>5.0</default>
+				<min>0.1</min>
+				<max>1000.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="fade_in_duration">
+				<short>Fade In duration (sec)</short>
+				<short xml:lang="ca">Durada de l'entrada de l'esvaïment (s)</short>
+				<short xml:lang="en_GB">Fade In duration (sec)</short>
+				<long>Fade In duration (sec).</long>
+				<long xml:lang="ca">Durada de l'entrada de l'esvaïment (s).</long>
+				<long xml:lang="en_GB">Fade In duration (sec).</long>
+				<default>3.0</default>
+				<min>0.0</min>
+				<max>10.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="fade_out_duration">
+				<short>Fade Out duration (sec)</short>
+				<short xml:lang="ca">Durada de la sortida de l'esvaïment (s)</short>
+				<short xml:lang="en_GB">Fade Out duration (sec)</short>
+				<long>Fade Out duration (sec).</long>
+				<long xml:lang="ca">Durada de la sortida de l'esvaïment (s).</long>
+				<long xml:lang="en_GB">Fade Out duration (sec).</long>
+				<default>1.0</default>
+				<min>0.0</min>
+				<max>10.0</max>
+				<precision>0.01</precision>
+			</option>
+			<group>
+				<short>Flying windows</short>
+				<short xml:lang="ca">Vol de les finestres</short>
+				<short xml:lang="en_GB">Flying windows</short>
+				<option type="match" name="window_match">
+					<short>ScreenSaver Windows</short>
+					<short xml:lang="ca">Finestres de l'estalvi de pantalla</short>
+					<short xml:lang="en_GB">Screen Saver Windows</short>
+					<long>:)</long>
+					<long xml:lang="ca">:)</long>
+					<long xml:lang="en_GB">:)</long>
+					<default>type=Normal | Dialog | ModalDialog | Utility | Unknown</default>
+				</option>
+				<option type="bool" name="mipmaps">
+					<short>Mipmaps</short>
+					<short xml:lang="ca">Mipmaps</short>
+					<short xml:lang="de">Mipmaps benutzen</short>
+					<short xml:lang="el">Mipmaps</short>
+					<short xml:lang="en_GB">Mipmaps</short>
+					<short xml:lang="eu">Mipmaps</short>
+					<short xml:lang="fi">Mipmapit</short>
+					<short xml:lang="fr">Mipmaps</short>
+					<short xml:lang="gl">Mapas de imaxes</short>
+					<short xml:lang="gu">મીપમેપ</short>
+					<short xml:lang="he">Mipmaps</short>
+					<short xml:lang="hi">मिपमैप</short>
+					<short xml:lang="hu">MIP térképek</short>
+					<short xml:lang="it">Mipmap</short>
+					<short xml:lang="ja">ミップマップ</short>
+					<short xml:lang="ko">Mipmap</short>
+					<short xml:lang="nb">MIP-kart</short>
+					<short xml:lang="nl">Mipmaps</short>
+					<short xml:lang="pl">Mipmapy</short>
+					<short xml:lang="pt">Mipmaps</short>
+					<short xml:lang="pt_BR">Mipmaps</short>
+					<short xml:lang="ru">Mip-карты</short>
+					<short xml:lang="sv">Mipmaps</short>
+					<short xml:lang="zh_CN">Mipmaps</short>
+					<long>Generate mipmaps</long>
+					<long xml:lang="ca">Genera els mipmaps</long>
+					<long xml:lang="cs">Generovat mipmapy</long>
+					<long xml:lang="de">Mipmaps erzeugen</long>
+					<long xml:lang="el">Δημιουργία mipmaps</long>
+					<long xml:lang="en_GB">Generate mipmaps</long>
+					<long xml:lang="es">Generar mipmaps</long>
+					<long xml:lang="eu">Sortu mipmaps</long>
+					<long xml:lang="fi">Luo mipmapit</long>
+					<long xml:lang="fr">Générer des mipmaps</long>
+					<long xml:lang="gl">Crear Mipmaps</long>
+					<long xml:lang="gu">મીપમેપ બનાવો</long>
+					<long xml:lang="he">ייצר mipmap</long>
+					<long xml:lang="hi">मिपमैंप बनाएं</long>
+					<long xml:lang="hu">MIP térképek létrehozása</long>
+					<long xml:lang="it">Genera mipmap</long>
+					<long xml:lang="ja">ミップマップを生成</long>
+					<long xml:lang="ko">Mipmap 생성</long>
+					<long xml:lang="nb">Lag MIP-kart</long>
+					<long xml:lang="nl">Mipmaps genereren</long>
+					<long xml:lang="pl">Generuj mipmapy</long>
+					<long xml:lang="pt">Criar mipmaps</long>
+					<long xml:lang="pt_BR">Criar mipmaps</long>
+					<long xml:lang="ru">Генерировать Mip-карты</long>
+					<long xml:lang="sv">Generera mipmaps</long>
+					<long xml:lang="zh_CN">生成Mipmap格式文件</long>
+					<default>false</default>
+				</option>
+				<option type="float" name="attraction_depth">
+					<short>Attraction Depth</short>
+					<short xml:lang="ca">Profunditat d'atracció</short>
+					<short xml:lang="en_GB">Attraction Depth</short>
+					<long>Attraction Depth.</long>
+					<long xml:lang="ca">Profunditat d'atracció.</long>
+					<long xml:lang="en_GB">Attraction Depth.</long>
+					<default>1.5</default>
+					<min>0.0</min>
+					<max>10.0</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="float" name="attraction_repulsion_ratio">
+					<short>Attraction/Repulsion ratio</short>
+					<short xml:lang="ca">Relació d'atracció/repulsió</short>
+					<short xml:lang="en_GB">Attraction/Repulsion ratio</short>
+					<long>Attraction/Repulsion ratio.</long>
+					<long xml:lang="ca">Relació d'atracció/repulsió.</long>
+					<long xml:lang="en_GB">Attraction/Repulsion ratio.</long>
+					<default>50.0</default>
+					<min>0.0</min>
+					<max>100.0</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="bool" name="bounce">
+					<short>Bounce</short>
+					<short xml:lang="ca">Rebota</short>
+					<short xml:lang="en_GB">Bounce</short>
+					<short xml:lang="es">Rebotar</short>
+					<long>Make windows bounce on the floor, still buggy, but essential with cube reflexion.</long>
+					<long xml:lang="ca">Fa que les finestres rebotin a terra, encara amb errors, però essencial amb la reflexió del cub.</long>
+					<long xml:lang="en_GB">Make windows bounce on the floor, still buggy, but essential with cube reflexion.</long>
+					<default>true</default>
+				</option>
+			</group>
+			<group>
+				<short>Rotating cube</short>
+				<short xml:lang="ca">Gir del cub</short>
+				<short xml:lang="en_GB">Rotating cube</short>
+				<option type="float" name="cube_rotation_speed">
+					<short>Cube rotation speed</short>
+					<short xml:lang="ca">Velocitat de gir del cub</short>
+					<short xml:lang="en_GB">Cube rotation speed</short>
+					<long>Cube rotation speed</long>
+					<long xml:lang="ca">Velocitat de gir del cub</long>
+					<long xml:lang="en_GB">Cube rotation speed</long>
+					<default>1.0</default>
+					<min>-10.0</min>
+					<max>10.0</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="float" name="cube_zoom">
+					<short>Zoom</short>
+					<short xml:lang="ar">تكبير</short>
+					<short xml:lang="ca">Zoom</short>
+					<short xml:lang="cs">Přiblížení</short>
+					<short xml:lang="de">Zoom</short>
+					<short xml:lang="el">Ζουμ</short>
+					<short xml:lang="en_GB">Zoom</short>
+					<short xml:lang="es">Zoom</short>
+					<short xml:lang="eu">Zoom</short>
+					<short xml:lang="fi">Zoomaus</short>
+					<short xml:lang="fr">Zoom</short>
+					<short xml:lang="gl">Zoom</short>
+					<short xml:lang="gu">નાનું-મોટુ કરો</short>
+					<short xml:lang="he">תקריב</short>
+					<short xml:lang="hi">ज़ूम</short>
+					<short xml:lang="hu">Nagyító</short>
+					<short xml:lang="it">Zoom</short>
+					<short xml:lang="ja">ズーム</short>
+					<short xml:lang="ko">축소</short>
+					<short xml:lang="nb">Forstørr/forminsk</short>
+					<short xml:lang="nl">Inzoomen</short>
+					<short xml:lang="pl">Zbliżenie</short>
+					<short xml:lang="pt">Zoom</short>
+					<short xml:lang="pt_BR">Zoom</short>
+					<short xml:lang="ru">Масштаб</short>
+					<short xml:lang="sv">Zoom</short>
+					<short xml:lang="tr">Büyütme</short>
+					<short xml:lang="zh_CN">缩放</short>
+					<long>Zoom</long>
+					<long xml:lang="ar">تكبير</long>
+					<long xml:lang="ca">Zoom</long>
+					<long xml:lang="cs">Přiblížení</long>
+					<long xml:lang="de">Zoom</long>
+					<long xml:lang="el">Ζουμ</long>
+					<long xml:lang="en_GB">Zoom</long>
+					<long xml:lang="es">Zoom</long>
+					<long xml:lang="eu">Zoom</long>
+					<long xml:lang="fi">Zoomaus</long>
+					<long xml:lang="fr">Zoom</long>
+					<long xml:lang="gl">Zoom</long>
+					<long xml:lang="gu">નાનું-મોટુ કરો</long>
+					<long xml:lang="he">תקריב</long>
+					<long xml:lang="hi">ज़ूम</long>
+					<long xml:lang="hu">Nagyító</long>
+					<long xml:lang="it">Zoom</long>
+					<long xml:lang="ja">ズーム</long>
+					<long xml:lang="ko">축소</long>
+					<long xml:lang="nb">Forstørr/forminsk</long>
+					<long xml:lang="nl">Inzoomen</long>
+					<long xml:lang="pl">Zbliżenie</long>
+					<long xml:lang="pt">Zoom</long>
+					<long xml:lang="pt_BR">Zoom</long>
+					<long xml:lang="ru">Масштаб</long>
+					<long xml:lang="sv">Zoom</long>
+					<long xml:lang="tr">Büyütme</long>
+					<long xml:lang="zh_CN">缩放</long>
+					<default>0.5</default>
+					<min>0.0</min>
+					<max>2.0</max>
+					<precision>0.1</precision>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

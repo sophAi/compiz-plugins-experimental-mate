@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="cubemodel">
+		<short>Cube 3D Models</short>
+		<short xml:lang="ca">Models 3D de cubs</short>
+		<short xml:lang="cs">3D modely kostky</short>
+		<short xml:lang="el">3Δ Μοντέλα Κύβου</short>
+		<short xml:lang="en_GB">Cube 3D Models</short>
+		<short xml:lang="es">Modelos de cubo 3D</short>
+		<short xml:lang="gl">Modelos do Cubo 3D</short>
+		<short xml:lang="he">מודל תלת ממדי בקובייה</short>
+		<short xml:lang="hu">Kocka 3D modell</short>
+		<short xml:lang="it">Modelli «Cubo 3D»</short>
+		<short xml:lang="ja">キューブ 3D モデル</short>
+		<short xml:lang="ko">큐브 3D 모델</short>
+		<short xml:lang="pl">Modele 3D wewnątrz kostki</short>
+		<short xml:lang="zh_CN">立方体3D模型</short>
+		<long>Render still/animated 3D mesh models inside of the transparent cube</long>
+		<long xml:lang="el">Σχεδιασμός ακίνητων/γραφικά απεικονιζόμενων 3Δ πλεγμένων μοντέλων μέσα στον διάφανο κύβο</long>
+		<long xml:lang="en_GB">Render still/animated 3D mesh models inside of the transparent cube</long>
+		<long xml:lang="gl">Renderizar modelos da malla 3D dentro do cubo transparente</long>
+		<long xml:lang="hu">Néhány álló vagy animált 3D modellt jelenít meg az áttetsző kockában</long>
+		<long xml:lang="it">Visualizzare i modelli 3D statici/animati all'interno del cubo trasparente</long>
+		<long xml:lang="ja">透明なキューブの内側に、静止画/動画 3D メッシュ・モデルを描画</long>
+		<long xml:lang="ko">투명 큐브안에 움직이거나 움직이지 않는 3D 톱니바퀴 모델을 그려 넣습니다.</long>
+		<long xml:lang="pl">Wyświetla nieruchome/animowane modele 3D wewnątrz przezroczystej kostki</long>
+		<category>Effects</category>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+				<plugin>cubeaddon</plugin>
+			</relation>
+			<requirement>
+				<plugin>cube</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<option type="float" name="global_model_scale_factor">
+				<short>Scale all factor</short>
+				<short xml:lang="el">Συντελεστής κλιμάκωσης όλων</short>
+				<short xml:lang="en_GB">Scale all factor</short>
+				<short xml:lang="fi">Kaiken skaalauskerroin</short>
+				<short xml:lang="gl">Escalar tódolos factores</short>
+				<short xml:lang="hu">Összes átméretezés méretarány</short>
+				<short xml:lang="it">Fattore di scala</short>
+				<short xml:lang="ja">すべて縮尺</short>
+				<short xml:lang="ko">모두 재조정할 값</short>
+				<short xml:lang="pl">Wspólny współczynnik rozmiaru</short>
+				<long>Scale all the 3D models by this factor.</long>
+				<long xml:lang="el">Κλιμάκωση όλων των 3Δ μοντέλων με αυτόν τον συντελεστή.</long>
+				<long xml:lang="en_GB">Scale all the 3D models by this factor.</long>
+				<long xml:lang="es">Escalar todos los modelos 3D por este factor.</long>
+				<long xml:lang="fi">Skaalaa kaikkia 3D-malleja tällä kertoimella.</long>
+				<long xml:lang="gl">Escalar tódolos modelos 3D por este factor.</long>
+				<long xml:lang="he">שנה את גודל המודלים התלת ממדיים על פי מקדם זה.</long>
+				<long xml:lang="hu">Összes 3D modell átméretezése a méretaránynak megfelelően.</long>
+				<long xml:lang="it">Scala tutti i modelli 3D di questo fattore</long>
+				<long xml:lang="ja">すべての 3D モデルをこの値に縮尺</long>
+				<long xml:lang="ko">이 값에 의해서 모든 3D 모델을 재조정합니다.</long>
+				<long xml:lang="pl">Mnoży rozmiar wszystkich obiektów 3D przez ten współczynnik.</long>
+				<min>0.01</min>
+				<max>100</max>
+				<default>1.0</default>
+				<precision>0.01</precision>
+			</option>
+			<subgroup>
+				<short>3D Models</short>
+				<short xml:lang="ca">Models 3D</short>
+				<short xml:lang="cs">3D modely</short>
+				<short xml:lang="el">3Δ Μοντέλα</short>
+				<short xml:lang="en_GB">3D Models</short>
+				<short xml:lang="es">Modelos 3D</short>
+				<short xml:lang="fi">3D-mallit</short>
+				<short xml:lang="gl">Modelos 3D</short>
+				<short xml:lang="hu">3D modellek</short>
+				<short xml:lang="it">Modelli 3D</short>
+				<short xml:lang="ja">3D モデル</short>
+				<short xml:lang="ko">3D 모델</short>
+				<short xml:lang="pl">Modele 3D</short>
+				<option type="list" name="model_filename">
+					<short>Model</short>
+					<short xml:lang="ca">Model</short>
+					<short xml:lang="cs">Model</short>
+					<short xml:lang="el">Μοντέλο</short>
+					<short xml:lang="en_GB">Model</short>
+					<short xml:lang="es">Modelo</short>
+					<short xml:lang="fi">Malli</short>
+					<short xml:lang="gl">Modelo</short>
+					<short xml:lang="hu">Modell</short>
+					<short xml:lang="it">Modello</short>
+					<short xml:lang="ja">モデル</short>
+					<short xml:lang="ko">모델</short>
+					<short xml:lang="pl">Model</short>
+					<long>Full path to 3D wavefront (.obj) model file.</long>
+					<long xml:lang="el">Πλήρης διαδρομή στο 3Δ wavefront (.obj) αρχείο μοντέλου.</long>
+					<long xml:lang="en_GB">Full path to 3D wavefront (.obj) model file.</long>
+					<long xml:lang="es">Ruta completa a 3D wavefront (.obj) archivo modelo.</long>
+					<long xml:lang="gl">Ruta completa ao ficheiro modelo wavefront 3D (.obj).</long>
+					<long xml:lang="he">נתיב מלא עבור קבצי מודל חזית גל (.obj).</long>
+					<long xml:lang="hu">3D wavefront (.obj) modell fájlok teljes elérési útja.</long>
+					<long xml:lang="it">Percorso al file del modello (.obj).</long>
+					<long xml:lang="ja">3D wavefront (.obj) モデル・ファイルへのフル・パス</long>
+					<long xml:lang="ko">3D wavefront(.obj) 모델 파일의 경로</long>
+					<long xml:lang="pl">Pełna ścieżka dostępu do pliku z modelem 3D (.obj)</long>
+					<type>string</type>
+					<hints>file;</hints>
+				</option>
+				<option type="list" name="model_scale_factor">
+					<short>Scale factor</short>
+					<short xml:lang="ca">Factor d'escalament</short>
+					<short xml:lang="el">Συντελεστής κλιμάκωσης</short>
+					<short xml:lang="en_GB">Scale factor</short>
+					<short xml:lang="fi">Skaalauskerroin</short>
+					<short xml:lang="gl">Factor de escala</short>
+					<short xml:lang="hu">Átméretezés méretarány</short>
+					<short xml:lang="it">Fattore di scala</short>
+					<short xml:lang="ja">拡縮率</short>
+					<short xml:lang="ko">재조정할 값</short>
+					<short xml:lang="pl">Współczynnik rozmiaru</short>
+					<long>Scale the 3D model by this factor.</long>
+					<long xml:lang="el">Κλιμάκωση του 3Δ μοντέλου με αυτόν τον συντελεστή.</long>
+					<long xml:lang="en_GB">Scale the 3D model by this factor.</long>
+					<long xml:lang="es">Escalar modelo 3D por este factor.</long>
+					<long xml:lang="fi">Skaalaa 3D-mallia tällä kertoimella.</long>
+					<long xml:lang="gl">Escalar o modelo 3D por este factor.</long>
+					<long xml:lang="he">שנה את גודל המודל התלת ממדי על פי מקדם זה.</long>
+					<long xml:lang="hu">3D modell átméretezése a méretaránynak megfelelően.</long>
+					<long xml:lang="it">Scala il modello 3D di questo fattore</long>
+					<long xml:lang="ja">3D モデルをこの値に縮尺</long>
+					<long xml:lang="ko">이 값에 의해서 3D 모델을 재조정합니다.</long>
+					<long xml:lang="pl">Mnoży rozmiar obiektu 3D przez ten współczynnik.</long>
+					<type>float</type>
+					<min>0.01</min>
+					<max>100</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="list" name="model_x_offset">
+					<short>X</short>
+					<short xml:lang="ca">X</short>
+					<short xml:lang="cs">X</short>
+					<short xml:lang="el">Χ</short>
+					<short xml:lang="en_GB">X</short>
+					<short xml:lang="es">X</short>
+					<short xml:lang="fi">X</short>
+					<short xml:lang="fr">X</short>
+					<short xml:lang="gl">X</short>
+					<short xml:lang="he">X</short>
+					<short xml:lang="hu">X</short>
+					<short xml:lang="it">X</short>
+					<short xml:lang="ja">X</short>
+					<short xml:lang="ko">X</short>
+					<short xml:lang="pl">X</short>
+					<long>X coordinate offset from the center of the cube.</long>
+					<long xml:lang="ca">Desplaçament de la coordenada X des del center del cub.</long>
+					<long xml:lang="el">Όφσετ Χ συντεταγμένης απ' το κέντρο του κύβου.</long>
+					<long xml:lang="en_GB">X coordinate offset from the centre of the cube.</long>
+					<long xml:lang="gl">Desvío da coordenada X dende o centro do cubo.</long>
+					<long xml:lang="hu">X koordináta eltolása a kocka kézepéhez képest.</long>
+					<long xml:lang="it">Coordinata X dal centro del cubo</long>
+					<long xml:lang="ja">キューブの中心からの X 座標オフセット</long>
+					<long xml:lang="ko">큐브의 중앙으로부터 X 오프셋 조정</long>
+					<long xml:lang="pl">Odległość w osi x od środka kostki</long>
+					<type>float</type>
+					<min>-1</min>
+					<max>1</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="list" name="model_y_offset">
+					<short>Y</short>
+					<short xml:lang="ca">Y</short>
+					<short xml:lang="cs">Y</short>
+					<short xml:lang="el">Υ</short>
+					<short xml:lang="en_GB">Y</short>
+					<short xml:lang="es">Y</short>
+					<short xml:lang="fi">Y</short>
+					<short xml:lang="fr">Y</short>
+					<short xml:lang="gl">Y</short>
+					<short xml:lang="he">Y</short>
+					<short xml:lang="hu">Y</short>
+					<short xml:lang="it">Y</short>
+					<short xml:lang="ja">Y</short>
+					<short xml:lang="ko">Y</short>
+					<short xml:lang="pl">Y</short>
+					<long>Y coordinate offset from the center of the cube.</long>
+					<long xml:lang="ca">Desplaçament de la coordenada Y des del center del cub.</long>
+					<long xml:lang="el">Όφσετ Υ συντεταγμένης απ' το κέντρο του κύβου.</long>
+					<long xml:lang="en_GB">Y coordinate offset from the centre of the cube.</long>
+					<long xml:lang="gl">Desvío da coordenada Y dende o centro do cubo.</long>
+					<long xml:lang="hu">Y koordináta eltolása a kocka kézepéhez képest.</long>
+					<long xml:lang="it">Coordinata Y dal centro del cubo</long>
+					<long xml:lang="ja">キューブの中心からの Y 座標オフセット</long>
+					<long xml:lang="ko">큐브의 중앙으로부터 Y 오프셋 조정</long>
+					<long xml:lang="pl">Odległość w osi y od środka kostki</long>
+					<type>float</type>
+					<min>-1</min>
+					<max>1</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="list" name="model_z_offset">
+					<short>Z</short>
+					<short xml:lang="ca">Z</short>
+					<short xml:lang="cs">Z</short>
+					<short xml:lang="el">Ζ</short>
+					<short xml:lang="en_GB">Z</short>
+					<short xml:lang="es">Z</short>
+					<short xml:lang="fi">Z</short>
+					<short xml:lang="gl">Z</short>
+					<short xml:lang="he">Z</short>
+					<short xml:lang="hu">Z</short>
+					<short xml:lang="it">Z</short>
+					<short xml:lang="ja">Z</short>
+					<short xml:lang="ko">Z</short>
+					<short xml:lang="pl">Z</short>
+					<long>Z coordinate offset from the center of the cube.</long>
+					<long xml:lang="ca">Desplaçament de la coordenada Z des del center del cub.</long>
+					<long xml:lang="el">Όφσετ Ζ συντεταγμένης απ' το κέντρο του κύβου.</long>
+					<long xml:lang="en_GB">Z coordinate offset from the centre of the cube.</long>
+					<long xml:lang="gl">Desvío da coordenada Z dende o centro do cubo.</long>
+					<long xml:lang="hu">Z koordináta eltolása a kocka kézepéhez képest.</long>
+					<long xml:lang="it">Coordinata Z dal centro del cubo</long>
+					<long xml:lang="ja">キューブの中心からの Z 座標オフセット</long>
+					<long xml:lang="ko">큐브의 중앙으로부터 Z 오프셋 조정</long>
+					<long xml:lang="pl">Odległość w osi z od środka kostki</long>
+					<type>float</type>
+					<min>-1</min>
+					<max>1</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="list" name="model_rotation_plane">
+					<short>Rotation plane</short>
+					<short xml:lang="ca">Pla de gir</short>
+					<short xml:lang="el">Πλάνο περιστροφής</short>
+					<short xml:lang="en_GB">Rotation plane</short>
+					<short xml:lang="fi">Kiertotaso</short>
+					<short xml:lang="gl">Rotación do plano</short>
+					<short xml:lang="hu">Forgatás síkja</short>
+					<short xml:lang="it">Piano di rotazione</short>
+					<short xml:lang="ja">回転面</short>
+					<short xml:lang="ko">회전 면</short>
+					<short xml:lang="pl">Powierzchnia obrotu</short>
+					<long>Plane of rotation for the 3D model.</long>
+					<long xml:lang="el">Πλάνο περιστροφής για το 3Δ μοντέλο.</long>
+					<long xml:lang="en_GB">Plane of rotation for the 3D model.</long>
+					<long xml:lang="es">Plano de rotación para el modelo 3D</long>
+					<long xml:lang="fi">Kiertämisen taso 3D-mallille.</long>
+					<long xml:lang="gl">Plano da rotación para o modelo 3D.</long>
+					<long xml:lang="he">מישור סיבוב עבור מודלים תלת ממדיים.</long>
+					<long xml:lang="hu">A 3D modell egyszerű forgatása.</long>
+					<long xml:lang="it">Piano di rotazione per il modello 3D</long>
+					<long xml:lang="ja">3D モデルの回転面</long>
+					<long xml:lang="ko">3D 모델의 회전면.</long>
+					<long xml:lang="pl">Płaszczyzna obrotu dla modelu 3D.</long>
+					<type>int</type>
+					<min>0</min>
+					<max>5</max>
+					<desc>
+						<value>0</value>
+						<name>XY</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>YZ</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>ZX</name>
+					</desc>
+					<desc>
+						<value>3</value>
+						<name>XY - reverse rotation</name>
+					</desc>
+					<desc>
+						<value>4</value>
+						<name>YZ - reverse rotation</name>
+					</desc>
+					<desc>
+						<value>5</value>
+						<name>ZX - reverse rotation</name>
+					</desc>
+				</option>
+				<option type="list" name="model_rotation_rate">
+					<short>Rotation rate</short>
+					<short xml:lang="ca">Relació de gir</short>
+					<short xml:lang="el">Ρυθμός περιστροφής</short>
+					<short xml:lang="en_GB">Rotation rate</short>
+					<short xml:lang="fi">Kiertonopeus</short>
+					<short xml:lang="gl">Ratio de Rotación</short>
+					<short xml:lang="hu">Forgatás mértéke</short>
+					<short xml:lang="it">Tasso rotazione</short>
+					<short xml:lang="ja">回転割合</short>
+					<short xml:lang="ko">회전 비율</short>
+					<short xml:lang="pl">Prędkość obrotu</short>
+					<long>Rate of rotation of 3D model (in rotations per second).</long>
+					<long xml:lang="el">Ρυθμός περιστροφής του 3Δ μοντέλου (σε περιστροφές ανά δευτερόλεπτο).</long>
+					<long xml:lang="en_GB">Rate of rotation of 3D model (in rotations per second).</long>
+					<long xml:lang="es">Velocidad de rotación del modelo 3D (en rotaciones por segundo).</long>
+					<long xml:lang="fi">Kiertämisen nopeus 3D-mallille (kierroksia sekunnissa).</long>
+					<long xml:lang="gl">Ratio da rotación do modelo 3D (en rotacións por segunto).</long>
+					<long xml:lang="he">קצב סיבוב המודל התלת ממדי (בסיבובים לשנייה).</long>
+					<long xml:lang="hu">3D modell forgatási sebessége (másodpercenkénti forgatás).</long>
+					<long xml:lang="it">Tasso della rotazione del modello 3D (in rotazioni al secondo)</long>
+					<long xml:lang="ja">3D モデルの回転の割合（1秒当たりの回転数）</long>
+					<long xml:lang="ko">3D 모델의 회전율(초당 회전).</long>
+					<long xml:lang="pl">Prędkość obrotów modelu 3D (w obrotach na sekundę)</long>
+					<type>float</type>
+					<min>0</min>
+					<max>2</max>
+					<precision>0.01</precision>
+				</option>
+				<option type="list" name="model_animation">
+					<short>Model type</short>
+					<short xml:lang="ca">Tipus de model</short>
+					<short xml:lang="cs">Typ modelu</short>
+					<short xml:lang="el">Είδος μοντέλου</short>
+					<short xml:lang="en_GB">Model type</short>
+					<short xml:lang="es">Tipo de modelo</short>
+					<short xml:lang="fi">Mallin tyyppi</short>
+					<short xml:lang="gl">Tipo de modelo</short>
+					<short xml:lang="hu">Modell típusa</short>
+					<short xml:lang="it">Tipo di modello</short>
+					<short xml:lang="ja">モデルの種類</short>
+					<short xml:lang="ko">모델 형태</short>
+					<short xml:lang="pl">Typ modelu</short>
+					<long>Type of 3D model (still or animated).</long>
+					<long xml:lang="el">Είδος 3Δ μοντέλου (σταθερό ή γραφικά απεικονιζόμενο).</long>
+					<long xml:lang="en_GB">Type of 3D model (still or animated).</long>
+					<long xml:lang="es">Tipo de modelos 3D (animados o no).</long>
+					<long xml:lang="gl">Tipo de modelo 3D (quieto ou animado).</long>
+					<long xml:lang="he">סוג המודל התלת ממדי (דומם או מונפש).</long>
+					<long xml:lang="hu">3D modell típusa (álló vagy animált).</long>
+					<long xml:lang="it">Tipo del modello 3D (immobile o animato)</long>
+					<long xml:lang="ja">3Dモデルの種類（静止画または動画）</long>
+					<long xml:lang="ko">3D 모델의 형태(움직이거나 안움직이거나)</long>
+					<long xml:lang="pl">Typ modelu (nieruchomy lub animowany)</long>
+					<type>int</type>
+					<min>0</min>
+					<max>2</max>
+					<desc>
+						<value>0</value>
+						<name>Still</name>
+					</desc>
+					<desc>
+						<value>1</value>
+						<name>Animated</name>
+					</desc>
+					<desc>
+						<value>2</value>
+						<name>Animated - play in reverse</name>
+					</desc>
+				</option>
+				<option type="list" name="model_fps">
+					<short>Frames per second</short>
+					<short xml:lang="ca">Fotogrames per segon</short>
+					<short xml:lang="cs">Snímky za sekundu</short>
+					<short xml:lang="el">Καρέ ανά δευτερόλεπτο</short>
+					<short xml:lang="en_GB">Frames per second</short>
+					<short xml:lang="es">Cuadros por segundo</short>
+					<short xml:lang="fi">Kehyksiä sekunnissa</short>
+					<short xml:lang="fr">Images par seconde</short>
+					<short xml:lang="gl">Cadros por segundo</short>
+					<short xml:lang="he">רענון לשנייה</short>
+					<short xml:lang="hu">Másodpercenkénti képkockák száma</short>
+					<short xml:lang="it">Frame al secondo</short>
+					<short xml:lang="ja">フレーム/秒</short>
+					<short xml:lang="ko">초당 프레임</short>
+					<short xml:lang="pl">Klatki na sekundę</short>
+					<long>Framerate (per second) for the animated series of obj files.</long>
+					<long xml:lang="el">Ρυθμός καρέ (ανά δευτερόλεπτο) των γραφικά απεικονιζόμενων σειρών αρχείων obj.</long>
+					<long xml:lang="en_GB">Framerate (per second) for the animated series of obj files.</long>
+					<long xml:lang="es">Framerate (por segundo) para las series animadas de los archivos de objeto.</long>
+					<long xml:lang="gl">Ratio de cadros (por segundo) para as series animadas de ficheiros obj.</long>
+					<long xml:lang="he">קצב רענון (לשנייה) עבור סדרת קבצי obj.</long>
+					<long xml:lang="hu">Másodpercenkénti képkockák száma az animáció lejátszásához.</long>
+					<long xml:lang="it">Tasso dei frame (al secondo) della serie animata di oggetti.</long>
+					<long xml:lang="ja">obj ファイル動画群の 1 秒当たりのフレームレート</long>
+					<long xml:lang="ko">움직이는 obj 파일들의 프레임 비율(초)</long>
+					<long xml:lang="pl">Szybkość (w klatkach na sekundę) dla zestawów animowanych modeli 3D.</long>
+					<type>int</type>
+					<min>0</min>
+					<max>60</max>
+				</option>
+			</subgroup>
+			<group>
+				<short>Display</short>
+				<short xml:lang="ca">Visualització</short>
+				<short xml:lang="cs">Zobrazení</short>
+				<short xml:lang="el">Οθόνη</short>
+				<short xml:lang="en_GB">Display</short>
+				<short xml:lang="fi">Näyttö</short>
+				<short xml:lang="gl">Pantalla</short>
+				<short xml:lang="hu">Megjelenítés</short>
+				<short xml:lang="it">Visualizzazione</short>
+				<short xml:lang="ja">表示</short>
+				<short xml:lang="ko">표시</short>
+				<short xml:lang="pl">Wyświetlanie</short>
+				<option type="bool" name="rescale_width">
+					<short>Rescale for screen ratio</short>
+					<short xml:lang="ca">Reescala per a la relació de pantalla</short>
+					<short xml:lang="cs">Zvětšit na poměr obrazovky</short>
+					<short xml:lang="el">Επανακλιμάκωση για αναλογία οθόνης</short>
+					<short xml:lang="en_GB">Rescale for screen ratio</short>
+					<short xml:lang="gl">Reescalar cara o ratio de pantalla</short>
+					<short xml:lang="hu">Átméretezés a képernyő arányaihoz</short>
+					<short xml:lang="it">Ridimensionare per proporzioni video</short>
+					<short xml:lang="ja">画面の縦横比に合わせたサイズ変更</short>
+					<short xml:lang="ko">화면 비율에 따라 재조정</short>
+					<short xml:lang="pl">Skaluj do formatu ekranu</short>
+					<long>Rescale along the sides of the cube by the ratio of screen width to height.</long>
+					<long xml:lang="ca">Reescala al llarg dels costats del cub amb la relació d'ample de la pantalla a l'alçada.</long>
+					<long xml:lang="el">Επανακλιμάκωση κατα μήκος των πλευρών του κύβου με την αναλογία της οθόνης πλάτος προς ύψος.</long>
+					<long xml:lang="en_GB">Rescale along the sides of the cube by the ratio of screen width to height.</long>
+					<long xml:lang="gl">Reescala ao longo das caras do cubo polo ratio de alto ao ancho da pantalla.</long>
+					<long xml:lang="he">התאם את הגודל לצידי הקוביה על פי יחס רוחב המסך לאורכו.</long>
+					<long xml:lang="hu">A kocka oldalainak átméretezése a képernyő méretarányának megfelelően.</long>
+					<long xml:lang="it">Ridimensiona lungo i lati del cubo in base al rapporto larghezza/altezza.</long>
+					<long xml:lang="ja">画面の高さに対する幅の割合に合わせキューブの側面に沿ったサイズ変更</long>
+					<long xml:lang="ko">화면의 너비와 높이 비율에 따라서 큐브를 재조정합니다.</long>
+					<long xml:lang="pl">Skaluje obraz wzdłuż ścian kostki by uzyskać proporcje ekranu zgodne z formatem komputerowego wyświetlacza.</long>
+					<default>true</default>
+				</option>
+				<option type="bool" name="render_front_and_back">
+					<short>Render front and back sides</short>
+					<short xml:lang="el">Σχεδιασμός μπροστινών και πίσω πλευρών</short>
+					<short xml:lang="en_GB">Render front and back sides</short>
+					<short xml:lang="es">Renderizar lados frontales y traseros</short>
+					<short xml:lang="fi">Piirrä etu- ja takasivut</short>
+					<short xml:lang="gl">Renderizar partes frontal e traseira</short>
+					<short xml:lang="he">צייר חזית ועורף</short>
+					<short xml:lang="hu">Elő- majd a hátlapok leképzése</short>
+					<short xml:lang="it">Visualizzare fronte e retro</short>
+					<short xml:lang="ja">前と後ろ側を描画</short>
+					<short xml:lang="ko">앞면과 뒷면을 렌더링</short>
+					<short xml:lang="pl">Wyświetlaj przednią i tylną powierzchnię</short>
+					<long>Renders the front surface and then the back surface. This can be useful for models which show black spots but can cause a performance hit.</long>
+					<long xml:lang="el">Σχεδιάζει την μπροστινή επιφάνεια και μετά την πίσω.Αυτό μπορεί να είναι χρήσιμο για μοντέλα που εμφανίζουν μαύρα σημάδια αλλα μπορεί να προκαλέσει χτύπημα στην απόδοση.</long>
+					<long xml:lang="en_GB">Renders the front surface and then the back surface. This can be useful for models which show black spots but can cause a performance hit.</long>
+					<long xml:lang="es">Renderizar la superficie frontal y luego la trasera. Esto puede ser útil para modelos donde haya espacios negros pero puedan causar pérdida de rendimiento.</long>
+					<long xml:lang="gl">Renderizar a superficie frontal e logo a superficie traseira. Isto pode ser útil para os modelos que amosan puntos negros que poida ser causa dun pico de rendemento.</long>
+					<long xml:lang="he">מצייר את המשטח הקדמי ולאחר מכן את האחורי. אפשרות זו עשויה להועיל במקרה של מודלים עליהם מופיעים כתמים שחורים, אך היא עלולה לפגוע בביצועים.</long>
+					<long xml:lang="hu">Első majd a hátsó felületek leképzése. Ez akkor célravezető, ha a háttérben lévő felületek, amelyek sötétben vannak, jelentős teljesítményveszteséget okoznak.</long>
+					<long xml:lang="it">Visualizza la superficie frontale e poi quella posteriore. Può essere utile per i modelli che mostrano dei punti neri, ma può diminure le prestazioni.</long>
+					<long xml:lang="ja">前面を描画してから後面を描画。これは黒い点を表示するモデルに有用ですが、パフォーマンスに影響する可能性があります。</long>
+					<long xml:lang="ko">앞면과 뒷면을 그려 넣습니다. 이것은 깨지는 곳이 보이는 모델에 유용할 수 있지만 성능 감소를 불러올 수 있습니다.</long>
+					<long xml:lang="pl">Wyświetla przednią, a potem tylną powierzchnię. Może to być przydatne dla modeli które posiadają czarne punkty, ale może spowodować spadek wydajności.</long>
+					<default>false</default>
+				</option>
+				<subgroup>
+					<short>Lighting</short>
+					<short xml:lang="ca">Il·luminació</short>
+					<short xml:lang="cs">Osvětlení</short>
+					<short xml:lang="el">Φωτισμός</short>
+					<short xml:lang="en_GB">Lighting</short>
+					<short xml:lang="es">Iluminación</short>
+					<short xml:lang="fi">Valaistus</short>
+					<short xml:lang="gl">Iluminación</short>
+					<short xml:lang="hu">Világosítás</short>
+					<short xml:lang="it">Illuminazione</short>
+					<short xml:lang="ja">照明</short>
+					<short xml:lang="ko">조명</short>
+					<short xml:lang="pl">Oświetlenie</short>
+					<short xml:lang="ru">Освещение</short>
+					<option type="bool" name="rotate_lighting">
+						<short>Rotate lighting</short>
+						<short xml:lang="ca">Gir de la il·luminació</short>
+						<short xml:lang="el">Περιστροφή φωτισμού</short>
+						<short xml:lang="en_GB">Rotate lighting</short>
+						<short xml:lang="es">Rotar iluminación</short>
+						<short xml:lang="fi">Käännä valaistusta</short>
+						<short xml:lang="gl">Rotación de iluminación</short>
+						<short xml:lang="he">סובב אור</short>
+						<short xml:lang="hu">Fények forgatása</short>
+						<short xml:lang="it">Ruotare la luce</short>
+						<short xml:lang="ja">照明を回転</short>
+						<short xml:lang="ko">조명 회전</short>
+						<short xml:lang="pl">Obracaj oświetlenie</short>
+						<short xml:lang="ru">Вращать освещение</short>
+						<long>Preserve light direction when rotating the cube.</long>
+						<long xml:lang="ca">Mantén la direcció de la llum en girar el cub.</long>
+						<long xml:lang="el">Διατήρηση κατεύθυνσης του φωτός όταν περιστρέφεται ο κύβος.</long>
+						<long xml:lang="en_GB">Preserve light direction when rotating the cube.</long>
+						<long xml:lang="fi">Säilytä valon suunta kuutiota käännettäessä</long>
+						<long xml:lang="fr">Conserver la direction de la lumière pendant la rotation du cube.</long>
+						<long xml:lang="gl">Preservar a dirección da luz cando se rota o cubo.</long>
+						<long xml:lang="hu">Fényirányok megtartása a kocka forgatása közben</long>
+						<long xml:lang="it">Preserva la direzione della luce alla rotazione del cubo</long>
+						<long xml:lang="ja">キューブ回転時に照明方向を保持</long>
+						<long xml:lang="ko">큐브를 회전시킬 때 조명의 위치를 보존합니다.</long>
+						<long xml:lang="pl">Zachowaj kierunek światła podczas obracania kostki</long>
+						<long xml:lang="ru">Сохранять направление света при вращении куба.</long>
+						<default>true</default>
+					</option>
+					<option type="float" name="light_inclination">
+						<short>Light inclination</short>
+						<short xml:lang="ca">Inclinació de la llum</short>
+						<short xml:lang="el">Γέρσιμο φωτός</short>
+						<short xml:lang="en_GB">Light inclination</short>
+						<short xml:lang="es">Inclinación de la luz</short>
+						<short xml:lang="fr">Inclinaison de la lumière</short>
+						<short xml:lang="gl">Inclinación da Luz</short>
+						<short xml:lang="he">הטייתהאור</short>
+						<short xml:lang="hu">Megvilágítás beesési szöge</short>
+						<short xml:lang="it">Inclinazione luce</short>
+						<short xml:lang="ja">光の傾斜角度</short>
+						<short xml:lang="ko">조명의 기울어진 정도</short>
+						<short xml:lang="pl">Nachylenie światła</short>
+						<short xml:lang="ru">Отклонение света</short>
+						<long>The angle of light rays from the horizon in degrees (0 is from the viewer's perspective, 90 is from on top). Only has effect when Rotate Lighting is false.</long>
+						<long xml:lang="ca">L'angle dels raigs de llum des de l'horitzó en graus (0 és des de la perspectiva de l'espectador, 90 és de dalt). Només té efecte quan el Gir de la il·luminació és fals.</long>
+						<long xml:lang="el">Η γωνία των ακτίνων φωτός απ' τον ορίζοντα σε μοίρες (0 είναι παράλληλα στην δική μας οπτική γωνία, 90 είναι απο πάνω). Έχει εφαρμογή μόνο όταν ο Περιστροφή Φωτισμού είναι απενεργοποιημένη. </long>
+						<long xml:lang="en_GB">The angle of light rays from the horizon in degrees (0 is from the viewer's perspective, 90 is from on top). Only has effect when Rotate Lighting is false.</long>
+						<long xml:lang="es">El ángulo de los rayos de luz desde el horizonte en grados (0 corresponde a la perspectiva del espectador, 90 corresponde a la cima). Sólo produce efectos cuando Rotar Iluminación está desactivado.</long>
+						<long xml:lang="gl">O ángulo dos raios de luz dende o horizonte en graos (0 se dende a perspectiva do viso, 90 dende arriba). So ten efecto cando Iluminación Rotativa é falso.</long>
+						<long xml:lang="he">זווית קרני האור מעל האופק במעלות (0 פירושו מנקודת מבטו של הצופה, 90 פירושו היישר מלמעלה). רלוונטית רק כאשר "סיבוב אור" מוגדר כ-"לא".</long>
+						<long xml:lang="hu">A fénysugarak beesési szöge a vízszinteshez képest fokban megadva. (A 0 megegyezik a néző perspektívájával, a 90 megegyezik a függőlegessel.) Csak akkor van hatása, ha a „Fények forgatása” beállítás ki van kapcsolva.</long>
+						<long xml:lang="it">L'angolo dei raggi di luce (in gradi) dall'orizzonte (0 per la prospettiva dell'utente, 90 dall'alto). Ha effetto solamente se «Ruotare la luce» è impostata a FALSO.</long>
+						<long xml:lang="ja">光線の水平からの傾斜角度（0 を指定するとちょうど観覧側の視点から、90 では真上から）。照明の回転が無効のときにのみ働きます。</long>
+						<long xml:lang="ko">수평으로부터 광선의 각도입니다.(0은 보는 사람의 관점에서부터이고, 90은 꼭대기부터입니다.) 이것은 조명 회전이 꺼져있을때만 적용됩니다.</long>
+						<long xml:lang="pl">Nachylenie promieni świetlnych w stopniach (0° - z perspektywy oglądającego, 90° - z góry). Jest stosowane wyłącznie, gdy opcja "Obracaj oświetlenie" jest wyłączona.</long>
+						<default>90</default>
+						<min>0</min>
+						<max>180</max>
+						<precision>0.1</precision>
+					</option>
+					<option type="float" name="light_ambient">
+						<short>Ambient light intensity</short>
+						<short xml:lang="ca">Intensitat de la llum ambiental</short>
+						<short xml:lang="el">Ένταση περιβάλλοντος φωτός</short>
+						<short xml:lang="en_GB">Ambient light intensity</short>
+						<short xml:lang="es">Intensidad de la luz ambiental</short>
+						<short xml:lang="fi">Ympäröivän valon intensiteetti</short>
+						<short xml:lang="gl">Intensidade da luz ambiental</short>
+						<short xml:lang="hu">Háttérfény erőssége</short>
+						<short xml:lang="it">Intensità luce ambientale</short>
+						<short xml:lang="ja">環境光の強さ</short>
+						<short xml:lang="ko">주변 조명의 세기</short>
+						<short xml:lang="pl">Intensywność otaczającego oświetlenia</short>
+						<long>Component of light coming from all directions equally.</long>
+						<long xml:lang="el">Συνιστώσα φωτός ερχόμενη απο όλες τις κατευθύνσεις εξίσου.</long>
+						<long xml:lang="en_GB">Component of light coming from all directions equally.</long>
+						<long xml:lang="fi">Kaikista suunnista yhtä suuresti tulevan valon määrä.</long>
+						<long xml:lang="gl">A compoñente de luz proven de tódalas direccións equitativamente.</long>
+						<long xml:lang="he">מרכיב האור מגיע מכל העברים במידה שווה.</long>
+						<long xml:lang="hu">A fénysugarak minden irányból azonos erősségűek.</long>
+						<long xml:lang="it">Componente della luce in arrivo da tutte le direzioni allo stesso modo</long>
+						<long xml:lang="ja">あらゆる方向から均等に来る光</long>
+						<long xml:lang="ko">모든 방향에서 동등하게 오는 빛의 요소</long>
+						<long xml:lang="pl">Część światła dochodzącego jednakowo ze wszystkich stron.</long>
+						<default>0.3</default>
+						<min>0.0</min>
+						<max>1.0</max>
+						<precision>0.01</precision>
+					</option>
+					<option type="float" name="light_diffuse">
+						<short>Diffuse light intensity</short>
+						<short xml:lang="ca">Intensitat de la llum difusa</short>
+						<short xml:lang="el">Ένταση διάχυτου φωτός</short>
+						<short xml:lang="en_GB">Diffuse light intensity</short>
+						<short xml:lang="es">Difuminar intensidad de la luz</short>
+						<short xml:lang="gl">Intensidade da luz ambiental</short>
+						<short xml:lang="hu">Szórt fény erőssége</short>
+						<short xml:lang="it">Intensità luce diffusa</short>
+						<short xml:lang="ja">拡散光の強さ</short>
+						<short xml:lang="ko">널리 퍼지는 빛의 세기</short>
+						<short xml:lang="pl">Intensywność rozproszonego światła</short>
+						<long>Component of light coming from the direction set by inclination or from the viewer if Rotate Lighting is true.</long>
+						<long xml:lang="ca">El component de la llum que prové de la direcció establerta per la inclinació o de l'espectador si el gir de la il·luminació és cert.</long>
+						<long xml:lang="el">Τμήμα φωτός ερχόμενο απ' την κατεύθυνση που ορίζεται απ' την κλίση ή απ' τον θεατή αν ο Φωτισμός Περιστροφής είναι ενεργός.</long>
+						<long xml:lang="en_GB">Component of light coming from the direction set by inclination or from the viewer if Rotate Lighting is true.</long>
+						<long xml:lang="es">Componente de luz proviniendo de la dirección ajustada por la inclinación o desde el visor si 'Rotar iluminación' está activado.</long>
+						<long xml:lang="gl">Compoñente de luz que proven dende o conxunto de dirección pola inclinación ou dende o espectador se Rotar Luz está configurado a verdadeiro.</long>
+						<long xml:lang="he">מרכיב האור מגיע מן הכיוון שנקבע על ידי ההטייה או מכיוון הצופה אם מוגדר "סיבוב אור".</long>
+						<long xml:lang="hu">Fénykomponens, amelyet a beesési szög alapján kerül megadásra, vagy a nézőtől függ, ha a „Fények forgatása” beállítás be van kapcsolva.</long>
+						<long xml:lang="it">Componente della luce che proviene dalla direzione indicata dall'inclinazione o dall'utente se «Ruotare la luce» è impostata a VERO.</long>
+						<long xml:lang="ja">傾斜角度によって設定された方向または照明の回転が有効な場合は視点方向から来る光</long>
+						<long xml:lang="ko">조명 회전이 설정 되었을 때 설정된 방향이나 보는 사람의 시각에서 오는 조명의 구성입니다.</long>
+						<long xml:lang="pl">Część światła pochodzącego z kierunku wyznaczonego przez nachylenie albo od patrzącego, jeśli funkcja Obracaj oświetlenie jest aktywowana.</long>
+						<default>1.0</default>
+						<min>0.0</min>
+						<max>1.0</max>
+						<precision>0.01</precision>
+					</option>
+					<option type="float" name="light_specular">
+						<short>Specular light intensity</short>
+						<short xml:lang="el">Ένταση κατοπτρικού φωτός</short>
+						<short xml:lang="en_GB">Specular light intensity</short>
+						<short xml:lang="es">Intensidad de la luz especular</short>
+						<short xml:lang="gl">Intensidade da luz Especular</short>
+						<short xml:lang="he">עוצמת אור משתקף</short>
+						<short xml:lang="hu">Tükröződés fény intenzitás</short>
+						<short xml:lang="it">Intensità luce speculare</short>
+						<short xml:lang="ja">鏡面光の強さ</short>
+						<short xml:lang="ko">반사되는 빛의 세기</short>
+						<short xml:lang="pl">Intensywność światła kierowanego</short>
+						<long>Highly directional component of light coming from the direction set by inclination or from the viewer if Rotate Lighting is true.</long>
+						<long xml:lang="el">Τμήμα φωτός υψηλής κατευθυντικότητας ερχόμενο απ' την κατεύθυνση που ορίζεται απ' την κλίση ή απ' τον θεατή αν ο Φωτισμός Περιστροφής είναι ενεργός.</long>
+						<long xml:lang="en_GB">Highly directional component of light coming from the direction set by inclination or from the viewer if Rotate Lighting is true.</long>
+						<long xml:lang="gl">Compoñente altamente direccional da luz que chega dende a dirección configurada pola inclinación ou polo visor se Iluminación de Rotación é certo.</long>
+						<long xml:lang="he">מרכיב אור כיווני ביותר המגיע מכיוון הנקבע על ידי ההטייה או מכיוון הצופה אם מוגדר "סיבוב אור".</long>
+						<long xml:lang="hu">Nagyon irányfüggő fénykomponens, amelyet a beesési szög alapján kerül megadásra, vagy a nézőtől függ, ha a „Fények forgatása” beállítás be van kapcsolva.</long>
+						<long xml:lang="it">Componene della luce che proviene dalla direzione impostata dall'inclinazione o dal punto di vista di chi vede se «Ruotare la luce» è impostata a VERO.</long>
+						<long xml:lang="ja">傾斜角度によって設定された方向または照明の回転が有効な場合は視点方向から来る指向性の強い光</long>
+						<long xml:lang="ko">조명 회전이 설정 되었을때 설정된 방향이나 보는 사람의 시각에서 나오는 조명의 고지향성 구성입니다.</long>
+						<long xml:lang="pl">Część światła posiadającego wyraźnie ukierunkowane źródło, wyznaczonego przez nachylenie albo od patrzącego, jeśli funkcja Obracaj oświetlenie jest aktywowana.</long>
+						<default>0.6</default>
+						<min>0.0</min>
+						<max>1.0</max>
+						<precision>0.01</precision>
+					</option>
+				</subgroup>
+			</group>
+			<group>
+				<short>Loading</short>
+				<short xml:lang="ca">Càrrega</short>
+				<short xml:lang="el">Φόρτωση</short>
+				<short xml:lang="en_GB">Loading</short>
+				<short xml:lang="es">Cargando</short>
+				<short xml:lang="fi">Ladataan</short>
+				<short xml:lang="gl">Cargando</short>
+				<short xml:lang="hu">Betöltés</short>
+				<short xml:lang="it">Caricamento</short>
+				<short xml:lang="ja">読み込み</short>
+				<short xml:lang="ko">불러오기</short>
+				<short xml:lang="pl">Ładowanie</short>
+				<option type="bool" name="concurrent_load">
+					<short>Use separate threads</short>
+					<short xml:lang="ca">Utilitza fils d'execució separats</short>
+					<short xml:lang="el">Χρήση ξεχωριστών νημάτων</short>
+					<short xml:lang="en_GB">Use separate threads</short>
+					<short xml:lang="es">Usar hilos separados</short>
+					<short xml:lang="gl">Empregar fíos separados</short>
+					<short xml:lang="he">השתמש בפתילים נפרדים.</short>
+					<short xml:lang="hu">Külön feldolgozószál használata</short>
+					<short xml:lang="it">Usare thread separati</short>
+					<short xml:lang="ja">個別のスレッドを使用</short>
+					<short xml:lang="ko">별도의 스레드 사용</short>
+					<short xml:lang="pl">Używaj oddzielnych wątków</short>
+					<long>Use separate threads to load each model faster and allow other interaction whilst loading.</long>
+					<long xml:lang="ca">Utilitza fils d'execució separats per carregar més ràpidament cada model i permetre la càrrega d'altres interaccions.</long>
+					<long xml:lang="el">Χρήση ξεχωριστών νημάτων για φόρτωση κάθε μοντέλου ταχύτερα και για να επιτραπεί άλλη επίδραση κατα το φόρτωμα.</long>
+					<long xml:lang="en_GB">Use separate threads to load each model faster and allow other interaction whilst loading.</long>
+					<long xml:lang="es">Usar hilos separados para cargar cada modelo más rápido y permitir otrainterracción al cargar.</long>
+					<long xml:lang="gl">Empregar fíos separados para cargar máis rápido cada modelo e permitir outra interacción mentres se carga.</long>
+					<long xml:lang="he">השתמש בפתילים נפרדים על מנת להאיץ את טעינתו של כל מודל ועל מנת לאפשר אינטראקציות מסוגים אחרים בעת הטעינה.</long>
+					<long xml:lang="hu">Külön feldolgozószál használata a modellek gyorsabb betöltéséhez és egyéb interakció megvalósításához.</long>
+					<long xml:lang="it">Usa thread separati per caricare più velocemente i modelli e consentire altre interazioni.</long>
+					<long xml:lang="ja">各モデルをより速く読み込むために個別のスレッドを使用して、読み込み中に他のやり取りができるようにする</long>
+					<long xml:lang="ko">모델을 빠르게 불러오고 불러오는 동안 다른 상호작용을 할 수 있도록 별도의 스레드를 사용합니다.</long>
+					<long xml:lang="pl">Używa oddzielnych wątków, by umożliwić ładować każdy model szybciej i pozwolić innym oddziaływać podczas ładowania.</long>
+					<default>true</default>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

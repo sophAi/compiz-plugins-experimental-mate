@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.ghost" gettext-domain="compiz">
+    <key type="s" name="ghost-toggle-key">
+      <default>'none'</default>
+      <summary>Toggle Ghost</summary>
+      <description>Toggle ghost for all matching windows</description>
+    </key>
+    <key type="s" name="ghost-toggle-button">
+      <default>'none'</default>
+      <summary>Toggle Ghost</summary>
+      <description>Toggle ghost for all matching windows</description>
+    </key>
+    <key type="s" name="ghost-toggle-window-key">
+      <default>'none'</default>
+      <summary>Toggle Ghost Window</summary>
+      <description>Toggle ghosting of individual window</description>
+    </key>
+    <key type="s" name="ghost-toggle-window-button">
+      <default>'none'</default>
+      <summary>Toggle Ghost Window</summary>
+      <description>Toggle ghosting of individual window</description>
+    </key>
+    <key type="s" name="window-types">
+      <default>'state=above &amp; type=normal'</default>
+      <summary>Window Types</summary>
+      <description>Windows which should become ghosts (match)</description>
+    </key>
+    <key type="b" name="ghost-active">
+      <default>true</default>
+      <summary>Ghost Active Window</summary>
+      <description>Whether a ghosted active window will accept input or not</description>
+    </key>
+    <key type="b" name="fade-on-mouseover">
+      <default>false</default>
+      <summary>Fade windows only on mousover</summary>
+      <description>Whether a ghosted window will always be faded or only when the cursor is over it</description>
+    </key>
+    <key type="d" name="speed">
+      <default>16</default>
+      <summary>Speed</summary>
+      <description>The speed of the animation (1 - 100)</description>
+    </key>
+    <key type="d" name="opacity">
+      <default>30</default>
+      <summary>Opacity</summary>
+      <description>The Opacity of Ghosted Windows (0 - 100)</description>
+    </key>
+    <key type="d" name="saturation">
+      <default>30</default>
+      <summary>Saturation</summary>
+      <description>The Saturation of Ghosted Windows (0 - 100)</description>
+    </key>
+    <key type="d" name="brightness">
+      <default>80</default>
+      <summary>Brightness</summary>
+      <description>The Brightness of Ghosted Windows (0 - 100)</description>
+    </key>
+  </schema>
+</schemalist>

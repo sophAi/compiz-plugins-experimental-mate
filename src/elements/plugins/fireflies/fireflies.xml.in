@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<compiz>
+    <plugin name="fireflies" useBcop="true">
+    <_short>Fireflies</_short>
+    <_long>Fireflies Elements Plugin</_long>
+    <category>Extras</category>
+	<deps>
+	    <requirement>
+		<plugin>elements</plugin>
+	    </requirement>
+	    <relation type="after">
+		<plugin>elements</plugin>
+	    </relation>
+	</deps>
+      <options>
+	 <group>
+	 <_short>Fireflies</_short>
+	    <option name="autostart" type="bool">
+		    <_short>Autostart</_short>
+		    <_long>Automatically start this element when the plugin is loaded</_long>
+		    <default>false</default>
+	    </option>
+	    <option name="toggle_firefly" type="key">
+		    <_short>Toggle all fireflies elements</_short>
+		    <_long>Toggle all fireflies elements defined in the elements
+			   list</_long>
+		    <default>&lt;Super&gt;&lt;Alt&gt;f</default>
+	    </option>
+	 </group>
+      </options>
+
+      <extension base_plugin="elements" screen="true">
+	<base_option>element_type</base_option>
+	<restriction>
+	  <value>fireflies</value>
+	  <_name>Fireflies</_name>
+	</restriction>
+      </extension>
+    </plugin>
+</compiz>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.cubemodel" gettext-domain="compiz">
+    <key type="d" name="global-model-scale-factor">
+      <default>1.0</default>
+      <summary>Scale all factor</summary>
+      <description>Scale all the 3D models by this factor. (0.01 - 100)</description>
+    </key>
+    <key type="as" name="model-filename">
+      <default>[]</default>
+      <summary>Model</summary>
+      <description>Full path to 3D wavefront (.obj) model file.</description>
+    </key>
+    <key type="ad" name="model-scale-factor">
+      <default>[]</default>
+      <summary>Scale factor</summary>
+      <description>Scale the 3D model by this factor.</description>
+    </key>
+    <key type="ad" name="model-x-offset">
+      <default>[]</default>
+      <summary>X</summary>
+      <description>X coordinate offset from the center of the cube.</description>
+    </key>
+    <key type="ad" name="model-y-offset">
+      <default>[]</default>
+      <summary>Y</summary>
+      <description>Y coordinate offset from the center of the cube.</description>
+    </key>
+    <key type="ad" name="model-z-offset">
+      <default>[]</default>
+      <summary>Z</summary>
+      <description>Z coordinate offset from the center of the cube.</description>
+    </key>
+    <key type="ai" name="model-rotation-plane">
+      <default>[]</default>
+      <summary>Rotation plane</summary>
+      <description>Plane of rotation for the 3D model.</description>
+    </key>
+    <key type="ad" name="model-rotation-rate">
+      <default>[]</default>
+      <summary>Rotation rate</summary>
+      <description>Rate of rotation of 3D model (in rotations per second).</description>
+    </key>
+    <key type="ai" name="model-animation">
+      <default>[]</default>
+      <summary>Model type</summary>
+      <description>Type of 3D model (still or animated).</description>
+    </key>
+    <key type="ai" name="model-fps">
+      <default>[]</default>
+      <summary>Frames per second</summary>
+      <description>Framerate (per second) for the animated series of obj files.</description>
+    </key>
+    <key type="b" name="rescale-width">
+      <default>true</default>
+      <summary>Rescale for screen ratio</summary>
+      <description>Rescale along the sides of the cube by the ratio of screen width to height.</description>
+    </key>
+    <key type="b" name="render-front-and-back">
+      <default>false</default>
+      <summary>Render front and back sides</summary>
+      <description>Renders the front surface and then the back surface. This can be useful for models which show black spots but can cause a performance hit.</description>
+    </key>
+    <key type="b" name="rotate-lighting">
+      <default>true</default>
+      <summary>Rotate lighting</summary>
+      <description>Preserve light direction when rotating the cube.</description>
+    </key>
+    <key type="d" name="light-inclination">
+      <default>90</default>
+      <summary>Light inclination</summary>
+      <description>The angle of light rays from the horizon in degrees (0 is from the viewer's perspective, 90 is from on top). Only has effect when Rotate Lighting is false. (0 - 180)</description>
+    </key>
+    <key type="d" name="light-ambient">
+      <default>0.3</default>
+      <summary>Ambient light intensity</summary>
+      <description>Component of light coming from all directions equally. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="light-diffuse">
+      <default>1.0</default>
+      <summary>Diffuse light intensity</summary>
+      <description>Component of light coming from the direction set by inclination or from the viewer if Rotate Lighting is true. (0.0 - 1.0)</description>
+    </key>
+    <key type="d" name="light-specular">
+      <default>0.6</default>
+      <summary>Specular light intensity</summary>
+      <description>Highly directional component of light coming from the direction set by inclination or from the viewer if Rotate Lighting is true. (0.0 - 1.0)</description>
+    </key>
+    <key type="b" name="concurrent-load">
+      <default>true</default>
+      <summary>Use separate threads</summary>
+      <description>Use separate threads to load each model faster and allow other interaction whilst loading.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.compiz.earth" gettext-domain="compiz">
+    <key type="d" name="latitude">
+      <default>0</default>
+      <summary>Latitude</summary>
+      <description>Enter a positive value for a North latitude, negative for a South one (-180 - 180)</description>
+    </key>
+    <key type="d" name="longitude">
+      <default>0</default>
+      <summary>Longitude</summary>
+      <description>Enter a positive value for a West longitude, negative for an East one (-180 - 180)</description>
+    </key>
+    <key type="d" name="timezone">
+      <default>0</default>
+      <summary>Time Zone</summary>
+      <description>Time difference from GMT (without taking account of DST) (-12 - 12)</description>
+    </key>
+    <key type="b" name="shaders">
+      <default>true</default>
+      <summary>Use shaders</summary>
+      <description>Make use of the shaders if possible</description>
+    </key>
+    <key type="b" name="clouds">
+      <default>false</default>
+      <summary>Realtime cloudmap</summary>
+      <description>Download a cloudmap every 3 hour</description>
+    </key>
+    <key type="d" name="rotation">
+      <default>0</default>
+      <summary>Rotation speed</summary>
+      <description>Make the whole scene rotate (-1 - 1)</description>
+    </key>
+    <key type="s" name="clouds-url">
+      <default>'http://home.megapass.co.kr/~holywatr/cloud_data/clouds_2048.jpg'</default>
+      <summary>Realtime cloudmap url</summary>
+      <description>Url from which realtime cloudmap texture will be downloaded</description>
+    </key>
+    <key type="d" name="earth-size">
+      <default>0.7</default>
+      <summary>Earth size</summary>
+      <description>Size of earth (0.1 - 1)</description>
+    </key>
+  </schema>
+</schemalist>
