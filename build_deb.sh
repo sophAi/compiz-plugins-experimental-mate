@@ -78,13 +78,15 @@ done
 
 # 2. Build elements from source if requested
 if [ "$BUILD_FROM_SOURCE" = true ]; then
-    echo "[2/6] Compiling elements plugin and subplugins from source..."
+    echo "[2/6] Compiling plugins from source..."
+    export PKG_CONFIG_PATH="/tmp/compiz-dev-sysroot/usr/lib/x86_64-linux-gnu/pkgconfig:/tmp/compiz-dev-sysroot/usr/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+
+    echo "  -> Compiling elements and subplugins..."
     ELEMENTS_SRC="${SCRIPT_DIR}/src/elements"
     BUILD_DIR="${ELEMENTS_SRC}/build"
     rm -rf "${BUILD_DIR}"
     mkdir -p "${BUILD_DIR}"
     
-    export PKG_CONFIG_PATH="/tmp/compiz-dev-sysroot/usr/lib/x86_64-linux-gnu/pkgconfig:/tmp/compiz-dev-sysroot/usr/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
     cd "${BUILD_DIR}"
     cmake .. \
         -DCMAKE_INSTALL_PREFIX=/usr \
@@ -95,7 +97,7 @@ if [ "$BUILD_FROM_SOURCE" = true ]; then
     
     make -j"$(nproc)"
     
-    # Update prebuilt and metadata from freshly built binaries
+    # Update prebuilt binaries
     cp "${BUILD_DIR}/libelements.so" "${SCRIPT_DIR}/prebuilt/lib/"
     cp "${BUILD_DIR}/plugins/autumn/libautumn.so" "${SCRIPT_DIR}/prebuilt/lib/"
     cp "${BUILD_DIR}/plugins/bubbles/libbubbles.so" "${SCRIPT_DIR}/prebuilt/lib/"
@@ -103,9 +105,22 @@ if [ "$BUILD_FROM_SOURCE" = true ]; then
     cp "${BUILD_DIR}/plugins/snow/libsnow.so" "${SCRIPT_DIR}/prebuilt/lib/"
     cp "${BUILD_DIR}/plugins/stars/libstars.so" "${SCRIPT_DIR}/prebuilt/lib/"
 
-    for p in elements autumn bubbles fireflies snow stars; do
-        if [ -f "${BUILD_DIR}/generated/${p}.xml" ]; then
-            cp "${BUILD_DIR}/generated/${p}.xml" "${SCRIPT_DIR}/metadata/${p}.xml"
+    # Compile ported standalone plugins
+    for p in stackswitch photo snowglobe atlantis cubemodel earth; do
+        if [ -d "${SCRIPT_DIR}/src/${p}" ]; then
+            echo "  -> Compiling ${p}..."
+            P_BUILD="${SCRIPT_DIR}/src/${p}/build"
+            rm -rf "${P_BUILD}"
+            mkdir -p "${P_BUILD}"
+            cd "${P_BUILD}"
+            cmake .. \
+                -DCMAKE_INSTALL_PREFIX=/usr \
+                -DCMAKE_MODULE_PATH="${SCRIPT_DIR}/cmake" \
+                -DCMAKE_PREFIX_PATH="/tmp/compiz-dev-sysroot/usr;/usr;${SCRIPT_DIR}/cmake" \
+                -D_compiz_def_macro="${SCRIPT_DIR}/cmake" \
+                -DCOMPIZ_PLUGIN_INSTALL_TYPE=local
+            make -j"$(nproc)"
+            cp "${P_BUILD}/lib${p}.so" "${SCRIPT_DIR}/prebuilt/lib/"
         fi
     done
     cd "${SCRIPT_DIR}"

@@ -1,0 +1,25 @@
+# Build directories
+build/
+src/*/build/
+src/elements/plugins/*/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Temporary & editor files
+*~
+*.swp
+*.bak
+*.orig
+*.rej
+.DS_Store
+
+# Debian build staging
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/*.substvars
+
+# Generated deb packages (optional, comment out if tracking releases)
+*.deb

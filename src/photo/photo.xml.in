@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="photo">
+		<short>Photowheel</short>
+		<short xml:lang="ca">Carrusel de fotografies</short>
+		<short xml:lang="en_GB">Photo wheel</short>
+		<long>Render photo turn wheel inside of the transparent cube</long>
+		<long xml:lang="ca">Renderitza el carrusel que gira les fotografies dins d'un cub transparent</long>
+		<long xml:lang="en_GB">Render photo turn wheel inside of the transparent cube</long>
+		<category>Effects</category>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+			</relation>
+			<requirement>
+				<plugin>cube</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<option type="list" name="photo_textures">
+				<short>Photo Textures</short>
+				<short xml:lang="ca">Textures de les fotos</short>
+				<short xml:lang="en_GB">Photo Textures</short>
+				<long>Photo textures</long>
+				<long xml:lang="ca">Textures de les fotos</long>
+				<long xml:lang="en_GB">Photo textures</long>
+				<hints>file;image;</hints>
+				<type>string</type>
+				<default>
+				</default>
+			</option>
+			<option type="float" name="height">
+				<short>Height</short>
+				<short xml:lang="ca">Alçada</short>
+				<short xml:lang="cs">Výška</short>
+				<short xml:lang="de">Höhe</short>
+				<short xml:lang="el">Ύψος</short>
+				<short xml:lang="en_GB">Height</short>
+				<short xml:lang="es">Alto</short>
+				<short xml:lang="eu">Altura</short>
+				<short xml:lang="fi">Korkeus</short>
+				<short xml:lang="fr">Hauteur</short>
+				<short xml:lang="gl">Altura</short>
+				<short xml:lang="gu">ઊંચાઈ</short>
+				<short xml:lang="he">גובה</short>
+				<short xml:lang="hi">ऊँचाई</short>
+				<short xml:lang="hu">Magasság</short>
+				<short xml:lang="it">Altezza</short>
+				<short xml:lang="ja">高さ</short>
+				<short xml:lang="ko">높이</short>
+				<short xml:lang="nb">Høyde</short>
+				<short xml:lang="nl">Hoogte</short>
+				<short xml:lang="pl">Wysokość</short>
+				<short xml:lang="pt">Altura</short>
+				<short xml:lang="pt_BR">Altura</short>
+				<short xml:lang="ru">Высота</short>
+				<short xml:lang="sv">Höjd</short>
+				<short xml:lang="tr">Yükseklik</short>
+				<short xml:lang="zh_CN">高度</short>
+				<long>Height</long>
+				<long xml:lang="ca">Alçada</long>
+				<long xml:lang="cs">Výška</long>
+				<long xml:lang="de">Höhe</long>
+				<long xml:lang="el">Ύψος</long>
+				<long xml:lang="en_GB">Height</long>
+				<long xml:lang="es">Alto</long>
+				<long xml:lang="eu">Altura</long>
+				<long xml:lang="fi">Korkeus</long>
+				<long xml:lang="fr">Hauteur</long>
+				<long xml:lang="gl">Altura</long>
+				<long xml:lang="gu">ઊંચાઈ</long>
+				<long xml:lang="he">גובה</long>
+				<long xml:lang="hi">ऊँचाई</long>
+				<long xml:lang="hu">Magasság</long>
+				<long xml:lang="it">Altezza</long>
+				<long xml:lang="ja">高さ</long>
+				<long xml:lang="ko">높이</long>
+				<long xml:lang="nb">Høyde</long>
+				<long xml:lang="nl">Hoogte</long>
+				<long xml:lang="pl">Wysokość</long>
+				<long xml:lang="pt">Altura</long>
+				<long xml:lang="pt_BR">Altura</long>
+				<long xml:lang="ru">Высота</long>
+				<long xml:lang="sv">Höjd</long>
+				<long xml:lang="tr">Yükseklik</long>
+				<long xml:lang="zh_CN">高度</long>
+				<default>1.0</default>
+				<min>0.0</min>
+				<max>2.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="width">
+				<short>Width</short>
+				<short xml:lang="ca">Amplada</short>
+				<short xml:lang="cs">Šířka</short>
+				<short xml:lang="de">Breite</short>
+				<short xml:lang="el">Πλάτος</short>
+				<short xml:lang="en_GB">Width</short>
+				<short xml:lang="es">Ancho OR anchura</short>
+				<short xml:lang="eu">Zabalera</short>
+				<short xml:lang="fi">Leveys</short>
+				<short xml:lang="fr">Largeur</short>
+				<short xml:lang="gl">Ancho</short>
+				<short xml:lang="gu">પહોળાઈ</short>
+				<short xml:lang="he">רוחב</short>
+				<short xml:lang="hi">चौड़ाई</short>
+				<short xml:lang="hu">Szélesség</short>
+				<short xml:lang="it">Larghezza</short>
+				<short xml:lang="ja">幅</short>
+				<short xml:lang="ko">넓이</short>
+				<short xml:lang="nb">Bredde</short>
+				<short xml:lang="nl">Breedte</short>
+				<short xml:lang="pl">Szerokość</short>
+				<short xml:lang="pt">Largura</short>
+				<short xml:lang="pt_BR">Largura</short>
+				<short xml:lang="ru">Ширина</short>
+				<short xml:lang="sv">Bredd</short>
+				<short xml:lang="tr">Genişlik</short>
+				<short xml:lang="zh_CN">宽度</short>
+				<long>Width</long>
+				<long xml:lang="ca">Amplada</long>
+				<long xml:lang="cs">Šířka</long>
+				<long xml:lang="de">Breite</long>
+				<long xml:lang="el">Πλάτος</long>
+				<long xml:lang="en_GB">Width</long>
+				<long xml:lang="es">Ancho OR anchura</long>
+				<long xml:lang="eu">Zabalera</long>
+				<long xml:lang="fi">Leveys</long>
+				<long xml:lang="fr">Largeur</long>
+				<long xml:lang="gl">Ancho</long>
+				<long xml:lang="gu">પહોળાઈ</long>
+				<long xml:lang="he">רוחב</long>
+				<long xml:lang="hi">चौड़ाई</long>
+				<long xml:lang="hu">Szélesség</long>
+				<long xml:lang="it">Larghezza</long>
+				<long xml:lang="ja">幅</long>
+				<long xml:lang="ko">넓이</long>
+				<long xml:lang="nb">Bredde</long>
+				<long xml:lang="nl">Breedte</long>
+				<long xml:lang="pl">Szerokość</long>
+				<long xml:lang="pt">Largura</long>
+				<long xml:lang="pt_BR">Largura</long>
+				<long xml:lang="ru">Ширина</long>
+				<long xml:lang="sv">Bredd</long>
+				<long xml:lang="tr">Genişlik</long>
+				<long xml:lang="zh_CN">宽度</long>
+				<default>1.0</default>
+				<min>0.0</min>
+				<max>3.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="speed">
+				<short>Speed</short>
+				<short xml:lang="ca">Velocitat</short>
+				<short xml:lang="cs">Rychlost</short>
+				<short xml:lang="de">Geschwindigkeit</short>
+				<short xml:lang="el">Ταχύτητα</short>
+				<short xml:lang="en_GB">Speed</short>
+				<short xml:lang="es">Velocidad</short>
+				<short xml:lang="eu">Abiadura</short>
+				<short xml:lang="fi">Nopeus</short>
+				<short xml:lang="fr">Vitesse</short>
+				<short xml:lang="gl">Velocidade</short>
+				<short xml:lang="gu">ઝડપ</short>
+				<short xml:lang="he">מהירות</short>
+				<short xml:lang="hi">गति</short>
+				<short xml:lang="hu">Sebesség</short>
+				<short xml:lang="it">Velocità</short>
+				<short xml:lang="ja">速度</short>
+				<short xml:lang="ko">속도</short>
+				<short xml:lang="nb">Hastighet</short>
+				<short xml:lang="nl">Snelheid</short>
+				<short xml:lang="pl">Szybkość</short>
+				<short xml:lang="pt">Velocidade</short>
+				<short xml:lang="pt_BR">Velocidade</short>
+				<short xml:lang="sv">Hastighet</short>
+				<short xml:lang="tr">Hız</short>
+				<short xml:lang="zh_CN">速度</short>
+				<long>Speed</long>
+				<long xml:lang="ca">Velocitat</long>
+				<long xml:lang="cs">Rychlost</long>
+				<long xml:lang="de">Geschwindigkeit</long>
+				<long xml:lang="el">Ταχύτητα</long>
+				<long xml:lang="en_GB">Speed</long>
+				<long xml:lang="es">Velocidad</long>
+				<long xml:lang="eu">Abiadura</long>
+				<long xml:lang="fi">Nopeus</long>
+				<long xml:lang="fr">Vitesse</long>
+				<long xml:lang="gl">Velocidade</long>
+				<long xml:lang="gu">ઝડપ</long>
+				<long xml:lang="he">מהירות</long>
+				<long xml:lang="hi">गति</long>
+				<long xml:lang="hu">Sebesség</long>
+				<long xml:lang="it">Velocità</long>
+				<long xml:lang="ja">速度</long>
+				<long xml:lang="ko">속도</long>
+				<long xml:lang="nb">Hastighet</long>
+				<long xml:lang="nl">Snelheid</long>
+				<long xml:lang="pl">Szybkość</long>
+				<long xml:lang="pt">Velocidade</long>
+				<long xml:lang="pt_BR">Velocidade</long>
+				<long xml:lang="sv">Hastighet</long>
+				<long xml:lang="tr">Hız</long>
+				<long xml:lang="zh_CN">速度</long>
+				<default>0.5</default>
+				<min>0.0</min>
+				<max>5.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="xpos">
+				<short>X Offset</short>
+				<short xml:lang="ca">Desplaçament X</short>
+				<short xml:lang="en_GB">X Offset</short>
+				<long>X Offset (this is width)</long>
+				<long xml:lang="ca">Desplaçament X (aquest és l'amplada)</long>
+				<long xml:lang="en_GB">X Offset (this is width)</long>
+				<default>0</default>
+				<min>-2.0</min>
+				<max>2.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="ypos">
+				<short>Y Offset</short>
+				<short xml:lang="ca">Desplaçament Y</short>
+				<short xml:lang="en_GB">Y Offset</short>
+				<long>Y Offset (this is height)</long>
+				<long xml:lang="ca">Desplaçament Y (aquest és l'alçada)</long>
+				<long xml:lang="en_GB">Y Offset (this is height)</long>
+				<default>0</default>
+				<min>-2.0</min>
+				<max>2.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="float" name="zpos">
+				<short>Z Offset</short>
+				<short xml:lang="ca">Desplaçament Z</short>
+				<short xml:lang="en_GB">Z Offset</short>
+				<long>Z Offset (this is depth)</long>
+				<long xml:lang="ca">Desplaçament Z (aquest és la profunditat)</long>
+				<long xml:lang="en_GB">Z Offset (this is depth)</long>
+				<default>0</default>
+				<min>-2.0</min>
+				<max>2.0</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="bool" name="order">
+				<short>Rotate Around Axis</short>
+				<short xml:lang="ca">Gira al voltant dels eixos</short>
+				<short xml:lang="en_GB">Rotate Around Axis</short>
+				<long>Otherwise rotate around its center of cube</long>
+				<long xml:lang="ca">Altrament gira al voltant del mateix center del cub</long>
+				<long xml:lang="en_GB">Otherwise rotate around its center of cube</long>
+				<default>true</default>
+			</option>
+			<option type="color" name="top_colour">
+				<short>Top Color</short>
+				<short xml:lang="ca">Color superior</short>
+				<short xml:lang="en_GB">Top Colour</short>
+				<long>Color of top face of the photo wheel</long>
+				<long xml:lang="ca">Color de la cara superior del carrusel de fotografies</long>
+				<long xml:lang="en_GB">Colour of top face of the photo wheel</long>
+				<default>
+					<red>0xffff</red>
+					<green>0xffff</green>
+					<blue>0xffff</blue>
+				</default>
+			</option>
+			<option type="color" name="bottom_colour">
+				<short>Bottom Color</short>
+				<short xml:lang="ca">Color inferior</short>
+				<short xml:lang="en_GB">Bottom Colour</short>
+				<long>Color of bottom face of the photo wheel</long>
+				<long xml:lang="ca">Color de la cara inferior del carrusel de fotografies</long>
+				<long xml:lang="en_GB">Colour of bottom face of the photo wheel</long>
+				<default>
+					<red>0xffff</red>
+					<green>0xffff</green>
+					<blue>0xffff</blue>
+				</default>
+			</option>
+			<option type="bool" name="cull">
+				<short>Backface Culling</short>
+				<short xml:lang="ca">Sacrifici de la cara posterior</short>
+				<short xml:lang="en_GB">Backface Culling</short>
+				<long>Enable backface culling</long>
+				<long xml:lang="ca">Habilita el sacrifici de la cara posterior</long>
+				<long xml:lang="en_GB">Enable backface culling</long>
+				<default>true</default>
+			</option>
+		</options>
+	</plugin>
+</compiz>

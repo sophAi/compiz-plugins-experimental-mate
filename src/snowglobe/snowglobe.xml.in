@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compiz>
+	<plugin useBcop="true" name="snowglobe">
+		<short>Cube Snow Globe</short>
+		<long>Render snow falling inside of the transparent cube</long>
+		<category>Effects</category>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+				<plugin>rotate</plugin>
+				<plugin>vpswitch</plugin>
+			</relation>
+			<requirement>
+				<plugin>cube</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<option type="float" name="speed_factor">
+				<short>Speed factor</short>
+				<long>Multiply the speed of the snowflakes by this factor.</long>
+				<default>1</default>
+				<min>0.5</min>
+				<max>10</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="int" name="num_snowflakes">
+				<short>Number of snowflakes</short>
+				<short xml:lang="ca">Nombre de flocs de neu</short>
+				<short xml:lang="cs">Počet vloček</short>
+				<short xml:lang="de">Anzahl der Schneeflocken</short>
+				<short xml:lang="el">Αριθμός νιφάδων</short>
+				<short xml:lang="en_GB">Number of snowflakes</short>
+				<short xml:lang="es">Número de copos de nieve</short>
+				<short xml:lang="fi">Lumihiutaleiden määrä</short>
+				<short xml:lang="fr">Nombre de flocons</short>
+				<short xml:lang="gl">Número de flocos de neve</short>
+				<short xml:lang="gu">બરફના કરાઓની સંખ્યા</short>
+				<short xml:lang="he">מספר פתיתי השלג</short>
+				<short xml:lang="hi">स्नोफ्लेक की संख्या</short>
+				<short xml:lang="hu">Hópihék száma</short>
+				<short xml:lang="it">Numero dei fiocchi di neve</short>
+				<short xml:lang="ja">雪片の数</short>
+				<short xml:lang="ko">눈송이의 수</short>
+				<short xml:lang="nb">Antall snøfnugg</short>
+				<short xml:lang="nl">Aantal sneeuwvlokken</short>
+				<short xml:lang="pl">Liczba płatków śniegu</short>
+				<short xml:lang="pt">Número de flocos de neve</short>
+				<short xml:lang="pt_BR">Número de flocos de neve</short>
+				<short xml:lang="sv">Antal snöflingor</short>
+				<short xml:lang="tr">Kar tanelerinin sayısı</short>
+				<short xml:lang="zh_CN">雪花的数量</short>
+				<long>Maximum number of snowflakes.</long>
+				<long xml:lang="ca">Nombre màxim de flocs de neu.</long>
+				<long xml:lang="en_GB">Maximum number of snowflakes.</long>
+				<default>100</default>
+				<min>0</min>
+				<max>1000</max>
+			</option>
+			<option type="float" name="snowflake_size">
+				<short>Size of snowflakes</short>
+				<short xml:lang="ca">Mida dels flocs de neu</short>
+				<short xml:lang="cs">Velikost vloček</short>
+				<short xml:lang="de">Größe der Schneeflocken</short>
+				<short xml:lang="el">Μέγεθος νιφάδων</short>
+				<short xml:lang="en_GB">Size of snowflakes</short>
+				<short xml:lang="es">Tamaño de los copos de nieve</short>
+				<short xml:lang="fi">Lumihiutaleiden koko</short>
+				<short xml:lang="fr">Taille des flocons</short>
+				<short xml:lang="gl">Tamaño dos flocos de neve</short>
+				<short xml:lang="gu">બરફના કરાઓનું માપ</short>
+				<short xml:lang="he">גודל פתיתי השלג</short>
+				<short xml:lang="hi">स्नो फ्लेक का आकार</short>
+				<short xml:lang="hu">Hópihék mérete</short>
+				<short xml:lang="it">Dimensione dei fiocchi di neve</short>
+				<short xml:lang="ja">雪片のサイズ</short>
+				<short xml:lang="ko">눈송이의 크기</short>
+				<short xml:lang="nb">Snøfnuggenes størrelse</short>
+				<short xml:lang="nl">Grootte sneeuwvlokken</short>
+				<short xml:lang="pl">Rozmiar płatków śniegu</short>
+				<short xml:lang="pt">Tamanho dos flocos de neve</short>
+				<short xml:lang="pt_BR">Tamanho dos flocos de neve</short>
+				<short xml:lang="sv">Storleken på snöflingor</short>
+				<short xml:lang="tr">Kar tanelerinin boyutu</short>
+				<short xml:lang="zh_CN">雪花的大小</short>
+				<long>Size of snowflakes.</long>
+				<long xml:lang="ca">Mida dels flocs de neu.</long>
+				<long xml:lang="en_GB">Size of snowflakes.</long>
+				<default>1</default>
+				<min>0.1</min>
+				<max>5</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="bool" name="show_snowman">
+				<short>Render snowman</short>
+				<long>Render a snowman inside the cube.</long>
+				<default>false</default>
+			</option>
+			<option type="float" name="snowman_size">
+				<short>Size of snowman</short>
+				<short xml:lang="ca">Mida del ninot de neu</short>
+				<short xml:lang="en_GB">Size of snowman</short>
+				<long>Size of snowman inside the cube.</long>
+				<long xml:lang="ca">Mida del ninot de neu dins del cub.</long>
+				<long xml:lang="en_GB">Size of snowman inside the cube.</long>
+				<default>0.6</default>
+				<min>0.1</min>
+				<max>1</max>
+				<precision>0.01</precision>
+			</option>
+			<option type="bool" name="shake_cube">
+				<short>Interaction</short>
+				<long>Snowflakes fall according to cube orientation.</long>
+				<default>true</default>
+			</option>
+			<group>
+				<short>Water / Ground</short>
+				<option type="bool" name="show_water">
+					<short>Render water</short>
+					<long>Render water inside the cube.</long>
+					<default>true</default>
+				</option>
+				<option type="bool" name="show_ground">
+					<short>Render ground</short>
+					<long>Render ground inside the cube.</long>
+					<default>true</default>
+				</option>
+				<option type="color" name="water_color">
+					<short>Water opacity</short>
+					<long>Opacity of water in the cube.</long>
+					<default>
+						<red>0x0800</red>
+						<green>0x0800</green>
+						<blue>0x3000</blue>
+						<alpha>0xf00</alpha>
+					</default>
+				</option>
+				<option type="int" name="grid_quality">
+					<short>Ground grid smoothnes</short>
+					<long>Number of subdivisions that create a finer grid.</long>
+					<default>3</default>
+					<min>1</min>
+					<max>10</max>
+				</option>
+			</group>
+		</options>
+	</plugin>
+</compiz>

@@ -72,6 +72,17 @@
 6. **Compiz 0.9.x GSettings Schemas 完整支援**：
    - 修正 `ghost.xml` 中布林值首字母大寫（`True`/`False` 改為 `true`/`false`），消除 `glib-compile-schemas` 錯誤。
    - 為全部 25 個外掛生成標準 GSettings Schema，並在套件 `postinst`/`postrm` 自動觸發編譯，徹底解決舊版在 CCSM 中點選會卡死或無法儲存設定的問題。
+7. **全面移植 6 個經典 3D / 視窗特效至 Compiz 0.9.x C++ 架構**：
+   - **Stack Window Switcher (`stackswitch`)**：立體堆疊視窗切換器全面重構適配 Compiz 0.9 渲染管線與文字繪製介面，修復缺少 Compiz 0.9 ABI VTable 無法啟動的問題。
+   - **Cube Atlantis (`atlantis`)**：海底水族館 3D 立方體特效，完整適配 `CubeScreenInterface` 介面，在立方體內部進行 3D 魚群游動與動態光影水波渲染。
+   - **Cube Snow Globe (`snowglobe`)**：方塊雪球特效，移植適配 `CubeScreenInterface`，修復立方體內部下雪與水底景觀動態效果。
+   - **Photowheel (`photo`)**：相片輪盤 3D 檢視外掛，完整重寫為 Compiz 0.9 C++ 物件模型。
+   - **Cube 3D Models (`cubemodel`)**：立方體 3D 模型渲染外掛，建立 `GLTexture` 與 `CubeScreenInterface` 相容層，支援在立方體內部載入與渲染 3D OBJ 模型。
+   - **Earth (`earth`)**：即時 3D 地球外掛，適配 Compiz 0.9 C++ 架構，移除舊版過時 GLEW 依賴改採標準 OpenGL 2.0+ Core 著色器與 `GLTexture::readImageToTexture`，並連結 `libcurl` 支援即時雲圖下載。
+8. **修復 Stack Window Switcher (`stackswitch`) 視窗切換時 Compiz 崩潰問題**：
+   - **解決記憶體野指針（Segmentation Fault）**：修正視窗列表加入時陣列前置遞增導致 `mWindows[0]` 未初始化的嚴重 Bug（`mWindows[++mNWindows]` → `mWindows[mNWindows++]`），徹底消除 `compareWindows` 進行 `qsort` 排序時因解引用未初始化指標導致 Compiz 崩潰的問題。
+   - **修正焦點查詢副作用**：將 `isStackswitchable()` 中誤用的 `window->focus()`（此方法會主動聚焦視窗）修正為 Compiz 0.9 標準唯讀查詢 `window->isFocussable()`，避免遍歷視窗時產生不必要的焦點變更事件。
+   - **增強防禦性程式碼與防除零機制**：在 `layoutThumbs()` 加入 `mNWindows <= 0` 提早返回與 `cols < 1` 保底防護（避免除以零產生浮點異常）；並在 `drawWindowTitle()` 修復縮圖中心 Y 座標計算與投影矩陣安全檢查。
 
 ---
 
@@ -79,6 +90,8 @@
 
 | 外掛名稱 | 功能說明 | 預設快捷鍵 |
 | :--- | :--- | :--- |
+| **Stack Window Switcher** | 呼叫堆疊視窗切換器 | <kbd>Super</kbd> + <kbd>Tab</kbd> / <kbd>Alt</kbd> + <kbd>Tab</kbd> |
+| **Photowheel** | 呼叫相片輪盤視窗切換器 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> |
 | **Elements** | 切換目前選中的元素特效 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>E</kbd> |
 | **Elements** | 切換至下一個元素定義 | <kbd>Alt</kbd> + <kbd>→</kbd> |
 | **Elements** | 切換至上一個元素定義 | <kbd>Alt</kbd> + <kbd>←</kbd> |
@@ -97,7 +110,7 @@
 
 ```bash
 # 1. 複製本專案
-git clone https://github.com/<your-username>/compiz-plugins-experimental-mate.git
+git clone https://github.com/sophAi/compiz-plugins-experimental-mate.git
 cd compiz-plugins-experimental-mate
 
 # 2. 執行一鍵安裝腳本（會自動建立並安裝 deb 套件）
@@ -126,7 +139,7 @@ sudo dpkg -i compiz-plugins-experimental_0.8.18-4+mint22.3_amd64.deb
 
 ## 🔨 自行編譯原始碼 (Build from Source)
 
-本專案內建了 `build_deb.sh` 自動化打包腳本，支援直接從源碼重新編譯 `elements` 家族外掛：
+本專案內建了 `build_deb.sh` 自動化打包腳本，支援直接從源碼重新編譯 `elements` 家族與 6 個現代化移植外掛 (`stackswitch`, `photo`, `snowglobe`, `atlantis`, `cubemodel`, `earth`)：
 
 ```bash
 # 從 C++ 源碼重新編譯並打包：
@@ -178,7 +191,13 @@ compiz-plugins-experimental-mate/
 │   └── xslt/compiz_gsettings_schemas.xslt
 ├── src/                      # 原始程式碼
 │   ├── elements/             # Compiz 0.9.x C++ Elements 核心與 5 個子外掛源碼
-│   └── plugins-classic/      # 經典 C 外掛原始碼 (atlantis, earth, cubemodel...)
+│   ├── stackswitch/          # Stack Window Switcher 堆疊切換 (Compiz 0.9 C++ 移植版)
+│   ├── photo/                # Photowheel 相片輪盤 (Compiz 0.9 C++ 移植版)
+│   ├── snowglobe/            # Cube Snow Globe 方塊雪球 (Compiz 0.9 C++ 移植版)
+│   ├── atlantis/             # Cube Atlantis 海底水族館 (Compiz 0.9 C++ 移植版)
+│   ├── cubemodel/            # Cube 3D Models 模型渲染 (Compiz 0.9 C++ 移植版)
+│   ├── earth/                # Earth 即時 3D 地球 (Compiz 0.9 C++ 移植版)
+│   └── plugins-classic/      # 歷史經典 C 外掛原始碼
 ├── prebuilt/                 # 經測試最佳化的 25 個外掛編譯二進位函式庫 (.so)
 ├── metadata/                 # 25 個外掛之 Compiz 0.9 XML 詮釋資料
 ├── schemas/                  # 25 個外掛之 GSettings XML 配置規範
