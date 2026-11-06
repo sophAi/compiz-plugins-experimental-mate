@@ -9,6 +9,34 @@ case "$1" in
         if which glib-compile-schemas >/dev/null 2>&1; then
             glib-compile-schemas /usr/share/glib-2.0/schemas/ 2>/dev/null || true
         fi
+
+        # Fix CCSM focus stealing bug (Fcitx5 / GTK entry focus lock)
+        CCM_PAGES="/usr/lib/python3/dist-packages/ccm/Pages.py"
+        if [ -f "$CCM_PAGES" ]; then
+            python3 -c "
+pages_file = '$CCM_PAGES'
+with open(pages_file, 'r', encoding='utf-8') as f:
+    content = f.read()
+
+target = '''    def ResetFocus(self, widget, data):
+        pos = self.FilterEntry.get_position() 
+        self.FilterEntry.grab_focus()
+        self.FilterEntry.set_position(pos)'''
+
+replacement = '''    def ResetFocus(self, widget, data):
+        if self.FilterEntry.is_focus():
+            pos = self.FilterEntry.get_position() 
+            self.FilterEntry.grab_focus()
+            self.FilterEntry.set_position(pos)'''
+
+if target in content:
+    with open(pages_file + '.orig', 'w', encoding='utf-8') as f_orig:
+        f_orig.write(content)
+    with open(pages_file, 'w', encoding='utf-8') as f:
+        f.write(content.replace(target, replacement))
+    print('Patched CCSM focus stealing issue in ' + pages_file)
+" 2>/dev/null || true
+        fi
         ;;
     *)
         ;;

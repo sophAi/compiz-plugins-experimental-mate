@@ -83,6 +83,9 @@
    - **解決記憶體野指針（Segmentation Fault）**：修正視窗列表加入時陣列前置遞增導致 `mWindows[0]` 未初始化的嚴重 Bug（`mWindows[++mNWindows]` → `mWindows[mNWindows++]`），徹底消除 `compareWindows` 進行 `qsort` 排序時因解引用未初始化指標導致 Compiz 崩潰的問題。
    - **修正焦點查詢副作用**：將 `isStackswitchable()` 中誤用的 `window->focus()`（此方法會主動聚焦視窗）修正為 Compiz 0.9 標準唯讀查詢 `window->isFocussable()`，避免遍歷視窗時產生不必要的焦點變更事件。
    - **增強防禦性程式碼與防除零機制**：在 `layoutThumbs()` 加入 `mNWindows <= 0` 提早返回與 `cols < 1` 保底防護（避免除以零產生浮點異常）；並在 `drawWindowTitle()` 修復縮圖中心 Y 座標計算與投影矩陣安全檢查。
+9. **修復 CCSM 設定文字欄位被左側過濾器鎖死/奪取焦點問題（Fcitx5 / GTK3 相容性修補）**：
+   - **問題成因**：CCSM 的 `PluginPage` 原本將 `size-allocate` 事件無條件連線至 `ResetFocus`（呼叫 `self.FilterEntry.grab_focus()`），導致在 Linux Mint GTK3 環境下點選文字輸入框（如「預設圖示」`default_icon`）時，因輸入法框架（如 Fcitx5）啟動或元件重繪發出 `size-allocate`，游標被強制吸回左側「過濾器」搜尋框中而無法編輯設定。
+   - **自動修復機制**：在 deb 套件的 `postinst` 中自動套用保護判斷（僅在焦點本就處於過濾器內時才重置焦點 `if self.FilterEntry.is_focus():`），安裝套件後即刻解決 CCSM 無法修改文字設定欄位之問題，並在 `postrm` 移除套件時支援乾淨復原。
 
 ---
 

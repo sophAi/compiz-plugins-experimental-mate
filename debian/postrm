@@ -9,6 +9,15 @@ case "$1" in
         if which glib-compile-schemas >/dev/null 2>&1; then
             glib-compile-schemas /usr/share/glib-2.0/schemas/ 2>/dev/null || true
         fi
+
+        # Restore original CCSM Pages.py if backup exists and removing package
+        if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+            CCM_PAGES="/usr/lib/python3/dist-packages/ccm/Pages.py"
+            if [ -f "${CCM_PAGES}.orig" ]; then
+                cp -f "${CCM_PAGES}.orig" "${CCM_PAGES}" 2>/dev/null || true
+                rm -f "${CCM_PAGES}.orig" 2>/dev/null || true
+            fi
+        fi
         ;;
     *)
         ;;
